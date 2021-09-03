@@ -12,7 +12,8 @@ class PopularWikisWidget extends WP_Widget {
 
       $control_ops = array( 'title' => __('Beliebte Wikis', 'wiki'), 'hierarchical' => 'yes' );
 
-			parent::WP_Widget( 'incsub_popular_wikis', __('Beliebte Wikis', 'wiki'), $widget_ops, $control_ops );
+			//parent::WP_Widget( 'incsub_popular_wikis', __('Beliebte Wikis', 'wiki'), $widget_ops, $control_ops );
+			parent::__construct( 'incsub_popular_wikis', __('Beliebte Wikis', 'wiki'), $widget_ops, $control_ops );
 
     }
 

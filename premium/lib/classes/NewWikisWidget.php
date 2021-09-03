@@ -16,7 +16,8 @@ class NewWikisWidget extends WP_Widget {
 
 
 
-			parent::WP_Widget( 'incsub_new_wikis', __('Neue Wikis', 'wiki'), $widget_ops, $control_ops );
+			//parent::WP_Widget( 'incsub_new_wikis', __('Neue Wikis', 'wiki'), $widget_ops, $control_ops );
+			parent::__construct( 'incsub_new_wikis', __('Neue Wikis', 'wiki'), $widget_ops, $control_ops );
 
 		}
 

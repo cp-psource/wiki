@@ -12,7 +12,8 @@ class WikiCategoriesWidget extends WP_Widget {
 
 
 
-	parent::WP_Widget( 'incsub_wiki_categories', __('Wiki-Kategorien', 'wiki'), $widget_ops, $control_ops );
+	//parent::WP_Widget( 'incsub_wiki_categories', __('Wiki-Kategorien', 'wiki'), $widget_ops, $control_ops );
+	parent::__construct( 'incsub_wiki_categories', __('Wiki-Kategorien', 'wiki'), $widget_ops, $control_ops );
 
     }
 

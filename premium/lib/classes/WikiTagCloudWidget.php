@@ -12,7 +12,8 @@ class WikiTagCloudWidget extends WP_Widget {
 
 
 
-	parent::WP_Widget( 'incsub_wiki_tag_cloud', __('Wiki Tag Cloud', 'wiki'), $widget_ops, $control_ops );
+	//parent::WP_Widget( 'incsub_wiki_tag_cloud', __('Wiki Tag Cloud', 'wiki'), $widget_ops, $control_ops );
+	parent::__construct( 'incsub_wiki_tag_cloud', __('Wiki Tag Cloud', 'wiki'), $widget_ops, $control_ops );
 
     }
 

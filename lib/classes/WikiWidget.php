@@ -16,7 +16,8 @@ class WikiWidget extends WP_Widget {
 
 
 
-			parent::WP_Widget( 'incsub_wiki', __('Wiki', 'wiki'), $widget_ops, $control_ops );
+			//parent::WP_Widget( 'incsub_wiki', __('Wiki', 'wiki'), $widget_ops, $control_ops );
+			parent::__construct( 'incsub_wiki', __('Wiki', 'wiki'), $widget_ops, $control_ops );
 
 		}
 

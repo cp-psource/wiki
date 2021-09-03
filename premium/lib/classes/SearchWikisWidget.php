@@ -10,7 +10,8 @@ class SearchWikisWidget extends WP_Widget {
 
       $control_ops = array( 'title' => __('Suche Wikis', 'wiki') );
 
-			parent::WP_Widget( 'incsub_search_wikis', __('Suche Wikis', 'wiki'), $widget_ops, $control_ops );
+			//parent::WP_Widget( 'incsub_search_wikis', __('Suche Wikis', 'wiki'), $widget_ops, $control_ops );
+			parent::__construct( 'incsub_search_wikis', __('Suche Wikis', 'wiki'), $widget_ops, $control_ops );
 
     }
 
