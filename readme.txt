@@ -12,9 +12,10 @@ Fehler, Feedback, Ideen gerne in unserem Hilfeforum ;)
 Change Log:
 
 ----------------------------------------------------------------------
-
+1.3.2
 ----------------------------------------------------------------------
 
+- Fixed: Deprecated Constructor
 
 
 1.2.5.1
