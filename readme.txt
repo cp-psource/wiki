@@ -32,6 +32,10 @@ Mehr Hilfe?
 [Projektseite](https://n3rds.work/piestingtal_source/ps-wiki-plugin-wiki/)
 [Supportforum](https://n3rds.work/forums/forum/psource-support-foren/ps-wiki-supportforum/)
 
+Mitentwickeln?
+
+[GitHub](https://github.com/piestingtal-source/ps-wiki-pro)
+
 == Screenshots ==
 
 
