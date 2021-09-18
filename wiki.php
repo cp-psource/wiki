@@ -1,13 +1,11 @@
 <?php
 
 /*
-
 Plugin Name: PS-Wiki
-
 Plugin URI: https://n3rds.work/wiki/piestingtal-source-wiki/ps-wiki-plugin/
 Description: Ein simples aber mächtiges Wiki-Plugin für Deine WordPress Seite, inkl. Multisitesupport, Frontend-Editor, Rechtemanagment.
 Author: Webmasterservice "Die N3rds"
-Version: 1.3.2
+Version: 1.3.3
 Author URI: https://n3rds.work
 Text Domain: wiki
 */
@@ -18,17 +16,11 @@ Text Domain: wiki
 Copyright 2019-2021 DerN3rd (https://n3rds.work)
 Author - Der N3rd
 
-
-
-
-
 This program is free software; you can redistribute it and/or modify
 
 it under the terms of the GNU General Public License (Version 2 - GPLv2) as published by
 
 the Free Software Foundation.
-
-
 
 This program is distributed in the hope that it will be useful,
 
@@ -38,8 +30,6 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 
 GNU General Public License for more details.
 
-
-
 You should have received a copy of the GNU General Public License
 
 along with this program; if not, write to the Free Software
@@ -48,7 +38,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 */
 
-require 'premium/plugin-update-checker/plugin-update-checker.php';
+require 'psource/psource-plugin-update/plugin-update-checker.php';
 $MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'https://n3rds.work/wp-update-server/?action=get_metadata&slug=ps-wiki-pro', 
 	__FILE__, 
@@ -59,7 +49,7 @@ class Wiki {
 
 	// @var string Current version
 
-	var $version = '1.3.2';
+	var $version = '1.3.3';
 
 	// @var string The db prefix
 
