@@ -21,22 +21,20 @@ PS Wiki funktioniert sofort und passt sich jedem WordPress-Theme an. Hole das Be
 
 Erstelle einen Ort, an dem Benutzer in wenigen Minuten Ideen sammeln, entwickeln und austauschen können.
 
-
-
 Blitzschnelle Ergebnisse
 Netzwerksuche verwendet unser leistungsstarkes PS-Multisite Beitragsindex Plugin, das alle Beiträge auf jeder Seite in Deinem Netzwerk indiziert, 
 um eine blitzschnelle Suche in Deinem gesamten Netzwerk zu erstellen.
 
-Mehr Hilfe?
+=== Mehr Hilfe? ===
 
-[Projektseite](https://n3rds.work/piestingtal_source/ps-wiki-plugin-wiki/)
+[Projektseite](https://n3rds.work/piestingtal_source/ps-wiki-plugin/)
 [Supportforum](https://n3rds.work/forums/forum/psource-support-foren/ps-wiki-supportforum/)
 
 Mitentwickeln?
 
 [GitHub](https://github.com/piestingtal-source/ps-wiki-pro)
 
-== Screenshots ==
+== Piestingtal.Source ==
 
 
 
