@@ -25,18 +25,28 @@ Blitzschnelle Ergebnisse
 Netzwerksuche verwendet unser leistungsstarkes PS-Multisite Beitragsindex Plugin, das alle Beiträge auf jeder Seite in Deinem Netzwerk indiziert, 
 um eine blitzschnelle Suche in Deinem gesamten Netzwerk zu erstellen.
 
-=== Mehr Hilfe? ===
+[POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/psource-plugins/)
 
-[Projektseite](https://n3rds.work/piestingtal_source/ps-wiki-plugin/)
-[Supportforum](https://n3rds.work/forums/forum/psource-support-foren/ps-wiki-supportforum/)
-
-Mitentwickeln?
-
+[Projektseite](https://n3rds.work/wiki/piestingtal-source-wiki/ps-wiki-plugin/)
+[Handbuch](https://n3rds.work/docs/ps-wiki-plugin-handbuch/)
+[Supportforum](https://n3rds.work/forums/forum/psource-support-foren/ps-wiki-supportforum)
 [GitHub](https://github.com/piestingtal-source/ps-wiki-pro)
 
-== Piestingtal.Source ==
+== Mehr PSOURCE ==
 
+= PS EVENTS PLUGIN =
 
+Unser [PS Events Plugin](https://n3rds.work/piestingtal_source/ps-events-eventmanagement-fuer-wordpress/) versendet auf Wunsch automatisch Newsletter an Veranstaltungs-Teilnehmer.
+Halte so Deine Teilnehmer über Deine anstehende Veranstaltung(en) auf dem laufenden!
+
+== Hilf uns ==
+
+Viele, viele Kaffees konsumieren wir während wir an unseren Plugins und Themes arbeiten.
+Wie wärs? Möchtest Du uns mit einer Kaffee-Spende bei der Arbeit an unseren Plugins unterstützen?
+
+= Unterstütze uns =
+
+Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/) wir Danken Dir!
 
 == ChangeLog ==
 
