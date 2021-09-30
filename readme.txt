@@ -27,7 +27,7 @@ um eine blitzschnelle Suche in Deinem gesamten Netzwerk zu erstellen.
 
 [POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/psource-plugins/)
 
-[Projektseite](https://n3rds.work/wiki/piestingtal-source-wiki/ps-wiki-plugin/)
+[Projektseite](https://n3rds.work/piestingtal_source/ps-wiki-plugin/)
 [Handbuch](https://n3rds.work/docs/ps-wiki-plugin-handbuch/)
 [Supportforum](https://n3rds.work/forums/forum/psource-support-foren/ps-wiki-supportforum)
 [GitHub](https://github.com/piestingtal-source/ps-wiki-pro)

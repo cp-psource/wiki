@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: PS-Wiki
-Plugin URI: https://n3rds.work/wiki/piestingtal-source-wiki/ps-wiki-plugin/
+Plugin URI: https://n3rds.work/piestingtal_source/ps-wiki-plugin/
 Description: Ein simples aber mächtiges Wiki-Plugin für Deine WordPress Seite, inkl. Multisitesupport, Frontend-Editor, Rechtemanagment.
 Author: Webmasterservice "Die N3rds"
 Version: 1.3.3
