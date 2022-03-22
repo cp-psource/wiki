@@ -4,7 +4,7 @@ Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free
 Tags: multisite, wiki, wikipedia
 Requires at least: 4.9
 Tested up to: 5.6
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -50,7 +50,14 @@ Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktion
 
 == ChangeLog ==
 
-= 1.3.2 = DerN3rd =
+= 1.3.4 = DerN3rd =
+
+* Jede Menge Code überholt
+* Komplett in Deutsch
+* Texte angepasst
+* Code-Entschlackt
+
+= 1.3.3 = DerN3rd =
 
 * Overhauled von WPMUDEV
 * Release WMS N@W Netzwerksuche

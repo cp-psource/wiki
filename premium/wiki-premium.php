@@ -190,7 +190,7 @@ class Wiki_Premium {
 
 				'add_or_remove_items'			=> __( 'Hinzufügen oder Entfernen von Wiki-Tags', 'wiki' ),
 
-				'choose_from_most_used'			=> __( 'Wähle aus den am häufigsten verwendeten Wiki-Tags', 'wiki' ),
+				'choose_from_most_used'			=> __( 'Wähle häufig verwendete Wiki-Tags', 'wiki' ),
 
 			),
 
