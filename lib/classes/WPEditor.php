@@ -1280,13 +1280,13 @@ final class WikiEditor {
 
 				'indent' => ! $set['wpautop'],
 
-				'toolbar1' => implode($mce_buttons, ','),
+				'toolbar1' => implode(',', $mce_buttons ),
 
-				'toolbar2' => implode($mce_buttons_2, ','),
+				'toolbar2' => implode(',', $mce_buttons_2),
 
-				'toolbar3' => implode($mce_buttons_3, ','),
+				'toolbar3' => implode(',', $mce_buttons_3,),
 
-				'toolbar4' => implode($mce_buttons_4, ','),
+				'toolbar4' => implode(',', $mce_buttons_4,),
 
 				'tabfocus_elements' => $set['tabfocus_elements'],
 
