@@ -50,6 +50,11 @@ Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktion
 
 == ChangeLog ==
 
+= 1.3.5 = DerN3rd =
+
+* CSS für Revisionen verbessert (auch Responsive)
+* Style des Frontend-Editors verbessert
+
 = 1.3.4 = DerN3rd =
 
 * Jede Menge Code überholt

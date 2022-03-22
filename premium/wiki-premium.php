@@ -570,7 +570,7 @@ class Wiki_Premium {
 
 		$content .= '<tr>';
 
-		$content .= '<td id="wiki-category-td">';
+		$content .= '<td id="wiki-category-td" style="width: 25%">';
 
 		$content .= wp_dropdown_categories( array(
 
@@ -598,7 +598,7 @@ class Wiki_Premium {
 
 		$content .= '</td>';
 
-		$content .= '<td id="wiki-tags-label">';
+		$content .= '<td id="wiki-tags-label" style="width: 50px">';
 
 		$content .= '<label for="wiki-tags">'.__('Tags:', 'wiki').'</label>';
 
@@ -606,7 +606,7 @@ class Wiki_Premium {
 
 		$content .= '<td id="wiki-tags-td">';
 
-		$content .= '<input type="text" id="psource_wiki-tags" name="psource_wiki_tags" value="'. implode( ', ', $wiki_tags ).'" />';
+		$content .= '<input type="text" id="psource_wiki-tags" name="psource_wiki_tags" style="width: 100%;" value="'. implode( ', ', $wiki_tags ).'" />';
 
 		$content .= '</td></tr></table>';
 

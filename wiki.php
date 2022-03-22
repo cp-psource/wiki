@@ -1518,7 +1518,7 @@ class Wiki {
 
 					$new_content .= '<tr id="revision-field-' . $field . '">';
 
-					$new_content .= '<th scope="row">'.esc_html( $field_title ).'</th>';
+					$new_content .= '<th scope="row" style="width: 150px">'.esc_html( $field_title ).'</th>';
 
 					$new_content .= '<td><div class="pre">'.$rcontent.'</div></td>';
 
@@ -2750,7 +2750,7 @@ class Wiki {
 
 			$content .= '<table class="widefat post-revisions" cellspacing="0" id="post-revisions">';
 
-			$content .= '<col /><col /><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" />';
+			$content .= '<col style="width: 45px" /><col style="width: 45px" /><col style="width: 33%" /><col style="width: 33%" /><col style="width: 33%" />';
 
 			$content .= '<thead>';
 
