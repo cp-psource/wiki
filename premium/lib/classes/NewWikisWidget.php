@@ -15,9 +15,7 @@ class NewWikisWidget extends WP_Widget {
 			$control_ops = array( 'title' => __('Neue Wikis', 'wiki'), 'hierarchical' => 'yes' );
 
 
-
-			//parent::WP_Widget( 'incsub_new_wikis', __('Neue Wikis', 'wiki'), $widget_ops, $control_ops );
-			parent::__construct( 'incsub_new_wikis', __('Neue Wikis', 'wiki'), $widget_ops, $control_ops );
+			parent::__construct( 'psource_new_wikis', __('Neue Wikis', 'wiki'), $widget_ops, $control_ops );
 
 		}
 
@@ -69,7 +67,7 @@ class NewWikisWidget extends WP_Widget {
 
 					'post_parent' => 0,
 
-					'post_type' => 'incsub_wiki',
+					'post_type' => 'psource_wiki',
 
 					'orderby' => 'post_date',
 
@@ -123,7 +121,7 @@ class NewWikisWidget extends WP_Widget {
 
 				array('post_parent' => $wiki->ID,
 
-						 'post_type' => 'incsub_wiki',
+						 'post_type' => 'psource_wiki',
 
 						 'orderby' => 'post_date',
 

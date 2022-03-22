@@ -12,8 +12,8 @@ class WikiTagCloudWidget extends WP_Widget {
 
 
 
-	//parent::WP_Widget( 'incsub_wiki_tag_cloud', __('Wiki Tag Cloud', 'wiki'), $widget_ops, $control_ops );
-	parent::__construct( 'incsub_wiki_tag_cloud', __('Wiki Tag Cloud', 'wiki'), $widget_ops, $control_ops );
+	//parent::WP_Widget( 'psource_wiki_tag_cloud', __('Wiki Tag Cloud', 'wiki'), $widget_ops, $control_ops );
+	parent::__construct( 'psource_wiki_tag_cloud', __('Wiki Tag Cloud', 'wiki'), $widget_ops, $control_ops );
 
     }
 
@@ -45,7 +45,7 @@ class WikiTagCloudWidget extends WP_Widget {
 
 	<ul>
 
-	    <?php echo wp_tag_cloud('taxonomy=incsub_wiki_tag'); ?>
+	    <?php echo wp_tag_cloud('taxonomy=psource_wiki_tag'); ?>
 
 	</ul>
 

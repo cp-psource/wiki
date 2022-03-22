@@ -18,11 +18,11 @@ get_header( 'wiki' );
 
 
 
-                <div class="incsub_wiki incsub_wiki_single">
+                <div class="psource_wiki psource_wiki_single">
 
                     <?php _e('Die gesuchte Wiki-Seite existiert nicht. Fühle Dich frei, es selbst zu erstellen.', 'wiki'); ?>
 
-                    <div class="incsub_wiki_tabs incsub_wiki_tabs_top"><div class="incsub_wiki_clear"></div></div>
+                    <div class="psource_wiki_tabs psource_wiki_tabs_top"><div class="psource_wiki_clear"></div></div>
 
                 </div>
 

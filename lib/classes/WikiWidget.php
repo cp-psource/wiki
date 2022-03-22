@@ -16,8 +16,8 @@ class WikiWidget extends WP_Widget {
 
 
 
-			//parent::WP_Widget( 'incsub_wiki', __('Wiki', 'wiki'), $widget_ops, $control_ops );
-			parent::__construct( 'incsub_wiki', __('Wiki', 'wiki'), $widget_ops, $control_ops );
+			//parent::WP_Widget( 'psource_wiki', __('Wiki', 'wiki'), $widget_ops, $control_ops );
+			parent::__construct( 'psource_wiki', __('Wiki', 'wiki'), $widget_ops, $control_ops );
 
 		}
 
@@ -71,7 +71,7 @@ class WikiWidget extends WP_Widget {
 
 				'post_parent' => 0,
 
-				'post_type' => 'incsub_wiki',
+				'post_type' => 'psource_wiki',
 
 				'orderby' => $order_by,
 
@@ -129,7 +129,7 @@ class WikiWidget extends WP_Widget {
 
 				array('post_parent' => $wiki->ID,
 
-						 'post_type' => 'incsub_wiki',
+						 'post_type' => 'psource_wiki',
 
 						 'orderby' => $order_by,
 

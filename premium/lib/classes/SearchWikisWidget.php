@@ -10,8 +10,8 @@ class SearchWikisWidget extends WP_Widget {
 
       $control_ops = array( 'title' => __('Suche Wikis', 'wiki') );
 
-			//parent::WP_Widget( 'incsub_search_wikis', __('Suche Wikis', 'wiki'), $widget_ops, $control_ops );
-			parent::__construct( 'incsub_search_wikis', __('Suche Wikis', 'wiki'), $widget_ops, $control_ops );
+			//parent::WP_Widget( 'psource_search_wikis', __('Suche Wikis', 'wiki'), $widget_ops, $control_ops );
+			parent::__construct( 'psource_search_wikis', __('Suche Wikis', 'wiki'), $widget_ops, $control_ops );
 
     }
 
@@ -45,7 +45,7 @@ class SearchWikisWidget extends WP_Widget {
 
 	<input type="text" value="<?php echo get_search_query(); ?>" name="s" id="s" />
 
-	<input type="hidden" value="incsub_wiki" name="post_type" id="post_type" />
+	<input type="hidden" value="psource_wiki" name="post_type" id="post_type" />
 
 	<input type="submit" id="searchsubmit" value="<?php esc_attr_e('Suche', 'wiki'); ?>" />
 

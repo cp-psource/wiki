@@ -1,6 +1,6 @@
 <?php
 
-
+defined('ABSPATH') or die("Zugriff verweigert.");
 
 class Wiki_Admin_Page_Settings {
 
@@ -16,7 +16,7 @@ class Wiki_Admin_Page_Settings {
 
 	/**
 
-	 * Adds the admin menus
+	 * Fügt die Admin-Menüs hinzu
 
 	 *
 
@@ -26,7 +26,7 @@ class Wiki_Admin_Page_Settings {
 
 	function admin_menu() {
 
-		$page = add_submenu_page('edit.php?post_type=incsub_wiki', __('Wiki-Einstellungen', 'wiki'), __('Wiki-Einstellungen', 'wiki'), 'manage_options', 'incsub_wiki', array(&$this, 'display_settings'));
+		$page = add_submenu_page('edit.php?post_type=psource_wiki', __('Wiki-Einstellungen', 'wiki'), __('Wiki-Einstellungen', 'wiki'), 'manage_options', 'psource_wiki', array(&$this, 'display_settings'));
 
 	}
 
@@ -40,11 +40,11 @@ class Wiki_Admin_Page_Settings {
 
 		if ( ! current_user_can('manage_options') )
 
-			wp_die(__('Du hast keine Berechtigung, auf diese Seite zuzugreifen', 'wiki'));	//If accessed properly, this message doesn't appear.
+			wp_die(__('Du hast keine Berechtigung, auf diese Seite zuzugreifen', 'wiki'));	//Bei ordnungsgemäßem Zugriff wird diese Meldung nicht angezeigt.
 
 
 
-		if ( isset($_GET['incsub_wiki_settings_saved']) && $_GET['incsub_wiki_settings_saved'] == 1 )
+		if ( isset($_GET['psource_wiki_settings_saved']) && $_GET['psource_wiki_settings_saved'] == 1 )
 
 			echo '<div class="updated fade"><p>'.__('Einstellungen gespeichert.', 'wiki').'</p></div>';
 
@@ -54,7 +54,7 @@ class Wiki_Admin_Page_Settings {
 
 			<h2><?php _e('Wiki-Einstellungen', 'wiki'); ?></h2>
 
-			<form method="post" action="edit.php?post_type=incsub_wiki&amp;page=incsub_wiki">
+			<form method="post" action="edit.php?post_type=psource_wiki&amp;page=psource_wiki">
 
 			<?php wp_nonce_field('wiki_save_settings', 'wiki_settings_nonce'); ?>
 
@@ -62,9 +62,9 @@ class Wiki_Admin_Page_Settings {
 
 				<tr valign="top">
 
-					<th><label for="incsub_wiki-slug"><?php _e('Wiki Slug', 'wiki'); ?></label> </th>
+					<th><label for="psource_wiki-slug"><?php _e('Wiki Slug', 'wiki'); ?></label> </th>
 
-					<td> /<input type="text" size="20" id="incsub_wiki-slug" name="wiki[slug]" value="<?php echo $wiki->get_setting('slug'); ?>" /></td>
+					<td> /<input type="text" size="20" id="psource_wiki-slug" name="wiki[slug]" value="<?php echo $wiki->get_setting('slug'); ?>" /></td>
 
 				</tr>
 
@@ -178,7 +178,7 @@ class Wiki_Admin_Page_Settings {
 
 
 
-			wp_redirect('edit.php?post_type=incsub_wiki&page=incsub_wiki&incsub_wiki_settings_saved=1');
+			wp_redirect('edit.php?post_type=psource_wiki&page=psource_wiki&psource_wiki_settings_saved=1');
 
 			exit;
 

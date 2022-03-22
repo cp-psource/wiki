@@ -13,7 +13,7 @@ Text Domain: wiki
 
 
 /*
-Copyright 2019-2021 DerN3rd (https://n3rds.work)
+Copyright 2019-2022 DerN3rd (https://n3rds.work)
 Author - Der N3rd
 
 This program is free software; you can redistribute it and/or modify
@@ -40,38 +40,38 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 require 'psource/psource-plugin-update/plugin-update-checker.php';
 $MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://n3rds.work/wp-update-server/?action=get_metadata&slug=ps-wiki-pro', 
+	'https://n3rds.work/wp-update-server/?action=get_metadata&slug=ps-wiki', 
 	__FILE__, 
-	'ps-wiki-pro' 
+	'ps-wiki' 
 );
 
 class Wiki {
 
-	// @var string Current version
+	// @var string Aktuelle Version
 
 	var $version = '1.3.3';
 
-	// @var string The db prefix
+	// @var string Der DB Prefix
 
 	var $db_prefix = '';
 
-	// @var string The plugin settings
+	// @var string Die Plugin Einstellungen
 
 	var $settings = array();
 
-	// @var string The slug to use for wiki tags
+	// @var string Der für Wiki-Tags zu verwendende Slug
 
 	var $slug_tags = 'tags';
 
-	// @var string The slug to use for wiki categories
+	// @var string Der für Wiki-Kategorien zu verwendende Slug
 
 	var $slug_categories = 'categories';
 
-	// @var string The directory where this plugin resides
+	// @var string Das Verzeichnis, in dem sich dieses Plugin befindet
 
 	var $plugin_dir = '';
 
-	// @var string The base url of the plugin
+	// @var string Die Basis-URL des Plugins
 
 	var $plugin_url = '';
 
@@ -79,7 +79,7 @@ class Wiki {
 
 	/**
 
-	 * Refers to our single instance of the class
+	 * Bezieht sich auf unsere einzelne Instanz der Klasse
 
 	 *
 
@@ -95,7 +95,7 @@ class Wiki {
 
 	/**
 
-	 * Gets the single instance of the class
+	 * Ruft die einzelne Instanz der Klasse ab
 
 	 *
 
@@ -123,7 +123,7 @@ class Wiki {
 
 	/**
 
-	 * Constructor function
+	 * Konstruktorfunktion
 
 	 *
 
@@ -136,17 +136,6 @@ class Wiki {
 	private function __construct() {
 
 		$this->init_vars();
-
-
-
-		if ( WIKI_DEMO_FOR_NON_SUPPORTER && function_exists('is_supporter') && ! is_supporter() ) {
-
-			add_action('admin_menu', array(&$this, 'non_suppporter_admin_menu'));
-
-			return;
-
-		}
-
 
 
 		add_action('init', array(&$this, 'init'));
@@ -167,7 +156,7 @@ class Wiki {
 
 
 
-		add_action('add_meta_boxes_incsub_wiki', array(&$this, 'meta_boxes') );
+		add_action('add_meta_boxes_psource_wiki', array(&$this, 'meta_boxes') );
 
 		add_action('wp_insert_post', array(&$this, 'save_wiki_meta'), 10, 2 );
 
@@ -177,7 +166,7 @@ class Wiki {
 
 		add_action('pre_post_update', array(&$this, 'send_notifications'), 50, 1);
 
-		add_filter('the_content', array(&$this, 'theme'), 999);	//set to really low priority. we want this to run after all other filters, otherwise undesired output may result.
+		add_filter('the_content', array(&$this, 'theme'), 999);	//auf wirklich niedrige Priorität gesetzt. Wir möchten, dass dies nach allen anderen Filtern ausgeführt wird, da es sonst zu unerwünschten Ausgaben kommen kann.
 
 		add_action('template_include', array(&$this, 'load_templates') );
 
@@ -231,7 +220,7 @@ class Wiki {
 
 	/**
 
-	 * Runs when adding a new blog in multisite
+	 * Wird beim Hinzufügen eines neuen Blogs in Multisite ausgeführt
 
 	 *
 
@@ -261,15 +250,15 @@ class Wiki {
 
 	/**
 
-	 * Get the table name with prefixes
+	 * Holt sich den Tabellennamen mit Präfixen
 
 	 *
 
-	 * @param string $table	Table name
+	 * @param string $table	Tabellenname
 
 	 * @uses $wpdb
 
-	 * @return string Table name complete with prefixes
+	 * @return string Tabellenname komplett mit Präfixen
 
 	 */
 
@@ -283,21 +272,9 @@ class Wiki {
 
 
 
-
-
-	function non_suppporter_admin_menu() {
-
-		global $psts;
-
-		add_menu_page(__('Wiki', 'wiki'), __('Wiki', 'wiki'), 'edit_posts', 'incsub_wiki', array(&$psts, 'feature_notice'), null, 30);
-
-	}
-
-
-
 	/**
 
-	 * Initialize plugin variables
+	 * Plugin-Variablen initialisieren
 
 	 * @since 1.2.4
 
@@ -315,19 +292,13 @@ class Wiki {
 
 		$this->plugin_url = plugin_dir_url(__FILE__);
 
-
-
-		if ( !defined('WIKI_DEMO_FOR_NON_SUPPORTER') )
-
-			define('WIKI_DEMO_FOR_NON_SUPPORTER', false);
-
 	}
 
 
 
 	function request( $query_vars ) {
 
-		if (!is_admin() && isset($query_vars['post_type']) && 'incsub_wiki' == $query_vars['post_type'] && (isset($query_vars['orderby']) && $query_vars['orderby'] == 'menu_order title') && $query_vars['posts_per_page'] == '-1') {
+		if (!is_admin() && isset($query_vars['post_type']) && 'psource_wiki' == $query_vars['post_type'] && (isset($query_vars['orderby']) && $query_vars['orderby'] == 'menu_order title') && $query_vars['posts_per_page'] == '-1') {
 
 			$query_vars['orderby'] = 'menu_order';
 
@@ -353,7 +324,7 @@ class Wiki {
 
 
 
-		if (!$id && get_query_var('post_type') == 'incsub_wiki' && $wp_query->is_404) {
+		if (!$id && get_query_var('post_type') == 'psource_wiki' && $wp_query->is_404) {
 
 			$post_type_object = get_post_type_object( get_query_var('post_type') );
 
@@ -377,19 +348,19 @@ class Wiki {
 
 	function body_class($classes) {
 
-		if (get_query_var('post_type') == 'incsub_wiki') {
+		if (get_query_var('post_type') == 'psource_wiki') {
 
-			if (!in_array('incsub_wiki', $classes)) {
+			if (!in_array('psource_wiki', $classes)) {
 
-				$classes[] = 'incsub_wiki';
+				$classes[] = 'psource_wiki';
 
 			}
 
 
 
-			if (is_singular() && !in_array('single-incsub_wiki', $classes)) {
+			if (is_singular() && !in_array('single-psource_wiki', $classes)) {
 
-				$classes[] = 'single-incsub_wiki';
+				$classes[] = 'single-psource_wiki';
 
 			}
 
@@ -409,7 +380,7 @@ class Wiki {
 
 
 
-		if ( 'incsub_wiki' != get_query_var('post_type') )
+		if ( 'psource_wiki' != get_query_var('post_type') )
 
 			return $path;
 
@@ -429,15 +400,15 @@ class Wiki {
 
 			if ( empty( $path ) || "$type.php" == $file ) {
 
-				// A more specific template was not found, so load the default one
+				// Eine spezifischere Vorlage wurde nicht gefunden, lade daher die Standardvorlage
 
-				$path = $this->plugin_dir . "default-templates/$type-incsub_wiki.php";
+				$path = $this->plugin_dir . "default-templates/$type-psource_wiki.php";
 
 			}
 
-			if ( file_exists( get_stylesheet_directory() . "/$type-incsub_wiki.php" ) ) {
+			if ( file_exists( get_stylesheet_directory() . "/$type-psource_wiki.php" ) ) {
 
-				$path = get_stylesheet_directory() . "/$type-incsub_wiki.php";
+				$path = get_stylesheet_directory() . "/$type-psource_wiki.php";
 
 			}
 
@@ -455,27 +426,27 @@ class Wiki {
 
 
 
-		if ( is_single() && 'incsub_wiki' == get_post_type() ) {
+		if ( is_single() && 'psource_wiki' == get_post_type() ) {
 
-			//check for custom theme templates
+			//Sucht nach benutzerdefinierten Designvorlagen
 
 			$wiki_name = $post->post_name;
 
 			$wiki_id = (int) $post->ID;
 
-			$templates = array('incsub_wiki.php');
+			$templates = array('psource_wiki.php');
 
 
 
 			if ( $wiki_name )
 
-				$templates[] = "incsub_wiki-$wiki_name.php";
+				$templates[] = "psource_wiki-$wiki_name.php";
 
 
 
 			if ( $wiki_id )
 
-				$templates[] = "incsub_wiki-$wiki_id.php";
+				$templates[] = "psource_wiki-$wiki_id.php";
 
 
 
@@ -499,7 +470,7 @@ class Wiki {
 
 	function pre_get_posts( $query ) {
 
-		if( $query->is_main_query() && !is_admin() && !empty($query->query_vars['incsub_wiki']) && preg_match('/\//', $query->query_vars['incsub_wiki']) == 0 ) {
+		if( $query->is_main_query() && !is_admin() && !empty($query->query_vars['psource_wiki']) && preg_match('/\//', $query->query_vars['psource_wiki']) == 0 ) {
 
 			$query->query_vars['post_parent'] = 0;
 
@@ -515,7 +486,7 @@ class Wiki {
 
 
 
-		if (get_query_var('post_type') == 'incsub_wiki') {
+		if (get_query_var('post_type') == 'psource_wiki') {
 
 			return true;
 
@@ -529,7 +500,7 @@ class Wiki {
 
 	/**
 
-	 * Checks to see if rewrites should be flushed and flushes them
+	 * Überprüft, ob Neuschreibungen geleert werden sollten, und löscht sie
 
 	 *
 
@@ -555,15 +526,15 @@ class Wiki {
 
 	function comments_open($open) {
 
-		global $wp_query, $incsub_tab_check;
+		global $wp_query, $psource_tab_check;
 
 
 
 		$action = isset($_REQUEST['action'])?$_REQUEST['action']:'view';
 
-		if (get_query_var('post_type') == 'incsub_wiki' && ($action != 'discussion')) {
+		if (get_query_var('post_type') == 'psource_wiki' && ($action != 'discussion')) {
 
-			if ($incsub_tab_check == 0 && !isset($_POST['submit']) && !isset($_POST['Submit'])) {
+			if ($psource_tab_check == 0 && !isset($_POST['submit']) && !isset($_POST['Submit'])) {
 
 				return false;
 
@@ -587,7 +558,7 @@ class Wiki {
 
 		$bc = 0;
 
-		if (!$post && get_query_var('post_type') == 'incsub_wiki' && $wp_query->is_404) {
+		if (!$post && get_query_var('post_type') == 'psource_wiki' && $wp_query->is_404) {
 
 			$post_type_object = get_post_type_object( get_query_var('post_type') );
 
@@ -677,11 +648,11 @@ class Wiki {
 
 	/**
 
-	 * Rename $_POST data from form names to DB post columns.
+	 * Benennt $_POST-Daten von Formularnamen in DB-Post-Spalten um.
 
 	 *
 
-	 * Manipulates $_POST directly.
+	 * Manipuliert $_POST direkt.
 
 	 *
 
@@ -691,11 +662,11 @@ class Wiki {
 
 	 *
 
-	 * @param bool $update Are we updating a pre-existing post?
+	 * @param bool $update Aktualisieren wir einen bereits bestehenden Beitrag?
 
-	 * @param array $post_data Array of post data. Defaults to the contents of $_POST.
+	 * @param array $post_data Array von Post-Daten. Standardmäßig der Inhalt von $_POST.
 
-	 * @return object|bool WP_Error on failure, true on success.
+	 * @return object|bool WP_Error bei Fehler, true bei Erfolg.
 
 	 */
 
@@ -761,9 +732,9 @@ class Wiki {
 
 					return new WP_Error( 'edit_others_pages', $update ?
 
-						__( 'You are not allowed to edit pages as this user.' ) :
+						__( 'Du darfst als dieser Benutzer keine Seiten bearbeiten.' ) :
 
-						__( 'You are not allowed to create pages as this user.' )
+						__( 'Du darfst als dieser Benutzer keine Seiten erstellen.' )
 
 					);
 
@@ -771,9 +742,9 @@ class Wiki {
 
 					return new WP_Error( 'edit_others_posts', $update ?
 
-						__( 'You are not allowed to edit posts as this user.' ) :
+						__( 'Du darfst als dieser Benutzer keine Beiträge bearbeiten.' ) :
 
-						__( 'You are not allowed to post as this user.' )
+						__( 'Du darfst nicht als dieser Benutzer posten.' )
 
 					);
 
@@ -909,7 +880,7 @@ class Wiki {
 
 	/**
 
-	 * Update an existing post with values provided in $_POST.
+	 * Aktualisiert einen vorhandenen Beitrag mit den in $_POST bereitgestellten Werten.
 
 	 *
 
@@ -943,17 +914,17 @@ class Wiki {
 
 			if ( 'page' == $post_data['post_type'] )
 
-				wp_die( __('You are not allowed to edit this page.' ));
+				wp_die( __('Du bist nicht berechtigt, diese Seite zu bearbeiten.' ));
 
 			else
 
-				wp_die( __('You are not allowed to edit this post.' ));
+				wp_die( __('Du bist nicht berechtigt, diesen Beitrag zu bearbeiten.' ));
 
 		}
 
 
 
-		// Autosave shouldn't save too soon after a real save
+		// Autosave sollte nicht zu früh nach einem echten Save speichern
 
 		if ( 'autosave' == $post_data['action'] ) {
 
@@ -1019,7 +990,7 @@ class Wiki {
 
 
 
-		// Post Formats
+		// Beitragsformate
 
 		if ( current_theme_supports( 'post-formats' ) && isset( $post_data['post_format'] ) ) {
 
@@ -1043,7 +1014,7 @@ class Wiki {
 
 		}
 
-		// Meta Stuff
+		// Meta-Zeug
 
 		if ( isset($post_data['meta']) && $post_data['meta'] ) {
 
@@ -1097,7 +1068,7 @@ class Wiki {
 
 
 
-		// Reunite any orphaned attachments with their parent
+		// Vereinigt alle verwaisten Anhänge wieder mit ihren Eltern
 
 		if ( !$draft_ids = get_user_option( 'autosave_draft_ids' ) )
 
@@ -1139,7 +1110,7 @@ class Wiki {
 
 
 
-		if ( !is_single() || 'incsub_wiki' != get_post_type() )
+		if ( !is_single() || 'psource_wiki' != get_post_type() )
 
 			return $content;
 
@@ -1173,19 +1144,19 @@ class Wiki {
 
 		if ($action != 'edit') {
 
-			$new_content .= '<div class="incsub_wiki incsub_wiki_single">';
+			$new_content .= '<div class="psource_wiki psource_wiki_single">';
 
 
 
 			if ( isset($_GET['restored']) ) {
 
-				$new_content .= '<div class="incsub_wiki_message">' . __('Revision erfolgreich wiederhergestellt', 'wiki') . ' <a class="dismiss" href="#">x</a></div>';
+				$new_content .= '<div class="psource_wiki_message">' . __('Revision erfolgreich wiederhergestellt', 'wiki') . ' <a class="dismiss" href="#">x</a></div>';
 
 			}
 
 
 
-			$new_content .= '<div class="incsub_wiki_tabs incsub_wiki_tabs_top">' . $this->tabs() . '<div class="incsub_wiki_clear"></div></div>';
+			$new_content .= '<div class="psource_wiki_tabs psource_wiki_tabs_top">' . $this->tabs() . '<div class="psource_wiki_clear"></div></div>';
 
 			$new_content .= $this->decider($content, $action, $revision_id, $left, $right);
 
@@ -1257,25 +1228,25 @@ class Wiki {
 
 				if ( empty($post->ID) )
 
-					wp_die( __('You attempted to edit an item that doesn&#8217;t exist. Perhaps it was deleted?') );
+					wp_die( __('Du hast versucht, ein nicht vorhandenes Element zu bearbeiten. Vielleicht wurde es gelöscht?') );
 
 
 
 				if ( !current_user_can($post_type_object->cap->edit_post, $post->ID) )
 
-					wp_die( __('You are not allowed to edit this item.') );
+					wp_die( __('Du bist nicht berechtigt, dieses Element zu bearbeiten.') );
 
 
 
 				if ( 'trash' == $post->post_status )
 
-					wp_die( __('You can&#8217;t edit this item because it is in the Trash. Please restore it and try again.') );
+					wp_die( __('Du kannst dieses Element nicht bearbeiten, da es sich im Papierkorb befindet. Bitte stelle es wieder her und versuche es erneut.') );
 
 
 
 				if ( null == $post_type_object )
 
-					wp_die( __('Unknown post type.') );
+					wp_die( __('Unbekannter Beitragstyp.') );
 
 
 
@@ -1325,7 +1296,7 @@ class Wiki {
 
 
 
-				// Revisions disabled and we're not looking at an autosave
+				// Überarbeitungen deaktiviert und wir betrachten keine automatische Speicherung
 
 				if ( ( ! WP_POST_REVISIONS || !post_type_supports($post->post_type, 'revisions') ) && !wp_is_post_autosave( $revision ) ) {
 
@@ -1363,7 +1334,7 @@ class Wiki {
 
 
 
-				// If we're comparing a revision to itself, redirect to the 'view' page for that revision or the edit page for that post
+				// Wenn wir eine Überarbeitung mit sich selbst vergleichen, leiten sie zur Ansichtsseite für diese Überarbeitung oder zur Bearbeitungsseite für diesen Beitrag weiter
 
 				if ( $left_revision->ID == $right_revision->ID ) {
 
@@ -1375,7 +1346,7 @@ class Wiki {
 
 
 
-				// Don't allow reverse diffs?
+				// Reverse Diffs nicht zulassen?
 
 				if ( strtotime($right_revision->post_modified_gmt) < strtotime($left_revision->post_modified_gmt) ) {
 
@@ -1387,21 +1358,21 @@ class Wiki {
 
 
 
-				if ( $left_revision->ID == $right_revision->post_parent ) // right is a revision of left
+				if ( $left_revision->ID == $right_revision->post_parent ) // Rechts ist eine Überarbeitung von Links
 
 					$post =& $left_revision;
 
-				elseif ( $left_revision->post_parent == $right_revision->ID ) // left is a revision of right
+				elseif ( $left_revision->post_parent == $right_revision->ID ) // Links ist eine Überarbeitung von Rechts
 
 					$post =& $right_revision;
 
-				elseif ( $left_revision->post_parent == $right_revision->post_parent ) // both are revisions of common parent
+				elseif ( $left_revision->post_parent == $right_revision->post_parent ) // beide sind Revisionen des gemeinsamen Elternteils
 
 					$post = get_post( $left_revision->post_parent );
 
 				else
 
-					break; // Don't diff two unrelated revisions
+					break; // Vergleiche nicht zwei unabhängige Revisionen
 
 
 
@@ -1409,13 +1380,13 @@ class Wiki {
 
 					if (
 
-					// we're not looking at an autosave
+					// Wir sehen uns kein Autosave an
 
 						( !wp_is_post_autosave( $left_revision ) && !wp_is_post_autosave( $right_revision ) )
 
 					||
 
-					// we're not comparing an autosave to the current post
+					// Wir vergleichen eine automatische Speicherung nicht mit dem aktuellen Beitrag
 
 					( $post->ID !== $left_revision->ID && $post->ID !== $right_revision->ID )
 
@@ -1433,13 +1404,13 @@ class Wiki {
 
 				if (
 
-					// They're the same
+					// Sie sind gleich
 
 					$left_revision->ID == $right_revision->ID
 
 					||
 
-					// Neither is a revision
+					// Auch keine Überarbeitung
 
 					( !wp_get_post_revision( $left_revision->ID ) && !wp_get_post_revision( $right_revision->ID ) )
 
@@ -1453,9 +1424,9 @@ class Wiki {
 
 				$post_title = '<a href="' . get_permalink().'?action=edit' . '">' . get_the_title() . '</a>';
 
-				$h2 = sprintf( __( 'Compare Revisions of &#8220;%1$s&#8221;', 'wiki' ), $post_title );
+				$h2 = sprintf( __( 'Vergleiche Revisionen von &#8220;%1$s&#8221;', 'wiki' ), $post_title );
 
-				$title = __( 'Revisions' );
+				$title = __( 'Revisionen' );
 
 
 
@@ -1485,7 +1456,7 @@ class Wiki {
 
 					$revision_title = wp_post_revision_title( $revision, false );
 
-					$h2 = sprintf( __( 'Revision for &#8220;%1$s&#8221; created on %2$s', 'wiki' ), $post_title, $revision_title );
+					$h2 = sprintf( __( 'Revision für &#8220;%1$s&#8221; erstellt am %2$s', 'wiki' ), $post_title, $revision_title );
 
 				}
 
@@ -1507,9 +1478,9 @@ class Wiki {
 
 					$new_content .= '<th scope="col" class="th-full">';
 
-					$new_content .= '<span class="alignleft">'.sprintf( __('Older: %s', 'wiki'), wp_post_revision_title( $left_revision, false ) ).'</span>';
+					$new_content .= '<span class="alignleft">'.sprintf( __('Älter: %s', 'wiki'), wp_post_revision_title( $left_revision, false ) ).'</span>';
 
-					$new_content .= '<span class="alignright">'.sprintf( __('Newer: %s', 'wiki'), wp_post_revision_title( $right_revision, false ) ).'</span>';
+					$new_content .= '<span class="alignright">'.sprintf( __('Neuer: %s', 'wiki'), wp_post_revision_title( $right_revision, false ) ).'</span>';
 
 					$new_content .= '</th>';
 
@@ -1519,7 +1490,7 @@ class Wiki {
 
 
 
-				// use get_post_to_edit filters?
+				// get_post_to_edit-Filter verwenden?
 
 				$identical = true;
 
@@ -1533,7 +1504,7 @@ class Wiki {
 
 						if ( !$rcontent = wp_text_diff( $left_content, $right_content ) )
 
-							continue; // There is no difference between left and right
+							continue; // Es gibt keinen Unterschied zwischen links und rechts
 
 						$identical = false;
 
@@ -1559,7 +1530,7 @@ class Wiki {
 
 				if ( 'diff' == $action && $identical ) :
 
-					$new_content .= '<tr><td colspan="2"><div class="updated"><p>'.__( 'These revisions are identical.', 'wiki' ). '</p></div></td></tr>';
+					$new_content .= '<tr><td colspan="2"><div class="updated"><p>'.__( 'Diese Revisionen sind identisch.', 'wiki' ). '</p></div></td></tr>';
 
 				endif;
 
@@ -1571,7 +1542,7 @@ class Wiki {
 
 				$new_content .= '<br class="clear" />';
 
-				$new_content .= '<div class="incsub_wiki_revisions">' . $this->list_post_revisions( $post, $args ) . '</div>';
+				$new_content .= '<div class="psource_wiki_revisions">' . $this->list_post_revisions( $post, $args ) . '</div>';
 
 				$redirect = false;
 
@@ -1583,7 +1554,7 @@ class Wiki {
 
 
 
-				$crumbs = array('<a href="'.home_url($this->settings['slug']).'" class="incsub_wiki_crumbs">'.$this->settings['wiki_name'].'</a>');
+				$crumbs = array('<a href="'.home_url($this->settings['slug']).'" class="psource_wiki_crumbs">'.$this->settings['wiki_name'].'</a>');
 
 				foreach($post->ancestors as $parent_pid) {
 
@@ -1591,13 +1562,13 @@ class Wiki {
 
 
 
-					$crumbs[] = '<a href="'.get_permalink($parent_pid).'" class="incsub_wiki_crumbs">'.$parent_post->post_title.'</a>';
+					$crumbs[] = '<a href="'.get_permalink($parent_pid).'" class="psource_wiki_crumbs">'.$parent_post->post_title.'</a>';
 
 				}
 
 
 
-				$crumbs[] = '<span class="incsub_wiki_crumbs">'.$post->post_title.'</span>';
+				$crumbs[] = '<span class="psource_wiki_crumbs">'.$post->post_title.'</span>';
 
 
 
@@ -1605,7 +1576,7 @@ class Wiki {
 
 
 
-				$top .= join(get_option("incsub_meta_seperator", " > "), $crumbs);
+				$top .= join(get_option("psource_meta_seperator", " > "), $crumbs);
 
 
 
@@ -1615,15 +1586,15 @@ class Wiki {
 
 				if ( class_exists('Wiki_Premium') ) {
 
-					$category_list = get_the_term_list( 0, 'incsub_wiki_category', __( 'Wiki-Kategorie:', 'wiki' ) . ' <span class="incsub_wiki-category">', '', '</span> ' );
+					$category_list = get_the_term_list( 0, 'psource_wiki_category', __( 'Wiki-Kategorie:', 'wiki' ) . ' <span class="psource_wiki-category">', '', '</span> ' );
 
-					$tags_list = get_the_term_list( 0, 'incsub_wiki_tag', __( 'Tags:', 'wiki' ) . ' <span class="incsub_wiki-tags">', ' ', '</span> ' );
+					$tags_list = get_the_term_list( 0, 'psource_wiki_tag', __( 'Tags:', 'wiki' ) . ' <span class="psource_wiki-tags">', ' ', '</span> ' );
 
 
 
-					$taxonomy .= apply_filters('the_terms', $category_list, 'incsub_wiki_category', __( 'Wiki-Kategorie:', 'wiki' ) . ' <span class="incsub_wiki-category">', '', '</span> ' );
+					$taxonomy .= apply_filters('the_terms', $category_list, 'psource_wiki_category', __( 'Wiki-Kategorie:', 'wiki' ) . ' <span class="psource_wiki-category">', '', '</span> ' );
 
-					$taxonomy .= apply_filters('the_terms', $tags_list, 'incsub_wiki_tag', __( 'Tags:', 'wiki' ) . ' <span class="incsub_wiki-tags">', ' ', '</span> ' );
+					$taxonomy .= apply_filters('the_terms', $tags_list, 'psource_wiki_tag', __( 'Tags:', 'wiki' ) . ' <span class="psource_wiki-tags">', ' ', '</span> ' );
 
 				}
 
@@ -1633,7 +1604,7 @@ class Wiki {
 
 					'post_parent' => $post->ID,
 
-					'post_type' => 'incsub_wiki',
+					'post_type' => 'psource_wiki',
 
 					'orderby' => $this->settings['sub_wiki_order_by'],
 
@@ -1649,7 +1620,7 @@ class Wiki {
 
 				foreach($children as $child) {
 
-					$crumbs[] = '<a href="'.get_permalink($child->ID).'" class="incsub_wiki_crumbs">'.$child->post_title.'</a>';
+					$crumbs[] = '<a href="'.get_permalink($child->ID).'" class="psource_wiki_crumbs">'.$child->post_title.'</a>';
 
 				}
 
@@ -1683,7 +1654,7 @@ class Wiki {
 
 				if (current_user_can('edit_wiki', $post->ID)) {
 
-					$bottom .= '<div class="incsub_wiki-meta">';
+					$bottom .= '<div class="psource_wiki-meta">';
 
 					if (is_array($revisions) && count($revisions) > 0) {
 
@@ -1697,7 +1668,7 @@ class Wiki {
 
 
 
-				$notification_meta = get_post_meta($post->ID, 'incsub_wiki_email_notification', true);
+				$notification_meta = get_post_meta($post->ID, 'psource_wiki_email_notification', true);
 
 
 
@@ -1705,13 +1676,13 @@ class Wiki {
 
 					if (is_user_logged_in()) {
 
-						$bottom .= '<div class="incsub_wiki-subscribe"><a href="'.wp_nonce_url(add_query_arg(array('post_id' => $post->ID, 'subscribe' => 1)), "wiki-subscribe-wiki_$post->ID" ).'">'.__('Notify me of changes', 'wiki').'</a></div>';
+						$bottom .= '<div class="psource_wiki-subscribe"><a href="'.wp_nonce_url(add_query_arg(array('post_id' => $post->ID, 'subscribe' => 1)), "wiki-subscribe-wiki_$post->ID" ).'">'.__('Benachrichtige mich über Änderungen', 'wiki').'</a></div>';
 
 					} else {
 
-						if (!empty($_COOKIE['incsub_wiki_email'])) {
+						if (!empty($_COOKIE['psource_wiki_email'])) {
 
-							$user_email = $_COOKIE['incsub_wiki_email'];
+							$user_email = $_COOKIE['psource_wiki_email'];
 
 						} else {
 
@@ -1721,7 +1692,7 @@ class Wiki {
 
 
 
-						$bottom .= '<div class="incsub_wiki-subscribe">'.
+						$bottom .= '<div class="psource_wiki-subscribe">'.
 
 						'<form action="" method="post">'.
 
@@ -1743,11 +1714,11 @@ class Wiki {
 
 
 
-				$new_content	= '<div class="incsub_wiki_top">' . $top . '</div>'. $new_content;
+				$new_content	= '<div class="psource_wiki_top">' . $top . '</div>'. $new_content;
 
-				$new_content .= '<div class="incsub_wiki_content">' . $content . '</div>';
+				$new_content .= '<div class="psource_wiki_content">' . $content . '</div>';
 
-				$new_content .= '<div class="incsub_wiki_bottom">' . $bottom . '</div>';
+				$new_content .= '<div class="psource_wiki_bottom">' . $bottom . '</div>';
 
 				$redirect = false;
 
@@ -1763,7 +1734,7 @@ class Wiki {
 
 
 
-		// Empty post_type means either malformed object found, or no valid parent was found.
+		// Ein leerer post_type bedeutet, dass entweder ein falsch formatiertes Objekt gefunden wurde oder kein gültiges übergeordnetes Element gefunden wurde.
 
 		if ( isset($redirect) && !$redirect && empty($post->post_type) ) {
 
@@ -1795,7 +1766,7 @@ class Wiki {
 
 	/**
 
-	 * Default post information to use when populating the "Write Post" form.
+	 * Standard-Beitragsinformationen, die beim Ausfüllen des Formulars „Beitrag schreiben“ verwendet werden.
 
 	 *
 
@@ -1803,9 +1774,9 @@ class Wiki {
 
 	 *
 
-	 * @param string $post_type A post type string, defaults to 'post'.
+	 * @param string $post_type Ein Beitragstyp-String, standardmäßig „post“.
 
-	 * @return object stdClass object containing all the default post data as attributes
+	 * @return object stdClass-Objekt, das alle standardmäßigen Beitragsdaten als Attribute enthält
 
 	 */
 
@@ -1841,13 +1812,13 @@ class Wiki {
 
 		if ( $create_in_db ) {
 
-			// Cleanup old auto-drafts more than 7 days old
+			// Bereinigt alte automatische Entwürfe, die älter als 7 Tage sind
 
 			$old_posts = $wpdb->get_col( "SELECT ID FROM $wpdb->posts WHERE post_status = 'auto-draft' AND DATE_SUB( NOW(), INTERVAL 7 DAY ) > post_date" );
 
 			foreach ( (array) $old_posts as $delete )
 
-			wp_delete_post( $delete, true ); // Force delete
+			wp_delete_post( $delete, true ); // Löschen erzwingen
 
 			$post_id = wp_insert_post( array( 'post_parent' => $parent_id, 'post_title' => __( 'Auto Draft' ), 'post_type' => $post_type, 'post_status' => 'auto-draft' ) );
 
@@ -1857,11 +1828,11 @@ class Wiki {
 
 			set_post_format( $post, get_option( 'default_post_format' ) );
 
-			// Copy wiki privileges
+			// Wiki-Privilegien kopieren
 
-			$privileges = get_post_meta($post->post_parent, 'incsub_wiki_privileges');
+			$privileges = get_post_meta($post->post_parent, 'psource_wiki_privileges');
 
-			update_post_meta($post->ID, 'incsub_wiki_privileges', $privileges[0]);
+			update_post_meta($post->ID, 'psource_wiki_privileges', $privileges[0]);
 
 		} else {
 
@@ -1929,7 +1900,7 @@ class Wiki {
 
 		/**
 
-		 * Get an existing post and format it for editing.
+		 * Holt sich einen vorhandenen Beitrag und formatiert ihn zur Bearbeitung.
 
 		 *
 
@@ -1961,7 +1932,7 @@ class Wiki {
 
 		/**
 
-		 * Check to see if the post is currently being edited by another user.
+		 * Überprüft, ob der Beitrag gerade von einem anderen Benutzer bearbeitet wird.
 
 		 *
 
@@ -1969,9 +1940,9 @@ class Wiki {
 
 		 *
 
-		 * @param int $post_id ID of the post to check for editing
+		 * @param int $post_id ID des Beitrags, der auf Bearbeitung geprüft werden soll
 
-		 * @return bool|int False: not locked or locked by current user. Int: user ID of user with lock.
+		 * @return bool|int False: nicht gesperrt oder vom aktuellen Benutzer gesperrt. Int: Benutzer-ID des Benutzers mit Sperre.
 
 		 */
 
@@ -2013,7 +1984,7 @@ class Wiki {
 
 		/**
 
-		 * Mark the post as currently being edited by the current user
+		 * Markiert den Beitrag als derzeit vom aktuellen Benutzer bearbeitet
 
 		 *
 
@@ -2021,9 +1992,9 @@ class Wiki {
 
 		 *
 
-		 * @param int $post_id ID of the post to being edited
+		 * @param int $post_id ID des Beitrags, der bearbeitet werden soll
 
-		 * @return bool Returns false if the post doesn't exist of there is no current user
+		 * @return bool Gibt false zurück, wenn der Beitrag nicht existiert oder es keinen aktuellen Benutzer gibt
 
 		 */
 
@@ -2053,13 +2024,13 @@ class Wiki {
 
 	/**
 
-	 * Safely retrieve a setting
+	 * Sicheres Abrufen einer Einstellung
 
 	 *
 
 	 * @param string $key
 
-	 * @param mixed $default The value to return if the setting key is not set
+	 * @param mixed $default Der zurückzugebende Wert, wenn der Einstellungsschlüssel nicht gesetzt ist
 
 	 * @since 1.2.3
 
@@ -2079,9 +2050,9 @@ class Wiki {
 
 
 
-		echo '<div class="incsub_wiki incsub_wiki_single">';
+		echo '<div class="psource_wiki psource_wiki_single">';
 
-		echo '<div class="incsub_wiki_tabs incsub_wiki_tabs_top"><div class="incsub_wiki_clear"></div></div>';
+		echo '<div class="psource_wiki_tabs psource_wiki_tabs_top"><div class="psource_wiki_clear"></div></div>';
 
 
 
@@ -2099,7 +2070,7 @@ class Wiki {
 
 
 
-		$slug_parts = preg_split('/\//', $wp_query->query_vars['incsub_wiki']);
+		$slug_parts = preg_split('/\//', $wp_query->query_vars['psource_wiki']);
 
 
 
@@ -2107,7 +2078,7 @@ class Wiki {
 
 			for ($i=count($slug_parts)-1; $i>=0; $i--) {
 
-				$parent_post = get_posts(array('name' => $slug_parts[$i], 'post_type' => 'incsub_wiki', 'post_status' => 'publish'));
+				$parent_post = get_posts(array('name' => $slug_parts[$i], 'post_type' => 'psource_wiki', 'post_status' => 'publish'));
 
 				if (is_array($parent_post) && count($parent_post) > 0) {
 
@@ -2139,7 +2110,7 @@ class Wiki {
 
 		echo	'<input type="hidden" name="action" id="wiki_action" value="editpost" />';
 
-		echo	'<div><input type="hidden" name="post_title" id="wiki_title" value="'.ucwords(get_query_var('name')).'" class="incsub_wiki_title" size="30" /></div>';
+		echo	'<div><input type="hidden" name="post_title" id="wiki_title" value="'.ucwords(get_query_var('name')).'" class="psource_wiki_title" size="30" /></div>';
 
 		echo	'<div>';
 
@@ -2157,9 +2128,9 @@ class Wiki {
 
 		}
 
-		echo	'<div class="incsub_wiki_clear">';
+		echo	'<div class="psource_wiki_clear">';
 
-		echo	'<input type="submit" name="save" id="btn_save" value="'.__('Save', 'wiki').'" />&nbsp;';
+		echo	'<input type="submit" name="save" id="btn_save" value="'.__('Speichern', 'wiki').'" />&nbsp;';
 
 		echo	'<a href="'.get_permalink().'">'.__('Abbrechen', 'wiki').'</a>';
 
@@ -2219,9 +2190,9 @@ class Wiki {
 
 		if ($showheader) {
 
-			$return .= '<div class="incsub_wiki incsub_wiki_single">';
+			$return .= '<div class="psource_wiki psource_wiki_single">';
 
-			$return .= '<div class="incsub_wiki_tabs incsub_wiki_tabs_top">' . $this->tabs() . '<div class="incsub_wiki_clear"></div></div>';
+			$return .= '<div class="psource_wiki_tabs psource_wiki_tabs_top">' . $this->tabs() . '<div class="psource_wiki_clear"></div></div>';
 
 		}
 
@@ -2269,19 +2240,19 @@ class Wiki {
 
 				$visibility = 'private';
 
-					$visibility_trans = __('Private');
+					$visibility_trans = __('Privat');
 
 		} elseif ( !empty( $edit_post->post_password ) ) {
 
 				$visibility = 'password';
 
-				$visibility_trans = __('Password protected');
+				$visibility_trans = __('Passwortgeschützt');
 
 		} else {
 
 				$visibility = 'public';
 
-				$visibility_trans = __('Public');
+				$visibility_trans = __('Öffentlich');
 
 		}
 
@@ -2297,7 +2268,7 @@ class Wiki {
 
 		$return .= '<input type="hidden" name="action" id="wiki_action" value="editpost" />';
 
-		$return .= '<div><input type="text" name="post_title" id="wiki_title" value="'.$edit_post->post_title.'" class="incsub_wiki_title" size="30" /></div>';
+		$return .= '<div><input type="text" name="post_title" id="wiki_title" value="'.$edit_post->post_title.'" class="psource_wiki_title" size="30" /></div>';
 
 		$return .= '<div>';
 
@@ -2305,7 +2276,7 @@ class Wiki {
 
 		if ( @ob_start() ) {
 
-			// Output buffering is on, capture the output from wp_editor() and append it to the $return variable
+			// Die Ausgabepufferung ist aktiviert, erfasst die Ausgabe von wp_editor() und hängt sie an die $return-Variable an
 
 			wp_editor($edit_post->post_content, 'wikicontent', array('textarea_name' => 'content'));
 
@@ -2315,11 +2286,11 @@ class Wiki {
 
 			/*
 
-			This is hacky, but without output buffering on we needed to make a copy of the built-in _WP_Editors class and
+			Das ist hacky, aber ohne Ausgabepufferung mussten wir eine Kopie der eingebauten Klasse _WP_Editors erstellen und
 
-			change the editor() method to return the output instead of echo it. The only bad thing about this is that we
+            die Methode editor() so geändert werden, dass die Ausgabe zurückgegeben wird, anstatt sie zu wiederholen. Das einzig schlechte daran ist, dass wir
 
-			also had to remove the media_buttons action so plugins/themes won't be able to tie into it
+            auch die media_buttons-Aktion entfernen mussten, damit Plugins/Themen nicht daran gebunden werden können
 
 			*/
 
@@ -2345,7 +2316,7 @@ class Wiki {
 
 
 
-		$return .= '<div class="incsub_wiki_clear incsub_wiki_form_buttons">';
+		$return .= '<div class="psource_wiki_clear psource_wiki_form_buttons">';
 
 		$return .= '<input type="submit" name="save" id="btn_save" value="'.__('Speichern', 'wiki').'" />&nbsp;';
 
@@ -2393,25 +2364,25 @@ class Wiki {
 
 		if ( class_exists('Wiki_Premium') ) {
 
-			$content .= ( $frontend ) ? '<h3 class="incsub_wiki_header">' . __('Wiki Kategorien/Tags', 'wiki') . '</h3>' : '';
+			$content .= ( $frontend ) ? '<h3 class="psource_wiki_header">' . __('Wiki Kategorien/Tags', 'wiki') . '</h3>' : '';
 
-			$content .= '<div class="incsub_wiki_meta_box">'. Wiki_Premium::get_instance()->wiki_taxonomies(false) . '</div>';
+			$content .= '<div class="psource_wiki_meta_box">'. Wiki_Premium::get_instance()->wiki_taxonomies(false) . '</div>';
 
 		}
 
 
 
-		$content .= ( $frontend ) ? '<h3 class="incsub_wiki_header">' . __('Wiki-Benachrichtigungen', 'wiki') . '</h3>' : '';
+		$content .= ( $frontend ) ? '<h3 class="psource_wiki_header">' . __('Wiki-Benachrichtigungen', 'wiki') . '</h3>' : '';
 
-		$content .= '<div class="incsub_wiki_meta_box">' . $this->notifications_meta_box($post, false) . '</div>';
+		$content .= '<div class="psource_wiki_meta_box">' . $this->notifications_meta_box($post, false) . '</div>';
 
 
 
 		if ( current_user_can('edit_wiki_privileges') && class_exists('Wiki_Premium') ) {
 
-			$content .= ( $frontend ) ? '<h3 class="incsub_wiki_header">' . __('Wiki-Berechtigungen', 'wiki') . '</h3>' : '';
+			$content .= ( $frontend ) ? '<h3 class="psource_wiki_header">' . __('Wiki-Berechtigungen', 'wiki') . '</h3>' : '';
 
-			$content .= '<div class="incsub_wiki_meta_box">' . Wiki_Premium::get_instance()->privileges_meta_box($post, false) . '</div>';
+			$content .= '<div class="psource_wiki_meta_box">' . Wiki_Premium::get_instance()->privileges_meta_box($post, false) . '</div>';
 
 		}
 
@@ -2425,11 +2396,11 @@ class Wiki {
 
 	function tabs() {
 
-		global $post, $incsub_tab_check, $wp_query;
+		global $post, $psource_tab_check, $wp_query;
 
 
 
-		$incsub_tab_check = 1;
+		$psource_tab_check = 1;
 
 		$permalink = get_permalink();
 
@@ -2437,17 +2408,17 @@ class Wiki {
 
 		$classes = array();
 
-		$classes['page'] = array('incsub_wiki_link_page');
+		$classes['page'] = array('psource_wiki_link_page');
 
-		$classes['discussion'] = array('incsub_wiki_link_discussion');
+		$classes['discussion'] = array('psource_wiki_link_discussion');
 
-		$classes['history'] = array('incsub_wiki_link_history');
+		$classes['history'] = array('psource_wiki_link_history');
 
-		$classes['edit'] = array('incsub_wiki_link_edit');
+		$classes['edit'] = array('psource_wiki_link_edit');
 
-		$classes['advanced_edit'] = array('incsub_wiki_link_advanced_edit');
+		$classes['advanced_edit'] = array('psource_wiki_link_advanced_edit');
 
-		$classes['create'] = array('incsub_wiki_link_create');
+		$classes['create'] = array('psource_wiki_link_create');
 
 
 
@@ -2545,7 +2516,7 @@ class Wiki {
 
 
 
-		$incsub_tab_check = 0;
+		$psource_tab_check = 0;
 
 
 
@@ -2567,31 +2538,31 @@ class Wiki {
 
 	/**
 
-	 * Display list of a post's revisions.
+	 * Liste der Überarbeitungen eines Beitrags anzeigen.
 
 	 *
 
-	 * Can output either a UL with edit links or a TABLE with diff interface, and
+	 * Kann entweder eine UL mit Edit-Links oder eine TABLE mit Diff-Schnittstelle ausgeben, und
 
-	 * restore action links.
+    * Aktionslinks wiederherstellen.
 
 	 *
 
-	 * Second argument controls parameters:
+	 * Zweites Argument steuert Parameter:
 
-	 *	 (bool)		parent : include the parent (the "Current Revision") in the list.
+	 *	 (bool)		parent : die übergeordnete Version (die "Aktuelle Revision") in die Liste aufnehmen.
 
-	 *	 (string) format : 'list' or 'form-table'.	'list' outputs UL, 'form-table'
+	 *	 (string) format : 'list' oder 'form-table'.	'list' outputs UL, 'form-table'
 
-	 *										 outputs TABLE with UI.
+	 *										gibt TABLE mit UI aus.
 
-	 *	 (int)		right	 : what revision is currently being viewed - used in
+	 *	 (int)		right	 : welche Revision gerade angezeigt wird - verwendet in
 
-	 *										 form-table format.
+    *                                         Formulartabellenformat.
 
-	 *	 (int)		left	 : what revision is currently being diffed against right -
+	 *	 (int)		left	 : welche Revision wird derzeit gegen rechts unterschieden -
 
-	 *										 used in form-table format.
+	 *										 im Formulartabellenformat verwendet.
 
 	 *
 
@@ -2613,13 +2584,13 @@ class Wiki {
 
 	 *
 
-	 * @todo split into two functions (list, form-table) ?
+	 * @todo Aufteilung in zwei Funktionen (Liste, Formulartabelle) ?
 
 	 *
 
 	 * @param int|object $post_id Post ID or post object.
 
-	 * @param string|array $args See description {@link wp_parse_args()}.
+	 * @param string|array $args Siehe Beschreibung {@link wp_parse_args()}.
 
 	 * @return null
 
@@ -2651,7 +2622,7 @@ class Wiki {
 
 				break;
 
-			case 'revision' : // just revisions - remove autosave later
+			case 'revision' : // nur Überarbeitungen - Autosave später entfernen
 
 			case 'all' :
 
@@ -2667,9 +2638,9 @@ class Wiki {
 
 
 
-		/* translators: post revision: 1: when, 2: author name */
+		/* Übersetzer: Post-Revision: 1: wann, 2: Name des Autors */
 
-		$titlef = _x( '%1$s by %2$s', 'post revision' );
+		$titlef = _x( '%1$s von %2$s', 'post revision' );
 
 
 
@@ -2889,7 +2860,7 @@ class Wiki {
 
 						if ($edit_post) {
 
-							$current_privileges = get_post_meta($edit_post->ID, 'incsub_wiki_privileges', true);
+							$current_privileges = get_post_meta($edit_post->ID, 'psource_wiki_privileges', true);
 
 
 
@@ -2995,7 +2966,7 @@ class Wiki {
 
 	function role_has_cap($capabilities, $cap, $name) {
 
-		// nothing to do
+		// nichts zu tun
 
 		return $capabilities;
 
@@ -3005,7 +2976,7 @@ class Wiki {
 
 	/**
 
-	 * Install
+	 * Installieren
 
 	 *
 
@@ -3025,13 +2996,13 @@ class Wiki {
 
 
 
-		// WordPress database upgrade/creation functions
+		// Upgrade-/Erstellungsfunktionen für WordPress-Datenbanken
 
 		require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 
 
 
-		// Get the correct character collate
+		// Holt sich die richtige Zeichensortierung
 
 		$charset_collate = '';
 
@@ -3045,7 +3016,7 @@ class Wiki {
 
 
 
-		// Setup the subscription table
+		// Richtet die Abonnementtabelle ein
 
 		dbDelta("
 
@@ -3079,11 +3050,11 @@ class Wiki {
 
 	/**
 
-	 * Sets up a blog - called from install() and new_blog()
+	 * Richtet ein Blog ein - aufgerufen von install() und new_blog()
 
 	 *
 
-	 * @param int $blog (Optional) If multisite blog_id will be passed, otherwise will be NULL.
+	 * @param int $blog (Optional) Wenn multisite blog_id übergeben wird, ansonsten NULL.
 
 	 */
 
@@ -3095,7 +3066,7 @@ class Wiki {
 
 
 
-		// Set admin permissions
+		// Administratorberechtigungen festlegen
 
 		$role = get_role('administrator');
 
@@ -3103,7 +3074,7 @@ class Wiki {
 
 
 
-		// Set default settings
+		// Standardeinstellungen festlegen
 
 		$default_settings = array(
 
@@ -3113,7 +3084,7 @@ class Wiki {
 
 			'wiki_name' => __('Wikis', 'wiki'),
 
-			'sub_wiki_name' => __('Sub Wikis', 'wiki'),
+			'sub_wiki_name' => __('Sub-Wikis', 'wiki'),
 
 			'sub_wiki_order_by' => 'menu_order',
 
@@ -3123,7 +3094,7 @@ class Wiki {
 
 
 
-		// Migrate and delete old settings option name which isn't very intuitive
+		// Migriert und löscht den Namen der alten Einstellungsoption, was nicht sehr intuitiv ist
 
 		if ( $settings = get_option('wiki_default') )
 
@@ -3135,7 +3106,7 @@ class Wiki {
 
 
 
-		// Merge settings
+		// Einstellungen zusammenführen
 
 		if ( is_array($settings) )
 
@@ -3173,7 +3144,7 @@ class Wiki {
 
 	/**
 
-	 * Initialize the plugin
+	 * Initialisiert das Plugin
 
 	 *
 
@@ -3189,7 +3160,7 @@ class Wiki {
 
 
 
-		$this->install();	//we run this here because activation hooks aren't triggered when updating - see http://wp.mu/8kv
+		$this->install();	//Wir führen dies hier aus, weil Aktivierungs-Hooks beim Aktualisieren nicht ausgelöst werden - siehe http://wp.mu/8kv
 
 
 
@@ -3217,7 +3188,7 @@ class Wiki {
 
 		if ( class_exists('Wiki_Premium') ) {
 
-			// taxonomies MUST be registered before custom post types
+			// Taxonomien MÜSSEN vor benutzerdefinierten Beitragstypen registriert werden
 
 			Wiki_Premium::get_instance()->register_taxonomies();
 
@@ -3235,7 +3206,7 @@ class Wiki {
 
 				case 'editpost':
 
-					// editing an existing wiki using the frontend editor
+					// Bearbeiten eines bestehenden Wikis mit dem Frontend-Editor
 
 					if (wp_verify_nonce($_POST['_wpnonce'], "wiki-editpost_{$_POST['post_ID']}")) {
 
@@ -3267,7 +3238,7 @@ class Wiki {
 
 					'email' => $_REQUEST['email']))) {
 
-					setcookie('incsub_wiki_email', $_REQUEST['email'], time()+3600*24*365, '/');
+					setcookie('psource_wiki_email', $_REQUEST['email'], time()+3600*24*365, '/');
 
 					wp_redirect(get_permalink($_REQUEST['post_id']));
 
@@ -3321,7 +3292,7 @@ class Wiki {
 
 	/**
 
-	 * Initialize the plugin admin pages
+	 * Initialisiert die Plugin-Admin-Seiten
 
 	 */
 
@@ -3341,11 +3312,11 @@ class Wiki {
 
 	/**
 
-	 * Get all files from a given directory
+	 * Holt sich alle Dateien aus einem bestimmten Verzeichnis
 
-	 * @param string $dir The full path of the directory
+	 * @param string $dir Der vollständige Pfad des Verzeichnisses
 
-	 * @param string $ext Get only files with a given extension. Set to NULL to get all files.
+	 * @param string $ext Holt sich nur Dateien mit einer bestimmten Erweiterung. Auf NULL setzen, um alle Dateien zu erhalten.
 
 	 */
 
@@ -3381,7 +3352,7 @@ class Wiki {
 
 	/**
 
-	 * Registers plugin custom post types
+	 * Registriert benutzerdefinierte Beitragstypen des Plugins
 
 	 * @since 1.2.4
 
@@ -3391,7 +3362,7 @@ class Wiki {
 
 		$slug = $this->settings['slug'];
 
-		register_post_type('incsub_wiki', array(
+		register_post_type('psource_wiki', array(
 
 				'labels' => array(
 
@@ -3461,9 +3432,9 @@ class Wiki {
 
 				'taxonomies' => array(
 
-					'incsub_wiki_category',
+					'psource_wiki_category',
 
-					'incsub_wiki_tag',
+					'psource_wiki_tag',
 
 				),
 
@@ -3477,7 +3448,7 @@ class Wiki {
 
 	function wp_enqueue_scripts() {
 
-		if ( get_query_var('post_type') != 'incsub_wiki' ) { return; }
+		if ( get_query_var('post_type') != 'psource_wiki' ) { return; }
 
 
 
@@ -3485,15 +3456,15 @@ class Wiki {
 
 		wp_enqueue_script('jquery');
 
-		wp_enqueue_script('incsub_wiki-js', $this->plugin_url . 'js/wiki.js', array('jquery'), $this->version);
+		wp_enqueue_script('psource_wiki-js', $this->plugin_url . 'js/wiki.js', array('jquery'), $this->version);
 
-		wp_enqueue_style('incsub_wiki-css', $this->plugin_url . 'css/style.css', null, $this->version);
+		wp_enqueue_style('psource_wiki-css', $this->plugin_url . 'css/style.css', null, $this->version);
 
-		wp_enqueue_style('incsub_wiki-print-css', $this->plugin_url . 'css/print.css', null, $this->version, 'print');
+		wp_enqueue_style('psource_wiki-print-css', $this->plugin_url . 'css/print.css', null, $this->version, 'print');
 
 
 
-		wp_localize_script('incsub_wiki-js', 'Wiki', array(
+		wp_localize_script('psource_wiki-js', 'Wiki', array(
 
 			'restoreMessage' => __('Bist Du sicher, dass Sie diese Version wiederherstellen möchtest?', 'wiki'),
 
@@ -3515,9 +3486,9 @@ class Wiki {
 
 
 
-		if ( isset($_COOKIE['incsub_wiki_email']) )
+		if ( isset($_COOKIE['psource_wiki_email']) )
 
-			return (bool) $wpdb->get_var("SELECT COUNT(ID) FROM {$this->db_prefix}wiki_subscriptions WHERE blog_id = {$blog_id} AND wiki_id = {$post->ID} AND email = '{$_COOKIE['incsub_wiki_email']}'");
+			return (bool) $wpdb->get_var("SELECT COUNT(ID) FROM {$this->db_prefix}wiki_subscriptions WHERE blog_id = {$blog_id} AND wiki_id = {$post->ID} AND email = '{$_COOKIE['psource_wiki_email']}'");
 
 
 
@@ -3535,7 +3506,7 @@ class Wiki {
 
 		if ($post->post_author == $current_user->ID || current_user_can('edit_posts')) {
 
-			add_meta_box('incsub-wiki-notifications', __('Wiki-E-Mail-Benachrichtigungen', 'wiki'), array(&$this, 'notifications_meta_box'), 'incsub_wiki', 'side');
+			add_meta_box('psource-wiki-notifications', __('Wiki-E-Mail-Benachrichtigungen', 'wiki'), array(&$this, 'notifications_meta_box'), 'psource_wiki', 'side');
 
 		}
 
@@ -3551,13 +3522,13 @@ class Wiki {
 
 		$rewritecode = array(
 
-			'%incsub_wiki%'
+			'%psource_wiki%'
 
 		);
 
 
 
-		if ($post->post_type == 'incsub_wiki' && '' != $permalink) {
+		if ($post->post_type == 'psource_wiki' && '' != $permalink) {
 
 
 
@@ -3581,7 +3552,7 @@ class Wiki {
 
 				$uri .= '/';
 
-				$permalink = str_replace('%incsub_wiki%', "{$uri}%incsub_wiki%", $permalink);
+				$permalink = str_replace('%psource_wiki%', "{$uri}%psource_wiki%", $permalink);
 
 			}
 
@@ -3599,7 +3570,7 @@ class Wiki {
 
 		} else {
 
-			// if they're not using the fancy permalink option
+			// wenn nicht die Pretty Permalink-Option verwendet
 
 		}
 
@@ -3613,7 +3584,7 @@ class Wiki {
 
 	function name_save($post_name) {
 
-		if ($_POST['post_type'] == 'incsub_wiki' && empty($post_name)) {
+		if ($_POST['post_type'] == 'psource_wiki' && empty($post_name)) {
 
 			$post_name = $_POST['post_title'];
 
@@ -3629,9 +3600,9 @@ class Wiki {
 
 	function notifications_meta_box( $post, $echo = true ) {
 
-		$settings = get_option('incsub_wiki_settings');
+		$settings = get_option('psource_wiki_settings');
 
-		$email_notify = get_post_meta($post->ID, 'incsub_wiki_email_notification', true);
+		$email_notify = get_post_meta($post->ID, 'psource_wiki_email_notification', true);
 
 
 
@@ -3643,11 +3614,11 @@ class Wiki {
 
 		$content	= '';
 
-		$content .= '<input type="hidden" name="incsub_wiki_notifications_meta" value="1" />';
+		$content .= '<input type="hidden" name="psource_wiki_notifications_meta" value="1" />';
 
 		$content .= '<div class="alignleft">';
 
-		$content .= '<label><input type="checkbox" name="incsub_wiki_email_notification" value="enabled" ' . checked('enabled', $email_notify, false) .' /> '.__('Aktiviere E-Mail-Benachrichtigungen', 'wiki').'</label>';
+		$content .= '<label><input type="checkbox" name="psource_wiki_email_notification" value="enabled" ' . checked('enabled', $email_notify, false) .' /> '.__('Aktiviere E-Mail-Benachrichtigungen', 'wiki').'</label>';
 
 		$content .= '</div>';
 
@@ -3669,7 +3640,7 @@ class Wiki {
 
 	function save_wiki_meta($post_id, $post = null) {
 
-		//skip quick edit
+		//Schnellbearbeitung überspringen
 
 		if ( defined('DOING_AJAX') )
 
@@ -3677,21 +3648,21 @@ class Wiki {
 
 
 
-		if ( $post->post_type == "incsub_wiki" && isset( $_POST['incsub_wiki_notifications_meta'] ) ) {
+		if ( $post->post_type == "psource_wiki" && isset( $_POST['psource_wiki_notifications_meta'] ) ) {
 
 			$meta = get_post_custom($post_id);
 
-			$email_notify = isset($_POST['incsub_wiki_email_notification']) ? $_POST['incsub_wiki_email_notification'] : 0;
+			$email_notify = isset($_POST['psource_wiki_email_notification']) ? $_POST['psource_wiki_email_notification'] : 0;
 
 
 
-			update_post_meta($post_id, 'incsub_wiki_email_notification', $email_notify);
+			update_post_meta($post_id, 'psource_wiki_email_notification', $email_notify);
 
 
 
-			//for any other plugin to hook into
+			//für jedes andere Plugin, in das man sich einklinken kann
 
-			do_action( 'incsub_wiki_save_notifications_meta', $post_id, $meta );
+			do_action( 'psource_wiki_save_notifications_meta', $post_id, $meta );
 
 		}
 
@@ -3715,7 +3686,7 @@ class Wiki {
 
 
 
-		// We do autosaves manually with wp_publish_posts_autosave()
+		// Wir speichern manuell mit wp_publish_posts_autosave()
 
 		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
 
@@ -3729,13 +3700,13 @@ class Wiki {
 
 
 
-		if ( $post['post_type'] != 'incsub_wiki' || !post_type_supports($post['post_type'], 'revisions') )
+		if ( $post['post_type'] != 'psource_wiki' || !post_type_supports($post['post_type'], 'revisions') )
 
 				return;
 
 
 
-		// all revisions and (possibly) one autosave
+		// alle Revisionen und (möglicherweise) eine automatische Speicherung
 
 		$revisions = wp_get_post_revisions($post_id, array( 'order' => 'ASC' ));
 
@@ -3779,27 +3750,27 @@ class Wiki {
 
 
 
-		//cleanup title
+		//Bereinige Titel
 
 		$blog_name = get_option('blogname');
 
 		$post_title = strip_tags($post_title);
 
-		//cleanup content
+		//Bereinige Inhalt
 
 		$post_content = strip_tags($post_content);
 
-		//get excerpt
+		//Auszug bekommen
 
 		$post_excerpt = $post_content;
 
 		if (strlen($post_excerpt) > 255) {
 
-			$post_excerpt = substr($post_excerpt,0,252) . '...';
+			$post_excerpt = substr($post_excerpt,0,252) . 'Weiterlesen...';
 
 		}
 
-
+		//Email-Nachrichten 
 
 		$wiki_notification_content = array();
 
@@ -3887,7 +3858,7 @@ Abonnement kündigen: %s", 'wiki'), 'POST_TITLE', 'POST_URL', 'EXCERPT', 'BLOGNA
 
 
 
-		//format notification text
+		//Benachrichtigungstext formatieren
 
 		foreach ($wiki_notification_content as $key => $content) {
 

@@ -6,7 +6,7 @@ class Wiki_Premium {
 
 	/**
 
-	 * Refers to our single instance of the class
+	 * Bezieht sich auf unsere einzelne Instanz der Klasse
 
 	 *
 
@@ -22,7 +22,7 @@ class Wiki_Premium {
 
 	/**
 
-	 * Refers to our single instance of the wiki class
+	 * Bezieht sich auf unsere einzelne Instanz der Wiki-Klasse
 
 	 *
 
@@ -38,7 +38,7 @@ class Wiki_Premium {
 
 	/**
 
-	 * Gets the single instance of the class
+	 * Ruft die einzelne Instanz der Klasse ab
 
 	 *
 
@@ -66,7 +66,7 @@ class Wiki_Premium {
 
 	/**
 
-	 * Registers custom taxonomies
+	 * Registriert benutzerdefinierte Taxonomien
 
 	 *
 
@@ -78,7 +78,7 @@ class Wiki_Premium {
 
 		/**
 
-	 * Registers plugin taxonomies
+	 * Registriert Plugin-Taxonomien
 
 	 * @since 1.2.4
 
@@ -88,7 +88,7 @@ class Wiki_Premium {
 
 		$slug = $this->wiki->settings['slug'] . '/' . $this->wiki->slug_categories;
 
-		register_taxonomy('incsub_wiki_category', 'incsub_wiki', array(
+		register_taxonomy('psource_wiki_category', 'psource_wiki', array(
 
 			'hierarchical' => true,
 
@@ -144,7 +144,7 @@ class Wiki_Premium {
 
 		$slug = $this->wiki->settings['slug'] . '/' . $this->wiki->slug_tags;
 
-		register_taxonomy('incsub_wiki_tag', 'incsub_wiki', array(
+		register_taxonomy('psource_wiki_tag', 'psource_wiki', array(
 
 			'rewrite' => array(
 
@@ -204,7 +204,7 @@ class Wiki_Premium {
 
 	/**
 
-	 * Displays the admin page settings
+	 * Zeigt die Einstellungen der Admin-Seite an
 
 	 *
 
@@ -218,35 +218,35 @@ class Wiki_Premium {
 
 <tr valign="top">
 
-	<th><label for="incsub_wiki-breadcrumbs_in_title"><?php _e('Anzahl der Breadcrumbs, die dem Titel hinzugefügt werden sollen', 'wiki'); ?></label> </th>
+	<th><label for="psource_wiki-breadcrumbs_in_title"><?php _e('Anzahl der Breadcrumbs, die dem Titel hinzugefügt werden sollen', 'wiki'); ?></label> </th>
 
-	<td><input type="text" size="2" id="incsub_wiki-breadcrumbs_in_title" name="wiki[breadcrumbs_in_title]" value="<?php echo $this->wiki->get_setting('breadcrumbs_in_title'); ?>" /></td>
-
-</tr>
-
-<tr valign="top">
-
-	<th><label for="incsub_wiki-wiki_name"><?php _e('Wie möchtest Du Wikis nennen?', 'wiki'); ?></label> </th>
-
-	<td><input type="text" size="20" id="incsub_wiki-wiki_name" name="wiki[wiki_name]" value="<?php echo $this->wiki->get_setting('wiki_name'); ?>" /></td>
+	<td><input type="text" size="2" id="psource_wiki-breadcrumbs_in_title" name="wiki[breadcrumbs_in_title]" value="<?php echo $this->wiki->get_setting('breadcrumbs_in_title'); ?>" /></td>
 
 </tr>
 
 <tr valign="top">
 
-	<th><label for="incsub_wiki-sub_wiki_name"><?php _e('Wie möchtest Du Sub Wikis nennen?', 'wiki'); ?></label> </th>
+	<th><label for="psource_wiki-wiki_name"><?php _e('Wie möchtest Du Wikis nennen?', 'wiki'); ?></label> </th>
 
-	<td><input type="text" size="20" id="incsub_wiki-sub_wiki_name" name="wiki[sub_wiki_name]" value="<?php echo $this->wiki->get_setting('sub_wiki_name'); ?>" /></td>
+	<td><input type="text" size="20" id="psource_wiki-wiki_name" name="wiki[wiki_name]" value="<?php echo $this->wiki->get_setting('wiki_name'); ?>" /></td>
 
 </tr>
 
 <tr valign="top">
 
-	<th><label for="incsub_wiki-sub_wiki_order_by"><?php _e('Wie sollen Sub-Wikis bestellt werden?', 'wiki'); ?></label> </th>
+	<th><label for="psource_wiki-sub_wiki_name"><?php _e('Wie möchtest Du Sub Wikis nennen?', 'wiki'); ?></label> </th>
+
+	<td><input type="text" size="20" id="psource_wiki-sub_wiki_name" name="wiki[sub_wiki_name]" value="<?php echo $this->wiki->get_setting('sub_wiki_name'); ?>" /></td>
+
+</tr>
+
+<tr valign="top">
+
+	<th><label for="psource_wiki-sub_wiki_order_by"><?php _e('Wie sollen Sub-Wikis bestellt werden?', 'wiki'); ?></label> </th>
 
 	<td>
 
-		<select id="incsub_wiki-sub_wiki_order_by" name="wiki[sub_wiki_order_by]" >
+		<select id="psource_wiki-sub_wiki_order_by" name="wiki[sub_wiki_order_by]" >
 
 			<option value="menu_order" <?php selected($this->wiki->get_setting('sub_wiki_order_by'), 'menu_order'); ?>><?php _e('Menüreihenfolge/Reihenfolge erstellt', 'wiki'); ?></option>
 
@@ -262,11 +262,11 @@ class Wiki_Premium {
 
 <tr valign="top">
 
-	<th><label for="incsub_wiki-sub_wiki_order"><?php _e('Welche Reihenfolge sollten Sub Wikis bestellt werden?', 'wiki'); ?></label> </th>
+	<th><label for="psource_wiki-sub_wiki_order"><?php _e('Welche Reihenfolge sollten Sub Wikis bestellt werden?', 'wiki'); ?></label> </th>
 
 	<td>
 
-		<select id="incsub_wiki-sub_wiki_order" name="wiki[sub_wiki_order]" >
+		<select id="psource_wiki-sub_wiki_order" name="wiki[sub_wiki_order]" >
 
 			<option value="ASC" <?php selected($this->wiki->get_setting('sub_wiki_order'), 'ASC'); ?>><?php _e('Aufsteigend', 'wiki'); ?></option>
 
@@ -314,7 +314,7 @@ class Wiki_Premium {
 
 	/**
 
-	 * Saves additional settings
+	 * Speichert zusätzliche Einstellungen
 
 	 *
 
@@ -350,7 +350,7 @@ class Wiki_Premium {
 
 	/**
 
-	 * Adds meta boxes
+	 * Fügt Metaboxen hinzu
 
 	 *
 
@@ -366,7 +366,7 @@ class Wiki_Premium {
 
 		if ( $post->post_author == wp_get_current_user()->ID || current_user_can('edit_posts') ) {
 
-			add_meta_box('incsub-wiki-privileges', __('Wiki-Berechtigungen', 'wiki'), array(&$this, 'privileges_meta_box'), 'incsub_wiki', 'side');
+			add_meta_box('psource-wiki-privileges', __('Wiki-Berechtigungen', 'wiki'), array(&$this, 'privileges_meta_box'), 'psource_wiki', 'side');
 
 		}
 
@@ -376,7 +376,7 @@ class Wiki_Premium {
 
 	/**
 
-	 * Displays the privileges meta box
+	 * Zeigt das Privilegien-Metafeld an
 
 	 *
 
@@ -396,7 +396,7 @@ class Wiki_Premium {
 
 		$content	= '';
 
-		$current_privileges = (array) get_post_meta($post->ID, 'incsub_wiki_privileges', true);
+		$current_privileges = (array) get_post_meta($post->ID, 'psource_wiki_privileges', true);
 
 		$privileges = array(
 
@@ -412,7 +412,7 @@ class Wiki_Premium {
 
 
 
-		$content .= '<input type="hidden" name="incsub_wiki_privileges_meta" value="1" />';
+		$content .= '<input type="hidden" name="psource_wiki_privileges_meta" value="1" />';
 
 		$content .= '<div class="alignleft">';
 
@@ -422,7 +422,7 @@ class Wiki_Premium {
 
 		foreach ( $privileges as $key => $privilege ) {
 
-			$content .= '<label class="incsub_wiki_label_roles"><input type="checkbox" name="incsub_wiki_privileges[]" value="'.$key.'" '.((in_array($key, $current_privileges))?'checked="checked"':'').' /> '.$privilege.'</label><br class="incsub_wiki_br_roles"/>';
+			$content .= '<label class="psource_wiki_label_roles"><input type="checkbox" name="psource_wiki_privileges[]" value="'.$key.'" '.((in_array($key, $current_privileges))?'checked="checked"':'').' /> '.$privilege.'</label><br class="psource_wiki_br_roles"/>';
 
 		}
 
@@ -450,7 +450,7 @@ class Wiki_Premium {
 
 	/**
 
-	 * Saves the wiki's meta info
+	 * Speichert die Metainformationen des Wikis
 
 	 *
 
@@ -468,61 +468,61 @@ class Wiki_Premium {
 
 	public function save_wiki_meta( $post_id, $post = null ) {
 
-		//skip quick edit
+		//Schnellbearbeitung überspringen
 
 		if ( defined('DOING_AJAX') && DOING_AJAX ) { return; }
 
 
 
-		if ( get_post_type($post_id) == "incsub_wiki" && isset($_POST['incsub_wiki_tags']) ) {
+		if ( get_post_type($post_id) == "psource_wiki" && isset($_POST['psource_wiki_tags']) ) {
 
-			$wiki_tags = $_POST['incsub_wiki_tags'];
-
-
-
-			wp_set_post_terms($post_id, $wiki_tags, 'incsub_wiki_tag');
+			$wiki_tags = $_POST['psource_wiki_tags'];
 
 
 
-			//for any other plugin to hook into
-
-			do_action( 'incsub_wiki_save_taxonomy_tags', $post_id, $wiki_tags );
-
-		}
+			wp_set_post_terms($post_id, $wiki_tags, 'psource_wiki_tag');
 
 
 
-		if ( get_post_type($post_id) == "incsub_wiki" && isset($_POST['incsub_wiki_category']) ) {
+			//für jedes andere Plugin, in das man sich einklinken kann
 
-			$wiki_category = array( (int) $_POST['incsub_wiki_category'] );
-
-
-
-			wp_set_post_terms( $post_id, $wiki_category, 'incsub_wiki_category' );
-
-
-
-			//for any other plugin to hook into
-
-			do_action('incsub_wiki_save_taxonomy_category', $post_id, $wiki_category);
+			do_action( 'psource_wiki_save_taxonomy_tags', $post_id, $wiki_tags );
 
 		}
 
 
 
-		if ( get_post_type($post_id) == "incsub_wiki" && isset($_POST['incsub_wiki_privileges']) ) {
+		if ( get_post_type($post_id) == "psource_wiki" && isset($_POST['psource_wiki_category']) ) {
+
+			$wiki_category = array( (int) $_POST['psource_wiki_category'] );
+
+
+
+			wp_set_post_terms( $post_id, $wiki_category, 'psource_wiki_category' );
+
+
+
+			//für jedes andere Plugin, in das man sich einklinken kann
+
+			do_action('psource_wiki_save_taxonomy_category', $post_id, $wiki_category);
+
+		}
+
+
+
+		if ( get_post_type($post_id) == "psource_wiki" && isset($_POST['psource_wiki_privileges']) ) {
 
 			$meta = get_post_custom($post_id);
 
 
 
-			update_post_meta($post_id, 'incsub_wiki_privileges', $_POST['incsub_wiki_privileges']);
+			update_post_meta($post_id, 'psource_wiki_privileges', $_POST['psource_wiki_privileges']);
 
 
 
-			//for any other plugin to hook into
+			//für jedes andere Plugin, in das man sich einklinken kann
 
-			do_action( 'incsub_wiki_save_privileges_meta', $post_id, $meta );
+			do_action( 'psource_wiki_save_privileges_meta', $post_id, $meta );
 
 		}
 
@@ -532,7 +532,7 @@ class Wiki_Premium {
 
 	/**
 
-	 * Displays the wiki taxonomies dropdown
+	 * Zeigt das Dropdown-Menü Wiki-Taxonomien an
 
 	 *
 
@@ -554,11 +554,11 @@ class Wiki_Premium {
 
 		$wiki = isset($post) ? $post : $edit_post;
 
-		$wiki_tags = wp_get_object_terms( $wiki->ID, 'incsub_wiki_tag', array( 'fields' => 'names' ) );
+		$wiki_tags = wp_get_object_terms( $wiki->ID, 'psource_wiki_tag', array( 'fields' => 'names' ) );
 
 
 
-		$wiki_cats = wp_get_object_terms( $wiki->ID, 'incsub_wiki_category', array( 'fields' => 'ids' ) );
+		$wiki_cats = wp_get_object_terms( $wiki->ID, 'psource_wiki_category', array( 'fields' => 'ids' ) );
 
 		$wiki_cat = empty( $wiki_cats ) ? false : reset( $wiki_cats );
 
@@ -578,7 +578,7 @@ class Wiki_Premium {
 
 						'order' => 'ASC',
 
-						'taxonomy' => 'incsub_wiki_category',
+						'taxonomy' => 'psource_wiki_category',
 
 						'selected' => $wiki_cat,
 
@@ -586,7 +586,7 @@ class Wiki_Premium {
 
 						'hierarchical' => true,
 
-						'name' => 'incsub_wiki_category',
+						'name' => 'psource_wiki_category',
 
 						'class' => '',
 
@@ -606,7 +606,7 @@ class Wiki_Premium {
 
 		$content .= '<td id="wiki-tags-td">';
 
-		$content .= '<input type="text" id="incsub_wiki-tags" name="incsub_wiki_tags" value="'. implode( ', ', $wiki_tags ).'" />';
+		$content .= '<input type="text" id="psource_wiki-tags" name="psource_wiki_tags" value="'. implode( ', ', $wiki_tags ).'" />';
 
 		$content .= '</td></tr></table>';
 
@@ -628,7 +628,7 @@ class Wiki_Premium {
 
 	/**
 
-	 * Initializes widgets
+	 * Initialisiert Widgets
 
 	 *
 
@@ -672,7 +672,7 @@ class Wiki_Premium {
 
 	/**
 
-	 * Modifies the term link
+	 * Ändert den Begriff Link
 
 	 *
 
@@ -694,15 +694,15 @@ class Wiki_Premium {
 
 		$rewritecode = array(
 
-			'%incsub_wiki_category%',
+			'%psource_wiki_category%',
 
-			'%incsub_wiki_tag%'
+			'%psource_wiki_tag%'
 
 		);
 
 
 
-		if ( preg_match('/^incsub_wiki_/', $term->taxonomy) > 0 && '' != $termlink ) {
+		if ( preg_match('/^psource_wiki_/', $term->taxonomy) > 0 && '' != $termlink ) {
 
 			$rewritereplace = array(
 
@@ -728,7 +728,7 @@ class Wiki_Premium {
 
 	/**
 
-	 * Constructor function
+	 * Konstruktorfunktion
 
 	 *
 
@@ -742,15 +742,11 @@ class Wiki_Premium {
 
 		$this->wiki = Wiki::get_instance();
 
-		$this->_init_dash_notices();
-
-
-
 		add_filter('wiki_save_settings', array(&$this, 'save_settings'), 10, 2);
 
 		add_filter('term_link', array(&$this, 'term_link'), 10, 3);
 
-		add_action('add_meta_boxes_incsub_wiki', array(&$this, 'add_meta_boxes'));
+		add_action('add_meta_boxes_psource_wiki', array(&$this, 'add_meta_boxes'));
 
 		add_action('wp_insert_post', array(&$this, 'save_wiki_meta'), 10, 2);
 
@@ -758,57 +754,6 @@ class Wiki_Premium {
 
 	}
 
-
-
-	/**
-
-	 * Initializes WPMU DEV dash notices
-
-	 *
-
-	 * @since 1.2.5
-
-	 * @access private
-
-	 * @uses $wpmudev_notices
-
-	 */
-
-	private function _init_dash_notices() {
-
-		global $wpmudev_notices;
-
-		$wpmudev_notices[] = array(
-
-			'id' => 168,
-
-			'name' => 'Wiki',
-
-			'screens' => array(
-
-				'incsub_wiki_page_incsub_wiki',
-
-				'edit-incsub_wiki_tag',
-
-				'edit-incsub_wiki_category',
-
-				'incsub_wiki',
-
-				'edit-incsub_wiki',
-
-			),
-
-		);
-
-
-
-		if ( file_exists($this->wiki->plugin_dir . 'premium/lib/psource-dash/psource-dash-board.php') ) {
-
-			include_once $this->wiki->plugin_dir . 'premium/lib/psource-dash/psource-dash-board.php';
-
-		}
-
-	}
 
 }
 

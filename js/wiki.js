@@ -29,13 +29,13 @@ function deleteUserSetting(a) { return setUserSetting(a, "", 1) }
 function getAllUserSettings() { if ("object" !== typeof userSettings) { return {} } return wpCookies.getHash("wp-settings-" + userSettings.uid) || {} };
 
 jQuery(document).ready(function($) {
-    $('.incsub_wiki_revisions').find('.action-links').find('a').on("click", function(e) {
+    $('.psource_wiki_revisions').find('.action-links').find('a').on("click", function(e) {
         if (!confirm(Wiki.restoreMessage)) {
             e.preventDefault();
         }
     });
 
-    $('.incsub_wiki_message').find('a.dismiss').on("click", function(e) {
+    $('.psource_wiki_message').find('a.dismiss').on("click", function(e) {
         e.preventDefault();
         var $parent = $(this).parent();
         $parent.fadeOut(500, function() {

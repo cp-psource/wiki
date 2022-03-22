@@ -12,8 +12,8 @@ class PopularWikisWidget extends WP_Widget {
 
       $control_ops = array( 'title' => __('Beliebte Wikis', 'wiki'), 'hierarchical' => 'yes' );
 
-			//parent::WP_Widget( 'incsub_popular_wikis', __('Beliebte Wikis', 'wiki'), $widget_ops, $control_ops );
-			parent::__construct( 'incsub_popular_wikis', __('Beliebte Wikis', 'wiki'), $widget_ops, $control_ops );
+			//parent::WP_Widget( 'psource_popular_wikis', __('Beliebte Wikis', 'wiki'), $widget_ops, $control_ops );
+			parent::__construct( 'psource_popular_wikis', __('Beliebte Wikis', 'wiki'), $widget_ops, $control_ops );
 
     }
 
@@ -65,7 +65,7 @@ class PopularWikisWidget extends WP_Widget {
 
 					'post_parent' => 0,
 
-					'post_type' => 'incsub_wiki',
+					'post_type' => 'psource_wiki',
 
 					'orderby' => 'comment_count',
 
@@ -121,7 +121,7 @@ class PopularWikisWidget extends WP_Widget {
 
 				array('post_parent' => $wiki->ID,
 
-					  'post_type' => 'incsub_wiki',
+					  'post_type' => 'psource_wiki',
 
 					  'orderby' => 'comment_count',
 

@@ -12,8 +12,8 @@ class WikiTagsWidget extends WP_Widget {
 
 
 
-	//parent::WP_Widget( 'incsub_wiki_tags', __('Wiki-Tags', 'wiki'), $widget_ops, $control_ops );
-	parent::__construct( 'incsub_wiki_tags', __('Wiki-Tags', 'wiki'), $widget_ops, $control_ops );
+	//parent::WP_Widget( 'psource_wiki_tags', __('Wiki-Tags', 'wiki'), $widget_ops, $control_ops );
+	parent::__construct( 'psource_wiki_tags', __('Wiki-Tags', 'wiki'), $widget_ops, $control_ops );
 
     }
 
@@ -45,7 +45,7 @@ class WikiTagsWidget extends WP_Widget {
 
 	<ul>
 
-	    <?php echo wp_list_categories('taxonomy=incsub_wiki_tag&title_li='); ?>
+	    <?php echo wp_list_categories('taxonomy=psource_wiki_tag&title_li='); ?>
 
 	</ul>
 
