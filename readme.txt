@@ -54,6 +54,9 @@ Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktion
 
 * CSS für Revisionen verbessert (auch Responsive)
 * Style des Frontend-Editors verbessert
+* Psource Updater aktualisiert
+* Getestet für PhP8
+* Pot hinzugefügt
 
 = 1.3.4 = DerN3rd =
 
