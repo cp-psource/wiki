@@ -32,14 +32,32 @@ um eine blitzschnelle Suche in Deinem gesamten Netzwerk zu erstellen.
 [Supportforum](https://n3rds.work/forums/forum/psource-support-foren/ps-wiki-supportforum)
 [GitHub](https://github.com/piestingtal-source/ps-wiki-pro)
 
-== Mehr PSOURCE ==
+== Languages ==
+
+* Deutsch: de_DE
+* English: en_GB
+* English: en_US
+* France: fr_FR
+* Italiono: it_IT
+* Dutch: nl_NL
+* Polish: pl_PL
+* Spanish: es_ES
+* Portuguese: pt_PT
+
+Du kannst uns gerne Deine optimierten .po/.mo Dateien für Deine Muttersprache zukommen lassen. 
+Nutze die Möglichkeit dazu auf GitHub oder sende Deine Dateien an: webmaster@n3rds.work
+
+You are welcome to send us your optimized .po/.mo files for your native language. 
+Use the opportunity to do so on GitHub or send your files to: webmaster@n3rds.work
+
+== CP PSOURCE ==
 
 = PS EVENTS PLUGIN =
 
 Unser [PS Events Plugin](https://n3rds.work/piestingtal_source/ps-events-eventmanagement-fuer-wordpress/) versendet auf Wunsch automatisch Newsletter an Veranstaltungs-Teilnehmer.
 Halte so Deine Teilnehmer über Deine anstehende Veranstaltung(en) auf dem laufenden!
 
-== Hilf uns ==
+= Hilf uns =
 
 Viele, viele Kaffees konsumieren wir während wir an unseren Plugins und Themes arbeiten.
 Wie wärs? Möchtest Du uns mit einer Kaffee-Spende bei der Arbeit an unseren Plugins unterstützen?
