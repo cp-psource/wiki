@@ -5,7 +5,7 @@ Plugin Name: PS-Wiki
 Plugin URI: https://n3rds.work/piestingtal_source/ps-wiki-plugin/
 Description: Ein simples aber mächtiges Wiki-Plugin für Deine WordPress Seite, inkl. Multisitesupport, Frontend-Editor, Rechtemanagment.
 Author: Webmasterservice "Die N3rds"
-Version: 1.3.4
+Version: 1.3.5
 Author URI: https://n3rds.work
 Text Domain: ps-wiki
 */
@@ -37,7 +37,7 @@ $MyUpdateChecker = PucFactory::buildUpdateChecker(
 class Wiki {
 
 	// @var string Aktuelle Version
-	var $version = '1.3.4';
+	var $version = '1.3.5';
 
 	// @var string Der DB Prefix
 	var $db_prefix = '';
