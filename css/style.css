@@ -1,4 +1,4 @@
-.widget_incsub_wiki a.current {
+.widget_psource_wiki a.current {
 	color: #000;
 	font-weight: bold;
 }
@@ -91,7 +91,7 @@
 	color: inherit !important;
 }
 
-.type-incsub_wiki .post-edit-link {
+.type-psource_wiki .post-edit-link {
 	display: none;
 }
 

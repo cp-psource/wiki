@@ -11,7 +11,6 @@ Text Domain: ps-wiki
 */
 
 
-
 /*
 Copyright 2019-2023 DerN3rd (https://n3rds.work)
 Author - Der N3rd
@@ -28,8 +27,9 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
 require 'psource/psource-plugin-update/psource-plugin-updater.php';
-$MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://n3rds.work/wp-update-server/?action=get_metadata&slug=ps-wiki', 
+use Psource\PluginUpdateChecker\v5\PucFactory;
+$MyUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://n3rds.work//wp-update-server/?action=get_metadata&slug=ps-wiki', 
 	__FILE__, 
 	'ps-wiki' 
 );
@@ -1682,7 +1682,7 @@ class Wiki {
 
 	/**
 	 * Registriert benutzerdefinierte Beitragstypen des Plugins
-	 * @since 1.2.4
+	 * @since 1.0.0
 	 */
 	function register_post_types() {
 		$slug = $this->settings['slug'];

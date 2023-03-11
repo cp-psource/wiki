@@ -11,7 +11,11 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Ein simples aber mächtiges Wiki-Plugin für Deine WordPress Seite, inkl. Multisitesupport, Frontend-Editor, Rechtemanagment.
 
+A simple but powerful wiki plugin for your WordPress site, including multisite support, frontend editor, rights management.
+
 == Description ==
+
+= DEUTSCH = 
 
 PS Wiki ist alles, was Du brauchst, um eine WordPress-Seite/Netzwerk in ein leistungsstarkes, benutzerfreundliches Wiki zu verwandeln.
 
@@ -25,12 +29,26 @@ Blitzschnelle Ergebnisse
 Netzwerksuche verwendet unser leistungsstarkes PS-Multisite Beitragsindex Plugin, das alle Beiträge auf jeder Seite in Deinem Netzwerk indiziert, 
 um eine blitzschnelle Suche in Deinem gesamten Netzwerk zu erstellen.
 
-[POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/psource-plugins/)
+= ENGLISH =
 
-[Projektseite](https://n3rds.work/piestingtal_source/ps-wiki-plugin/)
-[Handbuch](https://n3rds.work/docs/ps-wiki-plugin-handbuch/)
-[Supportforum](https://n3rds.work/forums/forum/psource-support-foren/ps-wiki-supportforum)
-[GitHub](https://github.com/piestingtal-source/ps-wiki-pro)
+PS Wiki is everything you need to turn a WordPress site/network into a powerful, user-friendly wiki.
+
+With this sophisticated, powerful plugin you can easily create as many wikis as you like in WordPress, Multisite or BuddyPress.
+
+PS Wiki works out of the box and adapts to any WordPress theme. Get the most out of the integration with 7 built-in widgets.
+
+Create a place where users can brainstorm, develop, and share ideas in minutes.
+
+Lightning fast results
+Network Search uses our powerful PS-Multisite Post Index Plugin that indexes all posts on every site in your network,
+to create a lightning-fast search across your entire network.
+
+
+[Projektseite](https://n3rds.work/cp_psource/ps-wiki-plugin/)
+[Supportforum](https://n3rds.work/forum/ps-wiki-supportforum/)
+[GitHub](https://github.com/cp-psource/ps-wiki)
+
+[POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/cp-powersource/)
 
 == Languages ==
 
@@ -52,10 +70,7 @@ Use the opportunity to do so on GitHub or send your files to: webmaster@n3rds.wo
 
 == CP PSOURCE ==
 
-= PS EVENTS PLUGIN =
 
-Unser [PS Events Plugin](https://n3rds.work/piestingtal_source/ps-events-eventmanagement-fuer-wordpress/) versendet auf Wunsch automatisch Newsletter an Veranstaltungs-Teilnehmer.
-Halte so Deine Teilnehmer über Deine anstehende Veranstaltung(en) auf dem laufenden!
 
 = Hilf uns =
 
