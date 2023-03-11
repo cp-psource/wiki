@@ -70,16 +70,27 @@ Use the opportunity to do so on GitHub or send your files to: webmaster@n3rds.wo
 
 == CP PSOURCE ==
 
+= Finde mehr Piestingtal.Source =
 
+Wirf einen Blick in unser [PSOURCE Sortiment](https://n3rds.work/psource_kategorien/cp-powersource/) und hole noch mehr aus Deinem ClassicPress/ClassicPress!
 
-= Hilf uns =
+Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
+
+= Support Us =
 
 Viele, viele Kaffees konsumieren wir während wir an unseren Plugins und Themes arbeiten.
 Wie wärs? Möchtest Du uns mit einer Kaffee-Spende bei der Arbeit an unseren Plugins unterstützen?
 
-= Unterstütze uns =
+We consume many, many coffees while working on our plugins and themes.
+how about Would you like to support us with a coffee donation while working on our plugins?
 
 Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/) wir Danken Dir!
+
+Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
+
+Make a [donation by bank transfer or PayPal](https://n3rds.work/spenderaktionen/unterstuetze-unsere-psource-free-werke/) we thank you!
+
+Keep yourself informed about our Piestingtal.Source with our [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/)!
 
 == ChangeLog ==
 
