@@ -1,0 +1,607 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PS-Wiki\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-11 11:18+0000\n"
+"PO-Revision-Date: 2023-03-11 11:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: Portuguese (Portugal)\n"
+"Language: pt_PT\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.3; wp-4.9.22\n"
+"X-Domain: ps-wiki"
+
+#: admin-pages/settings.php:49
+msgid ""
+"<a target=\"_blank\" href=\"https://n3rds.work/piestingtal-source-project/ps-"
+"wiki-plugin/\">Upgrade jetzt</a> um neue Features zu erhalten!"
+msgstr ""
+
+#: wiki.php:1074 wiki.php:1167
+msgid "Abbrechen"
+msgstr ""
+
+#: premium/wiki-premium.php:149 lib/classes/WikiWidget.php:140
+msgid "Absteigend"
+msgstr ""
+
+#: wiki.php:1391
+msgid "Aktionen"
+msgstr ""
+
+#: wiki.php:1814
+msgid "Aktiviere E-Mail-Benachrichtigungen"
+msgstr ""
+
+#: premium/wiki-premium.php:63
+msgid "Alle Wiki-Kategorien"
+msgstr ""
+
+#: premium/wiki-premium.php:94
+msgid "Alle Wiki-Tags"
+msgstr ""
+
+#: premium/wiki-premium.php:116
+msgid "Anzahl der Breadcrumbs, die dem Titel hinzugefügt werden sollen"
+msgstr ""
+
+#: premium/wiki-premium.php:148 lib/classes/WikiWidget.php:139
+msgid "Aufsteigend"
+msgstr ""
+
+#: wiki.php:911
+msgid "Automatischer Entwurf"
+msgstr ""
+
+#: wiki.php:1035
+msgid "BEARBEITEN"
+msgstr ""
+
+#: wiki.php:1256
+msgid "Bearbeiten"
+msgstr ""
+
+#: premium/wiki-premium.php:224
+msgid "Bearbeitung zulassen durch"
+msgstr ""
+
+#: premium/lib/classes/PopularWikisWidget.php:7
+msgid "Beliebte Wiki-Seiten anzeigen"
+msgstr ""
+
+#: premium/wiki-premium.php:93
+msgid "Beliebte Wiki-Tags"
+msgstr ""
+
+#: premium/lib/classes/PopularWikisWidget.php:8
+#: premium/lib/classes/PopularWikisWidget.php:10
+#: premium/lib/classes/PopularWikisWidget.php:19
+#: premium/lib/classes/PopularWikisWidget.php:91
+#: premium/lib/classes/PopularWikisWidget.php:100
+msgid "Beliebte Wikis"
+msgstr ""
+
+#: wiki.php:836 wiki.php:848
+msgid "Benachrichtige mich über Änderungen"
+msgstr ""
+
+#: premium/wiki-premium.php:219
+msgid "Benutzer, die Beiträge auf dieser Seite bearbeiten können"
+msgstr ""
+
+#: wiki.php:1743
+msgid "Bist Du sicher, dass Sie diese Version wiederherstellen möchtest?"
+msgstr ""
+
+#: default-templates/404-psource_wiki.php:14
+msgid ""
+"Die gesuchte Wiki-Seite existiert nicht. Fühle Dich frei, sie selbst zu "
+"erstellen."
+msgstr ""
+
+#: wiki.php:1246
+msgid "Diskussion"
+msgstr ""
+
+#: wiki.php:479
+msgid "Du bist nicht berechtigt, diese Seite zu bearbeiten."
+msgstr ""
+
+#: wiki.php:481
+msgid "Du bist nicht berechtigt, diesen Beitrag zu bearbeiten."
+msgstr ""
+
+#: wiki.php:638
+msgid "Du bist nicht berechtigt, dieses Element zu bearbeiten."
+msgstr ""
+
+#: wiki.php:396
+msgid "Du darfst als dieser Benutzer keine Beiträge bearbeiten."
+msgstr ""
+
+#: wiki.php:391
+msgid "Du darfst als dieser Benutzer keine Seiten bearbeiten."
+msgstr ""
+
+#: wiki.php:392
+msgid "Du darfst als dieser Benutzer keine Seiten erstellen."
+msgstr ""
+
+#: wiki.php:397
+msgid "Du darfst nicht als dieser Benutzer posten."
+msgstr ""
+
+#: wiki.php:1090
+msgid "Du hast keine Berechtigung zum Anzeigen dieser Seite."
+msgstr ""
+
+#: admin-pages/settings.php:24
+msgid "Du hast keine Berechtigung, auf diese Seite zuzugreifen"
+msgstr ""
+
+#: wiki.php:636
+msgid ""
+"Du hast versucht, ein nicht vorhandenes Element zu bearbeiten. Vielleicht "
+"wurde es gelöscht?"
+msgstr ""
+
+#: wiki.php:640
+msgid ""
+"Du kannst dieses Element nicht bearbeiten, da es sich im Papierkorb befindet."
+" Bitte stelle es wieder her und versuche es erneut."
+msgstr ""
+
+#: wiki.php:846
+msgid "E-mail"
+msgstr ""
+
+#: premium/lib/classes/NewWikisWidget.php:111
+#: premium/lib/classes/PopularWikisWidget.php:115
+msgid "Ebenen"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:119
+msgid "Ebenene"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Ein simples aber mächtiges Wiki-Plugin für Deine WordPress Seite, inkl. "
+"Multisitesupport, Frontend-Editor, Rechtemanagment."
+msgstr ""
+
+#: admin-pages/settings.php:27
+msgid "Einstellungen gespeichert."
+msgstr ""
+
+#: admin-pages/settings.php:56
+msgid "Ermögliche anderen Benutzern als dem Administrator, Wikis zu bearbeiten"
+msgstr ""
+
+#: wiki.php:1258
+msgid "Erweitertes bearbeiten"
+msgstr ""
+
+#: admin-pages/settings.php:55
+msgid "Gib an wie Sub-Wikis bestellt werden sollen"
+msgstr ""
+
+#: admin-pages/settings.php:52
+msgid ""
+"Gib die Anzahl der Breadcrumbs an, die dem Titel hinzugefügt werden sollen"
+msgstr ""
+
+#: admin-pages/settings.php:53
+msgid "Gib einen benutzerdefinierten Namen für Wikis an"
+msgstr ""
+
+#: premium/wiki-premium.php:100
+msgid "Hinzufügen oder Entfernen von Wiki-Tags"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://n3rds.work"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://n3rds.work/piestingtal_source/ps-wiki-plugin/"
+msgstr ""
+
+#: wiki.php:1700
+msgid "Im Papierkorb wurden keine Wikis gefunden"
+msgstr ""
+
+#: premium/wiki-premium.php:216
+msgid "Jeder"
+msgstr ""
+
+#: premium/wiki-premium.php:302
+msgid "Kategorie wählen..."
+msgstr ""
+
+#: wiki.php:1699
+msgid "Kein Wiki gefunden"
+msgstr ""
+
+#: wiki.php:1917
+#, php-format
+msgid ""
+"Lieber Autor,\n"
+"\n"
+"%s wurde verändert\n"
+"\n"
+"Du kannst die Wiki-Seite hier vollständig lesen: %s\n"
+"\n"
+"%s\n"
+"\n"
+"Danke,\n"
+"\n"
+"%s\n"
+"\n"
+"Abonnement kündigen: %s"
+msgstr ""
+
+#: wiki.php:1902
+#, php-format
+msgid ""
+"Lieber Autor,\n"
+"\n"
+"%s wurde verändert\n"
+"\n"
+"Du kannst die Wiki-Seite hier vollständig lesen: %s\n"
+"\n"
+"Du kannst die Änderungen rückgängig machen: %s\n"
+"\n"
+"%s\n"
+"\n"
+"Danke,\n"
+"%s\n"
+"\n"
+"Abonnement kündigen: %s"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:131
+msgid "Menüreihenfolge / Reihenfolge erstellt"
+msgstr ""
+
+#: premium/wiki-premium.php:136
+msgid "Menüreihenfolge/Reihenfolge erstellt"
+msgstr ""
+
+#: premium/wiki-premium.php:217
+msgid "Netzwerk Benutzer"
+msgstr ""
+
+#: premium/wiki-premium.php:68
+msgid "Neue Wiki-Kategorie hinzufügen"
+msgstr ""
+
+#: premium/lib/classes/NewWikisWidget.php:7
+msgid "Neue Wiki-Seiten anzeigen"
+msgstr ""
+
+#: premium/lib/classes/NewWikisWidget.php:10
+#: premium/lib/classes/NewWikisWidget.php:88
+#: premium/lib/classes/NewWikisWidget.php:97
+msgid "Neue Wikis"
+msgstr ""
+
+#: premium/wiki-premium.php:69
+msgid "Neuer Name der Wiki-Kategorie"
+msgstr ""
+
+#: premium/wiki-premium.php:98
+msgid "Neuer Wiki-Tag-Name"
+msgstr ""
+
+#: wiki.php:1260
+msgid "Neues (Sub)Wiki"
+msgstr ""
+
+#: wiki.php:1696
+msgid "Neues Wiki"
+msgstr ""
+
+#: wiki.php:1694
+msgid "Neues Wiki hinzufügen"
+msgstr ""
+
+#: premium/wiki-premium.php:97
+msgid "Neues Wiki-Tag hinzufügen"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:129
+msgid "Ordne nach"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:137
+msgid "Ordnen"
+msgstr ""
+
+#: wiki.php:1131
+msgid "Passwortgeschützt"
+msgstr ""
+
+#: wiki.php:1128
+msgid "Privat"
+msgstr ""
+
+#. Name of the plugin
+msgid "PS-Wiki"
+msgstr ""
+
+#: wiki.php:597
+msgid "Revision erfolgreich wiederhergestellt"
+msgstr ""
+
+#: wiki.php:1377
+msgid "Revisionen vergleichen"
+msgstr ""
+
+#: wiki.php:1387
+msgctxt "revisions column name"
+msgid "Alt"
+msgstr ""
+
+#: wiki.php:1389
+msgctxt "revisions column name"
+msgid "Datum erstellt"
+msgstr ""
+
+#: wiki.php:1388
+msgctxt "revisions column name"
+msgid "Neu"
+msgstr ""
+
+#: premium/wiki-premium.php:218
+msgid "Seitenbenutzer"
+msgstr ""
+
+#: wiki.php:1073 wiki.php:1166
+msgid "Speichern"
+msgstr ""
+
+#: wiki.php:1555
+msgid "Sub-Wikis"
+msgstr ""
+
+#: admin-pages/settings.php:54
+msgid "Sub-Wikis hinzufügen"
+msgstr ""
+
+#: premium/lib/classes/SearchWikisWidget.php:27
+msgid "Suche"
+msgstr ""
+
+#: premium/wiki-premium.php:62
+msgid "Suche in Wiki-Kategorien"
+msgstr ""
+
+#: wiki.php:1698
+msgid "Suche Wiki"
+msgstr ""
+
+#: premium/wiki-premium.php:92
+msgid "Suche Wiki-Tags"
+msgstr ""
+
+#: premium/lib/classes/SearchWikisWidget.php:6
+#: premium/lib/classes/SearchWikisWidget.php:9
+#: premium/lib/classes/SearchWikisWidget.php:17
+#: premium/lib/classes/SearchWikisWidget.php:37
+#: premium/lib/classes/SearchWikisWidget.php:43
+msgid "Suche Wikis"
+msgstr ""
+
+#: wiki.php:793 wiki.php:795 premium/wiki-premium.php:306
+msgid "Tags:"
+msgstr ""
+
+#: premium/wiki-premium.php:137 lib/classes/WikiWidget.php:132
+#: premium/lib/classes/NewWikisWidget.php:108
+#: premium/lib/classes/PopularWikisWidget.php:111
+#: premium/lib/classes/SearchWikisWidget.php:48
+#: premium/lib/classes/WikiCategoriesWidget.php:42
+#: premium/lib/classes/WikiTagCloudWidget.php:44
+#: premium/lib/classes/WikiTagsWidget.php:40
+msgid "Titel"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:116
+msgid "Title"
+msgstr ""
+
+#: premium/wiki-premium.php:99
+msgid "Trenne Wiki-Tags durch Kommas"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:125 premium/lib/classes/NewWikisWidget.php:116
+#: premium/lib/classes/PopularWikisWidget.php:120
+msgid "Unlimitiert"
+msgstr ""
+
+#: wiki.php:1249
+msgid "Verlauf"
+msgstr ""
+
+#. Author of the plugin
+msgid "Webmasterservice \"Die N3rds\""
+msgstr ""
+
+#: premium/wiki-premium.php:144
+msgid "Welche Reihenfolge sollten Sub Wikis bestellt werden?"
+msgstr ""
+
+#: premium/wiki-premium.php:155
+msgid "Wer kann Wiki-Berechtigungen bearbeiten?"
+msgstr ""
+
+#: premium/wiki-premium.php:127
+msgid "Wie möchtest Du Sub Wikis nennen?"
+msgstr ""
+
+#: premium/wiki-premium.php:122
+msgid "Wie möchtest Du Wikis nennen?"
+msgstr ""
+
+#: premium/wiki-premium.php:132
+msgid "Wie sollen Sub-Wikis bestellt werden?"
+msgstr ""
+
+#: wiki.php:1357
+msgid "Wiederherstellen"
+msgstr ""
+
+#: wiki.php:1692 lib/classes/WikiWidget.php:8 lib/classes/WikiWidget.php:10
+#: lib/classes/WikiWidget.php:19 lib/classes/WikiWidget.php:93
+#: lib/classes/WikiWidget.php:105
+msgid "Wiki"
+msgstr ""
+
+#: wiki.php:1697
+msgid "Wiki anzeigen"
+msgstr ""
+
+#: wiki.php:1695
+msgid "Wiki bearbeiten"
+msgstr ""
+
+#: wiki.php:1693
+msgid "Wiki hinzufügen"
+msgstr ""
+
+#: wiki.php:1189
+msgid "Wiki Kategorien/Tags"
+msgstr ""
+
+#: admin-pages/settings.php:38
+msgid "Wiki Slug"
+msgstr ""
+
+#: premium/lib/classes/WikiTagCloudWidget.php:6
+#: premium/lib/classes/WikiTagCloudWidget.php:8
+#: premium/lib/classes/WikiTagCloudWidget.php:17
+#: premium/lib/classes/WikiTagCloudWidget.php:31
+#: premium/lib/classes/WikiTagCloudWidget.php:40
+msgid "Wiki Tag Cloud"
+msgstr ""
+
+#: wiki.php:1193
+msgid "Wiki-Benachrichtigungen"
+msgstr ""
+
+#: wiki.php:1197 premium/wiki-premium.php:199
+msgid "Wiki-Berechtigungen"
+msgstr ""
+
+#: wiki.php:1762
+msgid "Wiki-E-Mail-Benachrichtigungen"
+msgstr ""
+
+#: admin-pages/settings.php:17 admin-pages/settings.php:31
+msgid "Wiki-Einstellungen"
+msgstr ""
+
+#: premium/wiki-premium.php:61
+msgid "Wiki-Kategorie"
+msgstr ""
+
+#: premium/wiki-premium.php:67
+msgid "Wiki-Kategorie aktualisieren"
+msgstr ""
+
+#: premium/wiki-premium.php:66
+msgid "Wiki-Kategorie bearbeiten"
+msgstr ""
+
+#: wiki.php:792 wiki.php:794
+msgid "Wiki-Kategorie:"
+msgstr ""
+
+#: premium/wiki-premium.php:60 premium/lib/classes/WikiCategoriesWidget.php:6
+#: premium/lib/classes/WikiCategoriesWidget.php:8
+#: premium/lib/classes/WikiCategoriesWidget.php:17
+#: premium/lib/classes/WikiCategoriesWidget.php:31
+#: premium/lib/classes/WikiCategoriesWidget.php:37
+msgid "Wiki-Kategorien"
+msgstr ""
+
+#: premium/lib/classes/WikiCategoriesWidget.php:5
+msgid "Wiki-Kategorien anzeigen"
+msgstr ""
+
+#: wiki.php:1243
+msgid "Wiki-Seite"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:7
+msgid "Wiki-Seiten anzeigen"
+msgstr ""
+
+#: premium/lib/classes/SearchWikisWidget.php:5
+msgid "Wiki-Seiten durchsuchen"
+msgstr ""
+
+#: premium/wiki-premium.php:91
+msgid "Wiki-Tag"
+msgstr ""
+
+#: premium/wiki-premium.php:96
+msgid "Wiki-Tag aktualisieren"
+msgstr ""
+
+#: premium/wiki-premium.php:95
+msgid "Wiki-Tag bearbeiten"
+msgstr ""
+
+#: premium/lib/classes/WikiTagCloudWidget.php:5
+msgid "Wiki-Tag-Cloud anzeigen"
+msgstr ""
+
+#: premium/wiki-premium.php:90 premium/lib/classes/WikiTagsWidget.php:6
+#: premium/lib/classes/WikiTagsWidget.php:8
+#: premium/lib/classes/WikiTagsWidget.php:17
+#: premium/lib/classes/WikiTagsWidget.php:30
+#: premium/lib/classes/WikiTagsWidget.php:36
+msgid "Wiki-Tags"
+msgstr ""
+
+#: premium/lib/classes/WikiTagsWidget.php:5
+msgid "Wiki-Tags anzeigen"
+msgstr ""
+
+#: wiki.php:1554 wiki.php:1691 wiki.php:1701
+msgid "Wikis"
+msgstr ""
+
+#: premium/wiki-premium.php:101
+msgid "Wähle häufig verwendete Wiki-Tags"
+msgstr ""
+
+#: premium/wiki-premium.php:138 lib/classes/WikiWidget.php:133
+msgid "Zufällig"
+msgstr ""
+
+#: wiki.php:1964
+msgid "Änderungen an der Wiki-Seite"
+msgstr ""
+
+#: admin-pages/settings.php:61
+msgid "Änderungen speichern"
+msgstr ""
+
+#: wiki.php:1134
+msgid "Öffentlich"
+msgstr ""
+
+#: premium/wiki-premium.php:64
+msgid "Übergeordnete Wiki-Kategorie"
+msgstr ""
+
+#: premium/wiki-premium.php:65
+msgid "Übergeordnete Wiki-Kategorie:"
+msgstr ""
