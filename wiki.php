@@ -3,7 +3,7 @@
 /*
 Plugin Name: PS-Wiki
 Plugin URI: https://n3rds.work/piestingtal_source/ps-wiki-plugin/
-Description: Ein simples aber mächtiges Wiki-Plugin für Deine WordPress Seite, inkl. Multisitesupport, Frontend-Editor, Rechtemanagment.
+Description: Ein simples aber mächtiges Wiki-Plugin für Deine ClassicPress Seite, inkl. Multisitesupport, Frontend-Editor, Rechtemanagment.
 Author: Webmasterservice "Die N3rds"
 Version: 1.3.5
 Author URI: https://n3rds.work
@@ -350,7 +350,7 @@ class Wiki {
 	 *
 	 * Manipuliert $_POST direkt.
 	 *
-	 * @package WordPress
+	 * @package ClassicPress
 	 * @since 2.6.0
 	 *
 	 * @param bool $update Aktualisieren wir einen bereits bestehenden Beitrag?
@@ -1285,7 +1285,7 @@ class Wiki {
 	 *	 (int)		left	 : welche Revision wird derzeit gegen rechts unterschieden -
 	 *										 im Formulartabellenformat verwendet.
 	 *
-	 * @package WordPress
+	 * @package ClassicPress
 	 * @subpackage Post_Revisions
 	 * @since 2.6.0
 	 *
@@ -1508,7 +1508,7 @@ class Wiki {
 		if ( get_option('wiki_version', false) == $this->version )
 			return;
 
-		// Upgrade-/Erstellungsfunktionen für WordPress-Datenbanken
+		// Upgrade-/Erstellungsfunktionen für ClassicPress-Datenbanken
 		require_once ABSPATH . 'wp-admin/includes/upgrade.php';
 
 		// Holt sich die richtige Zeichensortierung

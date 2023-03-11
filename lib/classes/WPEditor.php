@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Facilitates adding of the WordPress editor as used on the Write and Edit screens.
+ * Facilitates adding of the ClassicPress editor as used on the Write and Edit screens.
  *
- * @package WordPress
+ * @package ClassicPress
  * @since 3.3.0
  *
  * Private, not included by default. See wp_editor() in wp-includes/general-template.php.
@@ -346,7 +346,7 @@ final class WikiEditor {
 					 * Filter the list of default TinyMCE plugins.
 					 *
 					 * The filter specifies which of the default plugins included
-					 * in WordPress should be added to the TinyMCE instance.
+					 * in ClassicPress should be added to the TinyMCE instance.
 					 *
 					 * @since 1.0.0
 					 *
@@ -590,7 +590,7 @@ final class WikiEditor {
 
 
 
-				// WordPress default stylesheet and dashicons
+				// ClassicPress default stylesheet and dashicons
 
 				$mce_css = array(
 
@@ -1514,7 +1514,7 @@ final class WikiEditor {
 
 
 
-			// WordPress strings
+			// ClassicPress strings
 
 			'Keyboard Shortcuts' => __( 'Keyboard Shortcuts' ),
 

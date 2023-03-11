@@ -8,7 +8,7 @@ if ( !class_exists('Puc_v4p10_Theme_Update', false) ):
 		protected static $extraFields = array('details_url');
 
 		/**
-		 * Transform the metadata into the format used by WordPress core.
+		 * Transform the metadata into the format used by ClassicPress core.
 		 * Note the inconsistency: WP stores plugin updates as objects and theme updates as arrays.
 		 *
 		 * @return array

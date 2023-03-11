@@ -94,7 +94,7 @@ if ( !class_exists('Puc_v4p10_DebugBar_Extension', false) ):
 							$httpError = $item['httpResponse'];
 							/** @var WP_Error $httpError */
 							printf(
-								'<dt>WordPress HTTP API-Fehler:</dt><dd>%s (<code>%s</code>)</dd>',
+								'<dt>ClassicPress HTTP API-Fehler:</dt><dd>%s (<code>%s</code>)</dd>',
 								esc_html($httpError->get_error_message()),
 								esc_html($httpError->get_error_code())
 							);
@@ -162,7 +162,7 @@ if ( !class_exists('Puc_v4p10_DebugBar_Extension', false) ):
 		private function getLibraryUrl($filePath) {
 			$absolutePath = realpath(dirname(__FILE__) . '/../../../' . ltrim($filePath, '/'));
 
-			//Where is the library located inside the WordPress directory structure?
+			//Where is the library located inside the ClassicPress directory structure?
 			$absolutePath = Puc_v4p10_Factory::normalizePath($absolutePath);
 
 			$pluginDir = Puc_v4p10_Factory::normalizePath(WP_PLUGIN_DIR);

@@ -9,19 +9,19 @@ Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Ein simples aber mächtiges Wiki-Plugin für Deine WordPress Seite, inkl. Multisitesupport, Frontend-Editor, Rechtemanagment.
+Ein simples aber mächtiges Wiki-Plugin für Deine ClassicPress Seite, inkl. Multisitesupport, Frontend-Editor, Rechtemanagment.
 
-A simple but powerful wiki plugin for your WordPress site, including multisite support, frontend editor, rights management.
+A simple but powerful wiki plugin for your ClassicPress site, including multisite support, frontend editor, rights management.
 
 == Description ==
 
 = DEUTSCH = 
 
-PS Wiki ist alles, was Du brauchst, um eine WordPress-Seite/Netzwerk in ein leistungsstarkes, benutzerfreundliches Wiki zu verwandeln.
+PS Wiki ist alles, was Du brauchst, um eine ClassicPress-Seite/Netzwerk in ein leistungsstarkes, benutzerfreundliches Wiki zu verwandeln.
 
-Mit diesem ausgeklügelten, leistungsstarken Plugin kannst Du ganz einfach beliebig viele Wikis in WordPress, Multisite oder BuddyPress erstellen.
+Mit diesem ausgeklügelten, leistungsstarken Plugin kannst Du ganz einfach beliebig viele Wikis in ClassicPress, Multisite oder BuddyPress erstellen.
 
-PS Wiki funktioniert sofort und passt sich jedem WordPress-Theme an. Hole das Beste aus der Integration mit 7 integrierten Widgets heraus.
+PS Wiki funktioniert sofort und passt sich jedem ClassicPress-Theme an. Hole das Beste aus der Integration mit 7 integrierten Widgets heraus.
 
 Erstelle einen Ort, an dem Benutzer in wenigen Minuten Ideen sammeln, entwickeln und austauschen können.
 
@@ -31,11 +31,11 @@ um eine blitzschnelle Suche in Deinem gesamten Netzwerk zu erstellen.
 
 = ENGLISH =
 
-PS Wiki is everything you need to turn a WordPress site/network into a powerful, user-friendly wiki.
+PS Wiki is everything you need to turn a ClassicPress site/network into a powerful, user-friendly wiki.
 
-With this sophisticated, powerful plugin you can easily create as many wikis as you like in WordPress, Multisite or BuddyPress.
+With this sophisticated, powerful plugin you can easily create as many wikis as you like in ClassicPress, Multisite or BuddyPress.
 
-PS Wiki works out of the box and adapts to any WordPress theme. Get the most out of the integration with 7 built-in widgets.
+PS Wiki works out of the box and adapts to any ClassicPress theme. Get the most out of the integration with 7 built-in widgets.
 
 Create a place where users can brainstorm, develop, and share ideas in minutes.
 

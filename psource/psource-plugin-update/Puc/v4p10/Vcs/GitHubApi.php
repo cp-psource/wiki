@@ -306,7 +306,7 @@ if ( !class_exists('Puc_v4p10_Vcs_GitHubApi', false) ):
 			$this->accessToken = is_string($credentials) ? $credentials : null;
 
 			//Optimization: Instead of filtering all HTTP requests, let's do it only when
-			//WordPress is about to download an update.
+			//ClassicPress is about to download an update.
 			add_filter('upgrader_pre_download', array($this, 'addHttpRequestFilter'), 10, 1); //WP 3.7+
 		}
 
@@ -341,7 +341,7 @@ if ( !class_exists('Puc_v4p10_Vcs_GitHubApi', false) ):
 		 * If the latest release contains no usable assets, the update checker
 		 * will fall back to using the automatically generated ZIP archive.
 		 *
-		 * Private repositories will only work with WordPress 3.7 or later.
+		 * Private repositories will only work with ClassicPress 3.7 or later.
 		 *
 		 * @param string|null $fileNameRegex Optional. Use only those assets where the file name matches this regex.
 		 */
@@ -396,7 +396,7 @@ if ( !class_exists('Puc_v4p10_Vcs_GitHubApi', false) ):
 		 * @return array
 		 */
 		public function setUpdateDownloadHeaders($requestArgs, $url = '') {
-			//Is WordPress trying to download one of our release assets?
+			//Is ClassicPress trying to download one of our release assets?
 			if ( $this->releaseAssetsEnabled && (strpos($url, $this->assetApiBaseUrl) !== false) ) {
 				$requestArgs['headers']['Accept'] = 'application/octet-stream';
 			}

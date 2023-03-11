@@ -1952,10 +1952,10 @@ msgstr "https://n3rds.work/piestingtal_source/ps-wiki-plugin/"
 #. Description of the plugin/theme
 #, fuzzy
 msgid ""
-"Ein simples aber mächtiges Wiki-Plugin für Deine WordPress Seite, inkl. "
+"Ein simples aber mächtiges Wiki-Plugin für Deine ClassicPress Seite, inkl. "
 "Multisitesupport, Frontend-Editor, Rechtemanagment."
 msgstr ""
-"Um simples mas poderoso plugin wiki para o seu site WordPress, incluindo "
+"Um simples mas poderoso plugin wiki para o seu site ClassicPress, incluindo "
 "suporte multisite, editor frontend, gestão de direitos."
 
 #. Author of the plugin/theme

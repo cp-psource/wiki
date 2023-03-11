@@ -86,7 +86,7 @@ if ( !class_exists('Puc_v4p10_Metadata', false) ):
 		}
 
 		/**
-		 * Transform the metadata into the format used by WordPress core.
+		 * Transform the metadata into the format used by ClassicPress core.
 		 *
 		 * @return object
 		 */

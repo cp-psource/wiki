@@ -62,7 +62,7 @@ if ( !class_exists('Puc_v4p10_InstalledPackage', false) ):
 		public function getFileHeader($content) {
 			$content = (string)$content;
 
-			//WordPress only looks at the first 8 KiB of the file, so we do the same.
+			//ClassicPress only looks at the first 8 KiB of the file, so we do the same.
 			$content = substr($content, 0, 8192);
 			//Normalize line endings.
 			$content = str_replace("\r", "\n", $content);
