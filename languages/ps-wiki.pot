@@ -2,193 +2,45 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PS-Wiki\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-11 11:18+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2023-03-11 16:11+0100\n"
+"PO-Revision-Date: 2023-03-11 16:10+0100\n"
+"Last-Translator: \n"
 "Language-Team: \n"
-"Language: \n"
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.3; wp-4.9.22\n"
-"X-Domain: ps-wiki"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: wiki.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: admin-pages/settings.php:49
-msgid ""
-"<a target=\"_blank\" href=\"https://n3rds.work/piestingtal-source-project/ps-"
-"wiki-plugin/\">Upgrade jetzt</a> um neue Features zu erhalten!"
-msgstr ""
-
-#: wiki.php:1074 wiki.php:1167
-msgid "Abbrechen"
-msgstr ""
-
-#: premium/wiki-premium.php:149 lib/classes/WikiWidget.php:140
-msgid "Absteigend"
-msgstr ""
-
-#: wiki.php:1391
-msgid "Aktionen"
-msgstr ""
-
-#: wiki.php:1814
-msgid "Aktiviere E-Mail-Benachrichtigungen"
-msgstr ""
-
-#: premium/wiki-premium.php:63
-msgid "Alle Wiki-Kategorien"
-msgstr ""
-
-#: premium/wiki-premium.php:94
-msgid "Alle Wiki-Tags"
-msgstr ""
-
-#: premium/wiki-premium.php:116
-msgid "Anzahl der Breadcrumbs, die dem Titel hinzugefügt werden sollen"
-msgstr ""
-
-#: premium/wiki-premium.php:148 lib/classes/WikiWidget.php:139
-msgid "Aufsteigend"
-msgstr ""
-
-#: wiki.php:911
-msgid "Automatischer Entwurf"
-msgstr ""
-
-#: wiki.php:1035
-msgid "BEARBEITEN"
-msgstr ""
-
-#: wiki.php:1256
-msgid "Bearbeiten"
-msgstr ""
-
-#: premium/wiki-premium.php:224
-msgid "Bearbeitung zulassen durch"
-msgstr ""
-
-#: premium/lib/classes/PopularWikisWidget.php:7
-msgid "Beliebte Wiki-Seiten anzeigen"
-msgstr ""
-
-#: premium/wiki-premium.php:93
-msgid "Beliebte Wiki-Tags"
-msgstr ""
-
-#: premium/lib/classes/PopularWikisWidget.php:8
-#: premium/lib/classes/PopularWikisWidget.php:10
-#: premium/lib/classes/PopularWikisWidget.php:19
-#: premium/lib/classes/PopularWikisWidget.php:91
-#: premium/lib/classes/PopularWikisWidget.php:100
-msgid "Beliebte Wikis"
-msgstr ""
-
-#: wiki.php:836 wiki.php:848
-msgid "Benachrichtige mich über Änderungen"
-msgstr ""
-
-#: premium/wiki-premium.php:219
-msgid "Benutzer, die Beiträge auf dieser Seite bearbeiten können"
-msgstr ""
-
-#: wiki.php:1743
-msgid "Bist Du sicher, dass Sie diese Version wiederherstellen möchtest?"
-msgstr ""
-
-#: default-templates/404-psource_wiki.php:14
-msgid ""
-"Die gesuchte Wiki-Seite existiert nicht. Fühle Dich frei, sie selbst zu "
-"erstellen."
-msgstr ""
-
-#: wiki.php:1246
-msgid "Diskussion"
-msgstr ""
-
-#: wiki.php:479
-msgid "Du bist nicht berechtigt, diese Seite zu bearbeiten."
-msgstr ""
-
-#: wiki.php:481
-msgid "Du bist nicht berechtigt, diesen Beitrag zu bearbeiten."
-msgstr ""
-
-#: wiki.php:638
-msgid "Du bist nicht berechtigt, dieses Element zu bearbeiten."
-msgstr ""
-
-#: wiki.php:396
-msgid "Du darfst als dieser Benutzer keine Beiträge bearbeiten."
-msgstr ""
-
-#: wiki.php:391
-msgid "Du darfst als dieser Benutzer keine Seiten bearbeiten."
-msgstr ""
-
-#: wiki.php:392
-msgid "Du darfst als dieser Benutzer keine Seiten erstellen."
-msgstr ""
-
-#: wiki.php:397
-msgid "Du darfst nicht als dieser Benutzer posten."
-msgstr ""
-
-#: wiki.php:1090
-msgid "Du hast keine Berechtigung zum Anzeigen dieser Seite."
+#: admin-pages/settings.php:17 admin-pages/settings.php:31
+msgid "Wiki-Einstellungen"
 msgstr ""
 
 #: admin-pages/settings.php:24
 msgid "Du hast keine Berechtigung, auf diese Seite zuzugreifen"
 msgstr ""
 
-#: wiki.php:636
-msgid ""
-"Du hast versucht, ein nicht vorhandenes Element zu bearbeiten. Vielleicht "
-"wurde es gelöscht?"
-msgstr ""
-
-#: wiki.php:640
-msgid ""
-"Du kannst dieses Element nicht bearbeiten, da es sich im Papierkorb befindet."
-" Bitte stelle es wieder her und versuche es erneut."
-msgstr ""
-
-#: wiki.php:846
-msgid "E-mail"
-msgstr ""
-
-#: premium/lib/classes/NewWikisWidget.php:111
-#: premium/lib/classes/PopularWikisWidget.php:115
-msgid "Ebenen"
-msgstr ""
-
-#: lib/classes/WikiWidget.php:119
-msgid "Ebenene"
-msgstr ""
-
-#. Description of the plugin
-msgid ""
-"Ein simples aber mächtiges Wiki-Plugin für Deine WordPress Seite, inkl. "
-"Multisitesupport, Frontend-Editor, Rechtemanagment."
-msgstr ""
-
 #: admin-pages/settings.php:27
 msgid "Einstellungen gespeichert."
 msgstr ""
 
-#: admin-pages/settings.php:56
-msgid "Ermögliche anderen Benutzern als dem Administrator, Wikis zu bearbeiten"
+#: admin-pages/settings.php:38
+msgid "Wiki Slug"
 msgstr ""
 
-#: wiki.php:1258
-msgid "Erweitertes bearbeiten"
-msgstr ""
-
-#: admin-pages/settings.php:55
-msgid "Gib an wie Sub-Wikis bestellt werden sollen"
+#: admin-pages/settings.php:49
+msgid ""
+"<a target=\"_blank\" href=\"https://n3rds.work/piestingtal-source-project/ps-"
+"wiki-plugin/\">Upgrade jetzt</a> um neue Features zu erhalten!"
 msgstr ""
 
 #: admin-pages/settings.php:52
@@ -200,50 +52,1475 @@ msgstr ""
 msgid "Gib einen benutzerdefinierten Namen für Wikis an"
 msgstr ""
 
+#: admin-pages/settings.php:54
+msgid "Sub-Wikis hinzufügen"
+msgstr ""
+
+#: admin-pages/settings.php:55
+msgid "Gib an wie Sub-Wikis bestellt werden sollen"
+msgstr ""
+
+#: admin-pages/settings.php:56
+msgid "Ermögliche anderen Benutzern als dem Administrator, Wikis zu bearbeiten"
+msgstr ""
+
+#: admin-pages/settings.php:61
+msgid "Änderungen speichern"
+msgstr ""
+
+#: default-templates/404-psource_wiki.php:14
+msgid ""
+"Die gesuchte Wiki-Seite existiert nicht. Fühle Dich frei, sie selbst zu "
+"erstellen."
+msgstr ""
+
+#: lib/classes/WPEditor.php:167 lib/classes/WPEditor.php:2029
+msgctxt "Name for the Text editor tab (formerly HTML)"
+msgid "Text"
+msgstr ""
+
+#: lib/classes/WPEditor.php:168 lib/classes/WPEditor.php:2027
+msgid "Visual"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1111
+msgid "New document"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1113
+msgctxt "TinyMCE"
+msgid "Formats"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1117
+msgctxt "TinyMCE"
+msgid "Headings"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1119
+msgid "Heading 1"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1121
+msgid "Heading 2"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1123
+msgid "Heading 3"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1125
+msgid "Heading 4"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1127
+msgid "Heading 5"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1129
+msgid "Heading 6"
+msgstr ""
+
+#. translators: block tags
+#: lib/classes/WPEditor.php:1135
+msgctxt "TinyMCE"
+msgid "Blocks"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1137
+msgid "Paragraph"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1139
+msgid "Blockquote"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1141
+msgctxt "HTML tag"
+msgid "Div"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1143
+msgctxt "HTML tag"
+msgid "Pre"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1145
+msgctxt "HTML tag"
+msgid "Address"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1149
+msgctxt "HTML elements"
+msgid "Inline"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1151
+msgid "Underline"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1153
+msgid "Strikethrough"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1155
+msgid "Subscript"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1157
+msgid "Superscript"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1159
+msgid "Clear formatting"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1161
+msgid "Bold"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1163
+msgid "Italic"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1165
+msgctxt "editor button"
+msgid "Code"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1167
+msgid "Source code"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1169
+msgid "Font Family"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1171
+msgid "Font Sizes"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1175
+msgid "Align center"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1177
+msgid "Align right"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1179
+msgid "Align left"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1181
+msgid "Justify"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1183
+msgid "Increase indent"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1185
+msgid "Decrease indent"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1189
+msgid "Cut"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1191
+msgid "Copy"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1193
+msgid "Paste"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1195
+msgid "Select all"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1197
+msgid "Undo"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1199
+msgid "Redo"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1203
+msgid "OK"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1205 lib/classes/WPEditor.php:2475
+msgid "Cancel"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1207
+msgid "Close"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1209
+msgid "Visual aids"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1213
+msgid "Bulleted list"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1215
+msgid "Numbered list"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1217
+msgctxt "list style"
+msgid "Square"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1219
+msgctxt "list style"
+msgid "Default"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1221
+msgctxt "list style"
+msgid "Circle"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1223
+msgctxt "list style"
+msgid "Disc"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1225
+msgctxt "list style"
+msgid "Lower Greek"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1227
+msgctxt "list style"
+msgid "Lower Alpha"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1229
+msgctxt "list style"
+msgid "Upper Alpha"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1231
+msgctxt "list style"
+msgid "Upper Roman"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1233
+msgctxt "list style"
+msgid "Lower Roman"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1239
+msgctxt "Name of link anchor (TinyMCE)"
+msgid "Name"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1241
+msgctxt "Link anchor (TinyMCE)"
+msgid "Anchor"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1243
+msgctxt "Link anchors (TinyMCE)"
+msgid "Anchors"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1249
+msgid "Document properties"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1251
+msgid "Robots"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1253 lib/classes/WikiWidget.php:116
+msgid "Title"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1255
+msgid "Keywords"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1257
+msgid "Encoding"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1259
+msgid "Description"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1261
+msgid "Author"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1267
+msgid "Insert/edit image"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1269
+msgid "General"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1271
+msgid "Advanced"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1273
+msgid "Source"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1275
+msgid "Border"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1277
+msgid "Constrain proportions"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1279
+msgid "Vertical space"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1281
+msgid "Image description"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1283
+msgid "Style"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1285
+msgid "Dimensions"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1287
+msgid "Insert image"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1289
+msgid "Insert date/time"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1291
+msgid "Insert/edit video"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1293
+msgid "Poster"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1295
+msgid "Alternative source"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1297
+msgid "Paste your embed code below:"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1299
+msgid "Insert video"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1301
+msgid "Embed"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1307
+msgid "Special character"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1309
+msgctxt "editor button"
+msgid "Right to left"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1311
+msgctxt "editor button"
+msgid "Left to right"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1313
+msgid "Emoticons"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1315
+msgid "Nonbreaking space"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1317
+msgid "Page break"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1319
+msgid "Paste as text"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1321
+msgid "Preview"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1323
+msgid "Print"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1325 lib/classes/WPEditor.php:2005
+msgid "Save"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1327
+msgid "Fullscreen"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1329
+msgid "Horizontal line"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1331
+msgid "Horizontal space"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1333
+msgid "Restore last draft"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1335
+msgid "Insert/edit link"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1337
+msgid "Remove link"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1343
+msgid "Could not find the specified string."
+msgstr ""
+
+#: lib/classes/WPEditor.php:1345
+msgctxt "find/replace"
+msgid "Replace"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1347
+msgctxt "find/replace"
+msgid "Next"
+msgstr ""
+
+#. translators: previous
+#: lib/classes/WPEditor.php:1351
+msgctxt "find/replace"
+msgid "Prev"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1353
+msgctxt "find/replace"
+msgid "Whole words"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1355
+msgid "Find and replace"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1357
+msgctxt "find/replace"
+msgid "Replace with"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1359
+msgctxt "find/replace"
+msgid "Find"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1361
+msgctxt "find/replace"
+msgid "Replace all"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1363
+msgid "Match case"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1365
+msgid "Check Spelling"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1367
+msgctxt "spellcheck"
+msgid "Finish"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1369
+msgctxt "spellcheck"
+msgid "Ignore all"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1371
+msgctxt "spellcheck"
+msgid "Ignore"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1377
+msgid "Insert table"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1379
+msgid "Delete table"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1381
+msgid "Table properties"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1383
+msgid "Table row properties"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1385
+msgid "Table cell properties"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1389
+msgid "Row"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1391
+msgid "Rows"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1393
+msgctxt "table column"
+msgid "Column"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1395
+msgctxt "table columns"
+msgid "Cols"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1397
+msgctxt "table cell"
+msgid "Cell"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1399
+msgid "Header cell"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1401
+msgctxt "table header"
+msgid "Header"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1403
+msgctxt "table body"
+msgid "Body"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1405
+msgctxt "table footer"
+msgid "Footer"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1409
+msgid "Insert row before"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1411
+msgid "Insert row after"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1413
+msgid "Insert column before"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1415
+msgid "Insert column after"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1417
+msgid "Paste table row before"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1419
+msgid "Paste table row after"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1421
+msgid "Delete row"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1423
+msgid "Delete column"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1425
+msgid "Cut table row"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1427
+msgid "Copy table row"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1429
+msgid "Merge table cells"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1431
+msgid "Split table cell"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1435
+msgid "Height"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1437
+msgid "Width"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1439
+msgid "Caption"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1441
+msgid "Alignment"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1443
+msgid "Left"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1445
+msgid "Center"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1447
+msgid "Right"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1449
+msgctxt "table cell alignment attribute"
+msgid "None"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1453
+msgid "Row group"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1455
+msgid "Column group"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1457
+msgid "Row type"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1459
+msgid "Cell type"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1461
+msgid "Cell padding"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1463
+msgid "Cell spacing"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1465
+msgctxt "table cell scope attribute"
+msgid "Scope"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1469
+msgctxt "TinyMCE"
+msgid "Insert template"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1471
+msgctxt "TinyMCE"
+msgid "Templates"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1475
+msgid "Background color"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1477
+msgid "Text color"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1479
+msgctxt "editor button"
+msgid "Show blocks"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1481
+msgid "Show invisible characters"
+msgstr ""
+
+#. translators: word count
+#: lib/classes/WPEditor.php:1487
+#, php-format
+msgid "Words: %s"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1489
+msgid ""
+"Paste is now in plain text mode. Contents will now be pasted as plain text "
+"until you toggle this option off."
+msgstr ""
+
+#: lib/classes/WPEditor.php:1489
+msgid ""
+"If you&#8217;re looking to paste rich content from Microsoft Word, try "
+"turning this option off. The editor will clean up text pasted from Word "
+"automatically."
+msgstr ""
+
+#: lib/classes/WPEditor.php:1491
+msgid ""
+"Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press "
+"ALT-0 for help"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1493
+msgid "The changes you made will be lost if you navigate away from this page."
+msgstr ""
+
+#: lib/classes/WPEditor.php:1495
+msgid ""
+"Your browser does not support direct access to the clipboard. Please use the "
+"Ctrl+X/C/V keyboard shortcuts instead."
+msgstr ""
+
+#: lib/classes/WPEditor.php:1501
+msgctxt "TinyMCE menu"
+msgid "Insert"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1503
+msgctxt "TinyMCE menu"
+msgid "File"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1505
+msgctxt "TinyMCE menu"
+msgid "Edit"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1507
+msgctxt "TinyMCE menu"
+msgid "Tools"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1509
+msgctxt "TinyMCE menu"
+msgid "View"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1511
+msgctxt "TinyMCE menu"
+msgid "Table"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1513
+msgctxt "TinyMCE menu"
+msgid "Format"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1519
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1521
+msgid "Toolbar Toggle"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1523
+msgid "Insert Read More tag"
+msgstr ""
+
+#: lib/classes/WPEditor.php:1525
+msgid "Distraction Free Writing"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2005
+msgid "Update"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2017
+msgid "Exit fullscreen"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2047
+msgid "Bold (Ctrl + B)"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2049
+msgid "Italic (Ctrl + I)"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2051
+msgid "Unordered list (Alt + Shift + U)"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2053
+msgid "Ordered list (Alt + Shift + O)"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2055
+msgid "Blockquote (Alt + Shift + Q)"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2057
+msgid "Media library (Alt + Shift + M)"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2059
+msgid "Insert/edit link (Alt + Shift + A)"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2061
+msgid "Unlink (Alt + Shift + S)"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2063
+msgid "Help (Alt + Shift + H)"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2135
+msgid "Updated."
+msgstr ""
+
+#: lib/classes/WPEditor.php:2135
+msgid "Saved."
+msgstr ""
+
+#: lib/classes/WPEditor.php:2137
+msgid "Save failed."
+msgstr ""
+
+#: lib/classes/WPEditor.php:2155
+#, php-format
+msgid "Word count: %s"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2157
+msgid "Just write."
+msgstr ""
+
+#: lib/classes/WPEditor.php:2281
+msgid "Y/m/d"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2385
+msgid "Link einfügen/bearbeiten"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2395
+msgid "Gib die Ziel-URL ein"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2399
+msgid "URL"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2405 lib/classes/WikiWidget.php:132
+#: premium/lib/classes/NewWikisWidget.php:108
+#: premium/lib/classes/PopularWikisWidget.php:111
+#: premium/lib/classes/SearchWikisWidget.php:48
+#: premium/lib/classes/WikiCategoriesWidget.php:42
+#: premium/lib/classes/WikiTagCloudWidget.php:44
+#: premium/lib/classes/WikiTagsWidget.php:40 premium/wiki-premium.php:137
+msgid "Titel"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2411
+msgid "Link in neuem Fenster/Tab öffnen"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2417
+msgid "Oder auf bestehende Inhalte verlinken"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2425 premium/lib/classes/SearchWikisWidget.php:27
+msgid "Suche"
+msgstr ""
+
+#: lib/classes/WPEditor.php:2449
+msgid "Kein Suchbegriff angegeben. Zuletzt verwendete Elemente anzeigen."
+msgstr ""
+
+#: lib/classes/WPEditor.php:2469
+msgid "Add Link"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:7
+msgid "Wiki-Seiten anzeigen"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:8 lib/classes/WikiWidget.php:10
+#: lib/classes/WikiWidget.php:19 lib/classes/WikiWidget.php:93
+#: lib/classes/WikiWidget.php:105 wiki.php:1692
+msgid "Wiki"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:119
+msgid "Ebenene"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:125 premium/lib/classes/NewWikisWidget.php:116
+#: premium/lib/classes/PopularWikisWidget.php:120
+msgid "Unlimitiert"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:129
+msgid "Ordne nach"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:131
+msgid "Menüreihenfolge / Reihenfolge erstellt"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:133 premium/wiki-premium.php:138
+msgid "Zufällig"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:137
+msgid "Ordnen"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:139 premium/wiki-premium.php:148
+msgid "Aufsteigend"
+msgstr ""
+
+#: lib/classes/WikiWidget.php:140 premium/wiki-premium.php:149
+msgid "Absteigend"
+msgstr ""
+
+#: premium/lib/classes/NewWikisWidget.php:7
+msgid "Neue Wiki-Seiten anzeigen"
+msgstr ""
+
+#: premium/lib/classes/NewWikisWidget.php:8
+#: premium/lib/classes/NewWikisWidget.php:10
+#: premium/lib/classes/NewWikisWidget.php:19
+#: premium/lib/classes/NewWikisWidget.php:88
+#: premium/lib/classes/NewWikisWidget.php:97
+msgid "Neue Wikis"
+msgstr ""
+
+#: premium/lib/classes/NewWikisWidget.php:111
+#: premium/lib/classes/PopularWikisWidget.php:115
+msgid "Ebenen"
+msgstr ""
+
+#: premium/lib/classes/PopularWikisWidget.php:7
+msgid "Beliebte Wiki-Seiten anzeigen"
+msgstr ""
+
+#: premium/lib/classes/PopularWikisWidget.php:8
+#: premium/lib/classes/PopularWikisWidget.php:10
+#: premium/lib/classes/PopularWikisWidget.php:19
+#: premium/lib/classes/PopularWikisWidget.php:91
+#: premium/lib/classes/PopularWikisWidget.php:100
+msgid "Beliebte Wikis"
+msgstr ""
+
+#: premium/lib/classes/SearchWikisWidget.php:5
+msgid "Wiki-Seiten durchsuchen"
+msgstr ""
+
+#: premium/lib/classes/SearchWikisWidget.php:6
+#: premium/lib/classes/SearchWikisWidget.php:9
+#: premium/lib/classes/SearchWikisWidget.php:17
+#: premium/lib/classes/SearchWikisWidget.php:37
+#: premium/lib/classes/SearchWikisWidget.php:43
+msgid "Suche Wikis"
+msgstr ""
+
+#: premium/lib/classes/SearchWikisWidget.php:24
+msgid "Search for:"
+msgstr ""
+
+#: premium/lib/classes/WikiCategoriesWidget.php:5
+msgid "Wiki-Kategorien anzeigen"
+msgstr ""
+
+#: premium/lib/classes/WikiCategoriesWidget.php:6
+#: premium/lib/classes/WikiCategoriesWidget.php:8
+#: premium/lib/classes/WikiCategoriesWidget.php:17
+#: premium/lib/classes/WikiCategoriesWidget.php:31
+#: premium/lib/classes/WikiCategoriesWidget.php:37 premium/wiki-premium.php:60
+msgid "Wiki-Kategorien"
+msgstr ""
+
+#: premium/lib/classes/WikiTagCloudWidget.php:5
+msgid "Wiki-Tag-Cloud anzeigen"
+msgstr ""
+
+#: premium/lib/classes/WikiTagCloudWidget.php:6
+#: premium/lib/classes/WikiTagCloudWidget.php:8
+#: premium/lib/classes/WikiTagCloudWidget.php:17
+#: premium/lib/classes/WikiTagCloudWidget.php:31
+#: premium/lib/classes/WikiTagCloudWidget.php:40
+msgid "Wiki Tag Cloud"
+msgstr ""
+
+#: premium/lib/classes/WikiTagsWidget.php:5
+msgid "Wiki-Tags anzeigen"
+msgstr ""
+
+#: premium/lib/classes/WikiTagsWidget.php:6
+#: premium/lib/classes/WikiTagsWidget.php:8
+#: premium/lib/classes/WikiTagsWidget.php:17
+#: premium/lib/classes/WikiTagsWidget.php:30
+#: premium/lib/classes/WikiTagsWidget.php:36 premium/wiki-premium.php:90
+msgid "Wiki-Tags"
+msgstr ""
+
+#: premium/wiki-premium.php:61
+msgid "Wiki-Kategorie"
+msgstr ""
+
+#: premium/wiki-premium.php:62
+msgid "Suche in Wiki-Kategorien"
+msgstr ""
+
+#: premium/wiki-premium.php:63
+msgid "Alle Wiki-Kategorien"
+msgstr ""
+
+#: premium/wiki-premium.php:64
+msgid "Übergeordnete Wiki-Kategorie"
+msgstr ""
+
+#: premium/wiki-premium.php:65
+msgid "Übergeordnete Wiki-Kategorie:"
+msgstr ""
+
+#: premium/wiki-premium.php:66
+msgid "Wiki-Kategorie bearbeiten"
+msgstr ""
+
+#: premium/wiki-premium.php:67
+msgid "Wiki-Kategorie aktualisieren"
+msgstr ""
+
+#: premium/wiki-premium.php:68
+msgid "Neue Wiki-Kategorie hinzufügen"
+msgstr ""
+
+#: premium/wiki-premium.php:69
+msgid "Neuer Name der Wiki-Kategorie"
+msgstr ""
+
+#: premium/wiki-premium.php:91
+msgid "Wiki-Tag"
+msgstr ""
+
+#: premium/wiki-premium.php:92
+msgid "Suche Wiki-Tags"
+msgstr ""
+
+#: premium/wiki-premium.php:93
+msgid "Beliebte Wiki-Tags"
+msgstr ""
+
+#: premium/wiki-premium.php:94
+msgid "Alle Wiki-Tags"
+msgstr ""
+
+#: premium/wiki-premium.php:95
+msgid "Wiki-Tag bearbeiten"
+msgstr ""
+
+#: premium/wiki-premium.php:96
+msgid "Wiki-Tag aktualisieren"
+msgstr ""
+
+#: premium/wiki-premium.php:97
+msgid "Neues Wiki-Tag hinzufügen"
+msgstr ""
+
+#: premium/wiki-premium.php:98
+msgid "Neuer Wiki-Tag-Name"
+msgstr ""
+
+#: premium/wiki-premium.php:99
+msgid "Trenne Wiki-Tags durch Kommas"
+msgstr ""
+
 #: premium/wiki-premium.php:100
 msgid "Hinzufügen oder Entfernen von Wiki-Tags"
 msgstr ""
 
-#. Author URI of the plugin
-msgid "https://n3rds.work"
+#: premium/wiki-premium.php:101
+msgid "Wähle häufig verwendete Wiki-Tags"
 msgstr ""
 
-#. URI of the plugin
-msgid "https://n3rds.work/piestingtal_source/ps-wiki-plugin/"
+#: premium/wiki-premium.php:116
+msgid "Anzahl der Breadcrumbs, die dem Titel hinzugefügt werden sollen"
 msgstr ""
 
-#: wiki.php:1700
-msgid "Im Papierkorb wurden keine Wikis gefunden"
+#: premium/wiki-premium.php:122
+msgid "Wie möchtest Du Wikis nennen?"
+msgstr ""
+
+#: premium/wiki-premium.php:127
+msgid "Wie möchtest Du Sub Wikis nennen?"
+msgstr ""
+
+#: premium/wiki-premium.php:132
+msgid "Wie sollen Sub-Wikis bestellt werden?"
+msgstr ""
+
+#: premium/wiki-premium.php:136
+msgid "Menüreihenfolge/Reihenfolge erstellt"
+msgstr ""
+
+#: premium/wiki-premium.php:144
+msgid "Welche Reihenfolge sollten Sub Wikis bestellt werden?"
+msgstr ""
+
+#: premium/wiki-premium.php:155
+msgid "Wer kann Wiki-Berechtigungen bearbeiten?"
+msgstr ""
+
+#: premium/wiki-premium.php:199 wiki.php:1197
+msgid "Wiki-Berechtigungen"
 msgstr ""
 
 #: premium/wiki-premium.php:216
 msgid "Jeder"
 msgstr ""
 
+#: premium/wiki-premium.php:217
+msgid "Netzwerk Benutzer"
+msgstr ""
+
+#: premium/wiki-premium.php:218
+msgid "Seitenbenutzer"
+msgstr ""
+
+#: premium/wiki-premium.php:219
+msgid "Benutzer, die Beiträge auf dieser Seite bearbeiten können"
+msgstr ""
+
+#: premium/wiki-premium.php:224
+msgid "Bearbeitung zulassen durch"
+msgstr ""
+
 #: premium/wiki-premium.php:302
 msgid "Kategorie wählen..."
+msgstr ""
+
+#: premium/wiki-premium.php:306 wiki.php:793 wiki.php:795
+msgid "Tags:"
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v4p10/Plugin/Ui.php:54
+msgid "HELPDESK"
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v4p10/Plugin/Ui.php:77
+#, php-format
+msgid "Weitere Informationen zu %s"
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v4p10/Plugin/Ui.php:128
+msgid "Auf Updates prüfen"
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v4p10/Plugin/Ui.php:213
+#, php-format
+msgctxt "the plugin title"
+msgid "Das %s-Plugin ist laut PSource Server auf dem neuesten Stand."
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v4p10/Plugin/Ui.php:215
+#, php-format
+msgctxt "the plugin title"
+msgid "Eine neue Version des %s-Plugins ist auf dem PSource Server verfügbar."
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v4p10/Plugin/Ui.php:217
+#, php-format
+msgctxt "the plugin title"
+msgid "Es konnte nicht festgestellt werden, ob Updates für %s verfügbar sind."
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v4p10/Plugin/Ui.php:223
+#, php-format
+msgid "Unbekannter Update-Status \"%s\""
+msgstr ""
+
+#: psource/psource-plugin-update/Puc/v4p10/Vcs/PluginUpdateChecker.php:98
+msgid "Es ist kein Änderungsprotokoll verfügbar."
+msgstr ""
+
+#: wiki.php:391
+msgid "Du darfst als dieser Benutzer keine Seiten bearbeiten."
+msgstr ""
+
+#: wiki.php:392
+msgid "Du darfst als dieser Benutzer keine Seiten erstellen."
+msgstr ""
+
+#: wiki.php:396
+msgid "Du darfst als dieser Benutzer keine Beiträge bearbeiten."
+msgstr ""
+
+#: wiki.php:397
+msgid "Du darfst nicht als dieser Benutzer posten."
+msgstr ""
+
+#: wiki.php:479
+msgid "Du bist nicht berechtigt, diese Seite zu bearbeiten."
+msgstr ""
+
+#: wiki.php:481
+msgid "Du bist nicht berechtigt, diesen Beitrag zu bearbeiten."
+msgstr ""
+
+#: wiki.php:597
+msgid "Revision erfolgreich wiederhergestellt"
+msgstr ""
+
+#: wiki.php:636
+msgid ""
+"Du hast versucht, ein nicht vorhandenes Element zu bearbeiten. Vielleicht "
+"wurde es gelöscht?"
+msgstr ""
+
+#: wiki.php:638
+msgid "Du bist nicht berechtigt, dieses Element zu bearbeiten."
+msgstr ""
+
+#: wiki.php:640
+msgid ""
+"Du kannst dieses Element nicht bearbeiten, da es sich im Papierkorb "
+"befindet. Bitte stelle es wieder her und versuche es erneut."
+msgstr ""
+
+#: wiki.php:642
+msgid "Unbekannter Beitragstyp."
+msgstr ""
+
+#: wiki.php:719
+#, php-format
+msgid "Vergleiche Revisionen von &#8220;%1$s&#8221;"
+msgstr ""
+
+#: wiki.php:720
+msgid "Revisionen"
+msgstr ""
+
+#: wiki.php:733
+#, php-format
+msgid "Revision für &#8220;%1$s&#8221; erstellt am %2$s"
+msgstr ""
+
+#: wiki.php:743
+#, php-format
+msgid "Älter: %s"
+msgstr ""
+
+#: wiki.php:744
+#, php-format
+msgid "Neuer: %s"
+msgstr ""
+
+#: wiki.php:769
+msgid "Diese Revisionen sind identisch."
+msgstr ""
+
+#: wiki.php:792 wiki.php:794
+msgid "Wiki-Kategorie:"
+msgstr ""
+
+#: wiki.php:836 wiki.php:848
+msgid "Benachrichtige mich über Änderungen"
+msgstr ""
+
+#: wiki.php:846
+msgid "E-mail"
+msgstr ""
+
+#: wiki.php:911
+msgid "Automatischer Entwurf"
+msgstr ""
+
+#: wiki.php:1035
+msgid "BEARBEITEN"
+msgstr ""
+
+#: wiki.php:1073 wiki.php:1166
+msgid "Speichern"
+msgstr ""
+
+#: wiki.php:1074 wiki.php:1167
+msgid "Abbrechen"
+msgstr ""
+
+#: wiki.php:1090
+msgid "Du hast keine Berechtigung zum Anzeigen dieser Seite."
+msgstr ""
+
+#: wiki.php:1105 wiki.php:1256
+msgid "Bearbeiten"
+msgstr ""
+
+#: wiki.php:1128
+msgid "Privat"
+msgstr ""
+
+#: wiki.php:1131
+msgid "Passwortgeschützt"
+msgstr ""
+
+#: wiki.php:1134
+msgid "Öffentlich"
+msgstr ""
+
+#: wiki.php:1189
+msgid "Wiki Kategorien/Tags"
+msgstr ""
+
+#: wiki.php:1193
+msgid "Wiki-Benachrichtigungen"
+msgstr ""
+
+#: wiki.php:1243
+msgid "Wiki-Seite"
+msgstr ""
+
+#: wiki.php:1246
+msgid "Diskussion"
+msgstr ""
+
+#: wiki.php:1249
+msgid "Verlauf"
+msgstr ""
+
+#: wiki.php:1258
+msgid "Erweitertes bearbeiten"
+msgstr ""
+
+#: wiki.php:1260
+msgid "Neues (Sub)Wiki"
+msgstr ""
+
+#: wiki.php:1329
+#, php-format
+msgctxt "post revision"
+msgid "%1$s von %2$s"
+msgstr ""
+
+#: wiki.php:1357
+msgid "Wiederherstellen"
+msgstr ""
+
+#: wiki.php:1377
+msgid "Revisionen vergleichen"
+msgstr ""
+
+#: wiki.php:1387
+msgctxt "revisions column name"
+msgid "Alt"
+msgstr ""
+
+#: wiki.php:1388
+msgctxt "revisions column name"
+msgid "Neu"
+msgstr ""
+
+#: wiki.php:1389
+msgctxt "revisions column name"
+msgid "Datum erstellt"
+msgstr ""
+
+#: wiki.php:1390
+msgid "Autor"
+msgstr ""
+
+#: wiki.php:1391
+msgid "Aktionen"
+msgstr ""
+
+#: wiki.php:1554 wiki.php:1691 wiki.php:1701
+msgid "Wikis"
+msgstr ""
+
+#: wiki.php:1555
+msgid "Sub-Wikis"
+msgstr ""
+
+#: wiki.php:1693
+msgid "Wiki hinzufügen"
+msgstr ""
+
+#: wiki.php:1694
+msgid "Neues Wiki hinzufügen"
+msgstr ""
+
+#: wiki.php:1695
+msgid "Wiki bearbeiten"
+msgstr ""
+
+#: wiki.php:1696
+msgid "Neues Wiki"
+msgstr ""
+
+#: wiki.php:1697
+msgid "Wiki anzeigen"
+msgstr ""
+
+#: wiki.php:1698
+msgid "Suche Wiki"
 msgstr ""
 
 #: wiki.php:1699
 msgid "Kein Wiki gefunden"
 msgstr ""
 
-#: wiki.php:1917
+#: wiki.php:1700
+msgid "Im Papierkorb wurden keine Wikis gefunden"
+msgstr ""
+
+#: wiki.php:1743
+msgid "Bist Du sicher, dass Sie diese Version wiederherstellen möchtest?"
+msgstr ""
+
+#: wiki.php:1762
+msgid "Wiki-E-Mail-Benachrichtigungen"
+msgstr ""
+
+#: wiki.php:1814
+msgid "Aktiviere E-Mail-Benachrichtigungen"
+msgstr ""
+
+#: wiki.php:1888
 #, php-format
 msgid ""
-"Lieber Autor,\n"
+"Sehr geehrter Abonnent,\n"
 "\n"
-"%s wurde verändert\n"
+"%s wurde geändert\n"
 "\n"
 "Du kannst die Wiki-Seite hier vollständig lesen: %s\n"
 "\n"
 "%s\n"
 "\n"
 "Danke,\n"
+"BLOGNAME\n"
 "\n"
-"%s\n"
-"\n"
-"Abonnement kündigen: %s"
+"Abonnement kündigen: CANCEL_URL"
 msgstr ""
 
 #: wiki.php:1902
@@ -265,344 +1542,46 @@ msgid ""
 "Abonnement kündigen: %s"
 msgstr ""
 
-#: lib/classes/WikiWidget.php:131
-msgid "Menüreihenfolge / Reihenfolge erstellt"
-msgstr ""
-
-#: premium/wiki-premium.php:136
-msgid "Menüreihenfolge/Reihenfolge erstellt"
-msgstr ""
-
-#: premium/wiki-premium.php:217
-msgid "Netzwerk Benutzer"
-msgstr ""
-
-#: premium/wiki-premium.php:68
-msgid "Neue Wiki-Kategorie hinzufügen"
-msgstr ""
-
-#: premium/lib/classes/NewWikisWidget.php:7
-msgid "Neue Wiki-Seiten anzeigen"
-msgstr ""
-
-#: premium/lib/classes/NewWikisWidget.php:10
-#: premium/lib/classes/NewWikisWidget.php:88
-#: premium/lib/classes/NewWikisWidget.php:97
-msgid "Neue Wikis"
-msgstr ""
-
-#: premium/wiki-premium.php:69
-msgid "Neuer Name der Wiki-Kategorie"
-msgstr ""
-
-#: premium/wiki-premium.php:98
-msgid "Neuer Wiki-Tag-Name"
-msgstr ""
-
-#: wiki.php:1260
-msgid "Neues (Sub)Wiki"
-msgstr ""
-
-#: wiki.php:1696
-msgid "Neues Wiki"
-msgstr ""
-
-#: wiki.php:1694
-msgid "Neues Wiki hinzufügen"
-msgstr ""
-
-#: premium/wiki-premium.php:97
-msgid "Neues Wiki-Tag hinzufügen"
-msgstr ""
-
-#: lib/classes/WikiWidget.php:129
-msgid "Ordne nach"
-msgstr ""
-
-#: lib/classes/WikiWidget.php:137
-msgid "Ordnen"
-msgstr ""
-
-#: wiki.php:1131
-msgid "Passwortgeschützt"
-msgstr ""
-
-#: wiki.php:1128
-msgid "Privat"
-msgstr ""
-
-#. Name of the plugin
-msgid "PS-Wiki"
-msgstr ""
-
-#: wiki.php:597
-msgid "Revision erfolgreich wiederhergestellt"
-msgstr ""
-
-#: wiki.php:1377
-msgid "Revisionen vergleichen"
-msgstr ""
-
-#: wiki.php:1387
-msgctxt "revisions column name"
-msgid "Alt"
-msgstr ""
-
-#: wiki.php:1389
-msgctxt "revisions column name"
-msgid "Datum erstellt"
-msgstr ""
-
-#: wiki.php:1388
-msgctxt "revisions column name"
-msgid "Neu"
-msgstr ""
-
-#: premium/wiki-premium.php:218
-msgid "Seitenbenutzer"
-msgstr ""
-
-#: wiki.php:1073 wiki.php:1166
-msgid "Speichern"
-msgstr ""
-
-#: wiki.php:1555
-msgid "Sub-Wikis"
-msgstr ""
-
-#: admin-pages/settings.php:54
-msgid "Sub-Wikis hinzufügen"
-msgstr ""
-
-#: premium/lib/classes/SearchWikisWidget.php:27
-msgid "Suche"
-msgstr ""
-
-#: premium/wiki-premium.php:62
-msgid "Suche in Wiki-Kategorien"
-msgstr ""
-
-#: wiki.php:1698
-msgid "Suche Wiki"
-msgstr ""
-
-#: premium/wiki-premium.php:92
-msgid "Suche Wiki-Tags"
-msgstr ""
-
-#: premium/lib/classes/SearchWikisWidget.php:6
-#: premium/lib/classes/SearchWikisWidget.php:9
-#: premium/lib/classes/SearchWikisWidget.php:17
-#: premium/lib/classes/SearchWikisWidget.php:37
-#: premium/lib/classes/SearchWikisWidget.php:43
-msgid "Suche Wikis"
-msgstr ""
-
-#: wiki.php:793 wiki.php:795 premium/wiki-premium.php:306
-msgid "Tags:"
-msgstr ""
-
-#: premium/wiki-premium.php:137 lib/classes/WikiWidget.php:132
-#: premium/lib/classes/NewWikisWidget.php:108
-#: premium/lib/classes/PopularWikisWidget.php:111
-#: premium/lib/classes/SearchWikisWidget.php:48
-#: premium/lib/classes/WikiCategoriesWidget.php:42
-#: premium/lib/classes/WikiTagCloudWidget.php:44
-#: premium/lib/classes/WikiTagsWidget.php:40
-msgid "Titel"
-msgstr ""
-
-#: lib/classes/WikiWidget.php:116
-msgid "Title"
-msgstr ""
-
-#: premium/wiki-premium.php:99
-msgid "Trenne Wiki-Tags durch Kommas"
-msgstr ""
-
-#: lib/classes/WikiWidget.php:125 premium/lib/classes/NewWikisWidget.php:116
-#: premium/lib/classes/PopularWikisWidget.php:120
-msgid "Unlimitiert"
-msgstr ""
-
-#: wiki.php:1249
-msgid "Verlauf"
-msgstr ""
-
-#. Author of the plugin
-msgid "Webmasterservice \"Die N3rds\""
-msgstr ""
-
-#: premium/wiki-premium.php:144
-msgid "Welche Reihenfolge sollten Sub Wikis bestellt werden?"
-msgstr ""
-
-#: premium/wiki-premium.php:155
-msgid "Wer kann Wiki-Berechtigungen bearbeiten?"
-msgstr ""
-
-#: premium/wiki-premium.php:127
-msgid "Wie möchtest Du Sub Wikis nennen?"
-msgstr ""
-
-#: premium/wiki-premium.php:122
-msgid "Wie möchtest Du Wikis nennen?"
-msgstr ""
-
-#: premium/wiki-premium.php:132
-msgid "Wie sollen Sub-Wikis bestellt werden?"
-msgstr ""
-
-#: wiki.php:1357
-msgid "Wiederherstellen"
-msgstr ""
-
-#: wiki.php:1692 lib/classes/WikiWidget.php:8 lib/classes/WikiWidget.php:10
-#: lib/classes/WikiWidget.php:19 lib/classes/WikiWidget.php:93
-#: lib/classes/WikiWidget.php:105
-msgid "Wiki"
-msgstr ""
-
-#: wiki.php:1697
-msgid "Wiki anzeigen"
-msgstr ""
-
-#: wiki.php:1695
-msgid "Wiki bearbeiten"
-msgstr ""
-
-#: wiki.php:1693
-msgid "Wiki hinzufügen"
-msgstr ""
-
-#: wiki.php:1189
-msgid "Wiki Kategorien/Tags"
-msgstr ""
-
-#: admin-pages/settings.php:38
-msgid "Wiki Slug"
-msgstr ""
-
-#: premium/lib/classes/WikiTagCloudWidget.php:6
-#: premium/lib/classes/WikiTagCloudWidget.php:8
-#: premium/lib/classes/WikiTagCloudWidget.php:17
-#: premium/lib/classes/WikiTagCloudWidget.php:31
-#: premium/lib/classes/WikiTagCloudWidget.php:40
-msgid "Wiki Tag Cloud"
-msgstr ""
-
-#: wiki.php:1193
-msgid "Wiki-Benachrichtigungen"
-msgstr ""
-
-#: wiki.php:1197 premium/wiki-premium.php:199
-msgid "Wiki-Berechtigungen"
-msgstr ""
-
-#: wiki.php:1762
-msgid "Wiki-E-Mail-Benachrichtigungen"
-msgstr ""
-
-#: admin-pages/settings.php:17 admin-pages/settings.php:31
-msgid "Wiki-Einstellungen"
-msgstr ""
-
-#: premium/wiki-premium.php:61
-msgid "Wiki-Kategorie"
-msgstr ""
-
-#: premium/wiki-premium.php:67
-msgid "Wiki-Kategorie aktualisieren"
-msgstr ""
-
-#: premium/wiki-premium.php:66
-msgid "Wiki-Kategorie bearbeiten"
-msgstr ""
-
-#: wiki.php:792 wiki.php:794
-msgid "Wiki-Kategorie:"
-msgstr ""
-
-#: premium/wiki-premium.php:60 premium/lib/classes/WikiCategoriesWidget.php:6
-#: premium/lib/classes/WikiCategoriesWidget.php:8
-#: premium/lib/classes/WikiCategoriesWidget.php:17
-#: premium/lib/classes/WikiCategoriesWidget.php:31
-#: premium/lib/classes/WikiCategoriesWidget.php:37
-msgid "Wiki-Kategorien"
-msgstr ""
-
-#: premium/lib/classes/WikiCategoriesWidget.php:5
-msgid "Wiki-Kategorien anzeigen"
-msgstr ""
-
-#: wiki.php:1243
-msgid "Wiki-Seite"
-msgstr ""
-
-#: lib/classes/WikiWidget.php:7
-msgid "Wiki-Seiten anzeigen"
-msgstr ""
-
-#: premium/lib/classes/SearchWikisWidget.php:5
-msgid "Wiki-Seiten durchsuchen"
-msgstr ""
-
-#: premium/wiki-premium.php:91
-msgid "Wiki-Tag"
-msgstr ""
-
-#: premium/wiki-premium.php:96
-msgid "Wiki-Tag aktualisieren"
-msgstr ""
-
-#: premium/wiki-premium.php:95
-msgid "Wiki-Tag bearbeiten"
-msgstr ""
-
-#: premium/lib/classes/WikiTagCloudWidget.php:5
-msgid "Wiki-Tag-Cloud anzeigen"
-msgstr ""
-
-#: premium/wiki-premium.php:90 premium/lib/classes/WikiTagsWidget.php:6
-#: premium/lib/classes/WikiTagsWidget.php:8
-#: premium/lib/classes/WikiTagsWidget.php:17
-#: premium/lib/classes/WikiTagsWidget.php:30
-#: premium/lib/classes/WikiTagsWidget.php:36
-msgid "Wiki-Tags"
-msgstr ""
-
-#: premium/lib/classes/WikiTagsWidget.php:5
-msgid "Wiki-Tags anzeigen"
-msgstr ""
-
-#: wiki.php:1554 wiki.php:1691 wiki.php:1701
-msgid "Wikis"
-msgstr ""
-
-#: premium/wiki-premium.php:101
-msgid "Wähle häufig verwendete Wiki-Tags"
-msgstr ""
-
-#: premium/wiki-premium.php:138 lib/classes/WikiWidget.php:133
-msgid "Zufällig"
+#: wiki.php:1917
+#, php-format
+msgid ""
+"Lieber Autor,\n"
+"\n"
+"%s wurde verändert\n"
+"\n"
+"Du kannst die Wiki-Seite hier vollständig lesen: %s\n"
+"\n"
+"%s\n"
+"\n"
+"Danke,\n"
+"\n"
+"%s\n"
+"\n"
+"Abonnement kündigen: %s"
 msgstr ""
 
 #: wiki.php:1964
 msgid "Änderungen an der Wiki-Seite"
 msgstr ""
 
-#: admin-pages/settings.php:61
-msgid "Änderungen speichern"
+#. Plugin Name of the plugin/theme
+msgid "PS-Wiki"
 msgstr ""
 
-#: wiki.php:1134
-msgid "Öffentlich"
+#. Plugin URI of the plugin/theme
+msgid "https://n3rds.work/piestingtal_source/ps-wiki-plugin/"
 msgstr ""
 
-#: premium/wiki-premium.php:64
-msgid "Übergeordnete Wiki-Kategorie"
+#. Description of the plugin/theme
+msgid ""
+"Ein simples aber mächtiges Wiki-Plugin für Deine WordPress Seite, inkl. "
+"Multisitesupport, Frontend-Editor, Rechtemanagment."
 msgstr ""
 
-#: premium/wiki-premium.php:65
-msgid "Übergeordnete Wiki-Kategorie:"
+#. Author of the plugin/theme
+msgid "Webmasterservice \"Die N3rds\""
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://n3rds.work"
 msgstr ""

@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PS-Wiki\n"
-"POT-Creation-Date: 2023-03-11 16:26+0100\n"
-"PO-Revision-Date: 2023-03-11 16:29+0100\n"
+"POT-Creation-Date: 2023-03-11 16:07+0100\n"
+"PO-Revision-Date: 2023-03-11 16:09+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: nl_NL\n"
+"Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,17 +24,17 @@ msgstr ""
 #: admin-pages/settings.php:17 admin-pages/settings.php:31
 #, fuzzy
 msgid "Wiki-Einstellungen"
-msgstr "Wiki instellingen"
+msgstr "Wiki Settings"
 
 #: admin-pages/settings.php:24
 #, fuzzy
 msgid "Du hast keine Berechtigung, auf diese Seite zuzugreifen"
-msgstr "Je hebt geen toegang tot deze pagina"
+msgstr "You do not have permission to access this page"
 
 #: admin-pages/settings.php:27
 #, fuzzy
 msgid "Einstellungen gespeichert."
-msgstr "Instellingen opgeslagen."
+msgstr "Settings saved."
 
 #: admin-pages/settings.php:38
 #, fuzzy
@@ -48,159 +48,161 @@ msgid ""
 "wiki-plugin/\">Upgrade jetzt</a> um neue Features zu erhalten!"
 msgstr ""
 "<a target=\"_blank\" href=\"https://n3rds.work/piestingtal-source-project/ps-"
-"wiki-plugin/\">Upgrade nu</a> om nieuwe functies te krijgen!"
+"wiki-plugin/\">Upgrade now</a> to get new features!"
 
 #: admin-pages/settings.php:52
 #, fuzzy
 msgid ""
 "Gib die Anzahl der Breadcrumbs an, die dem Titel hinzugefügt werden sollen"
-msgstr ""
-"Specificeer het aantal broodkruimels dat aan de titel moet worden toegevoegd"
+msgstr "Specify the number of breadcrumbs to add to the title"
 
 #: admin-pages/settings.php:53
 #, fuzzy
 msgid "Gib einen benutzerdefinierten Namen für Wikis an"
-msgstr "Specificeer een aangepaste naam voor wiki's"
+msgstr "Provide a custom name for wikis"
 
 #: admin-pages/settings.php:54
 #, fuzzy
 msgid "Sub-Wikis hinzufügen"
-msgstr "Subwiki's toevoegen"
+msgstr "Add subwikis"
 
 #: admin-pages/settings.php:55
 #, fuzzy
 msgid "Gib an wie Sub-Wikis bestellt werden sollen"
-msgstr "Geef aan hoe sub-wiki's moeten worden gerangschikt"
+msgstr "Specify how sub-wikis should be ordered"
 
 #: admin-pages/settings.php:56
 #, fuzzy
 msgid "Ermögliche anderen Benutzern als dem Administrator, Wikis zu bearbeiten"
-msgstr "Andere gebruikers dan de beheerder toestaan wiki's te bewerken"
+msgstr "Allow users other than the admin to edit wikis"
 
 #: admin-pages/settings.php:61
+#, fuzzy
 msgid "Änderungen speichern"
-msgstr "Wijzigingen opslaan"
+msgstr "save Changes"
 
 #: default-templates/404-psource_wiki.php:14
 #, fuzzy
 msgid ""
 "Die gesuchte Wiki-Seite existiert nicht. Fühle Dich frei, sie selbst zu "
 "erstellen."
-msgstr "De wikipagina die u zoekt bestaat niet. Maak hem gerust zelf aan."
+msgstr ""
+"The wiki page you are looking for does not exist. Feel free to create them "
+"yourself."
 
 #: lib/classes/WPEditor.php:167 lib/classes/WPEditor.php:2029
 #, fuzzy
 msgctxt "Name for the Text editor tab (formerly HTML)"
 msgid "Text"
-msgstr "Tekst"
+msgstr "text"
 
 #: lib/classes/WPEditor.php:168 lib/classes/WPEditor.php:2027
 #, fuzzy
 msgid "Visual"
-msgstr "Visueel"
+msgstr "Visual"
 
 #: lib/classes/WPEditor.php:1111
 #, fuzzy
 msgid "New document"
-msgstr "Nieuw document"
+msgstr "Newdocument"
 
 #: lib/classes/WPEditor.php:1113
 #, fuzzy
 msgctxt "TinyMCE"
 msgid "Formats"
-msgstr "Formaten"
+msgstr "format"
 
 #: lib/classes/WPEditor.php:1117
 #, fuzzy
 msgctxt "TinyMCE"
 msgid "Headings"
-msgstr "Rubrieken"
+msgstr "headings"
 
 #: lib/classes/WPEditor.php:1119
 #, fuzzy
 msgid "Heading 1"
-msgstr "Rubriek 1"
+msgstr "heading 1"
 
 #: lib/classes/WPEditor.php:1121
 #, fuzzy
 msgid "Heading 2"
-msgstr "Rubriek 2"
+msgstr "heading 2"
 
 #: lib/classes/WPEditor.php:1123
 #, fuzzy
 msgid "Heading 3"
-msgstr "Rubriek 3"
+msgstr "heading 3"
 
 #: lib/classes/WPEditor.php:1125
 #, fuzzy
 msgid "Heading 4"
-msgstr "Rubriek 4"
+msgstr "heading 4"
 
 #: lib/classes/WPEditor.php:1127
 #, fuzzy
 msgid "Heading 5"
-msgstr "Rubriek 5"
+msgstr "heading 5"
 
 #: lib/classes/WPEditor.php:1129
 #, fuzzy
 msgid "Heading 6"
-msgstr "Rubriek 6"
+msgstr "heading 6"
 
 #. translators: block tags
 #: lib/classes/WPEditor.php:1135
 #, fuzzy
 msgctxt "TinyMCE"
 msgid "Blocks"
-msgstr "Blokken"
+msgstr "block"
 
 #: lib/classes/WPEditor.php:1137
 #, fuzzy
 msgid "Paragraph"
-msgstr "Paragraaf"
+msgstr "paragraph"
 
 #: lib/classes/WPEditor.php:1139
 #, fuzzy
 msgid "Blockquote"
-msgstr "Blockquote"
+msgstr "block quota"
 
 #: lib/classes/WPEditor.php:1141
 #, fuzzy
 msgctxt "HTML tag"
 msgid "Div"
-msgstr "Div"
+msgstr "div"
 
 #: lib/classes/WPEditor.php:1143
 #, fuzzy
 msgctxt "HTML tag"
 msgid "Pre"
-msgstr "Pre"
+msgstr "pre"
 
 #: lib/classes/WPEditor.php:1145
 #, fuzzy
 msgctxt "HTML tag"
 msgid "Address"
-msgstr "Adres"
+msgstr "Address"
 
 #: lib/classes/WPEditor.php:1149
 #, fuzzy
 msgctxt "HTML elements"
 msgid "Inline"
-msgstr "Inline"
+msgstr "inline"
 
 #: lib/classes/WPEditor.php:1151
 #, fuzzy
 msgid "Underline"
-msgstr "Onderstrepen"
+msgstr "underline"
 
 #: lib/classes/WPEditor.php:1153
 #, fuzzy
 msgid "Strikethrough"
-msgstr "Doorhalen"
+msgstr "Strikethrough"
 
 #: lib/classes/WPEditor.php:1155
 #, fuzzy
 msgid "Subscript"
-msgstr "Subscript"
+msgstr "subscript"
 
 #: lib/classes/WPEditor.php:1157
 #, fuzzy
@@ -210,20 +212,19 @@ msgstr "Superscript"
 #: lib/classes/WPEditor.php:1159
 #, fuzzy
 msgid "Clear formatting"
-msgstr "Duidelijke opmaak"
+msgstr "Clear formatting"
 
 #: lib/classes/WPEditor.php:1161
 #, fuzzy
 msgid "Bold"
-msgstr "Gedurfd"
+msgstr "bold"
 
 #: lib/classes/WPEditor.php:1163
 #, fuzzy
 msgid "Italic"
-msgstr "Cursief"
+msgstr "italic"
 
 #: lib/classes/WPEditor.php:1165
-#, fuzzy
 msgctxt "editor button"
 msgid "Code"
 msgstr "Code"
@@ -231,47 +232,47 @@ msgstr "Code"
 #: lib/classes/WPEditor.php:1167
 #, fuzzy
 msgid "Source code"
-msgstr "Broncode"
+msgstr "sourcecode"
 
 #: lib/classes/WPEditor.php:1169
 #, fuzzy
 msgid "Font Family"
-msgstr "Lettertype familie"
+msgstr "Font Family"
 
 #: lib/classes/WPEditor.php:1171
 #, fuzzy
 msgid "Font Sizes"
-msgstr "Lettergrootten"
+msgstr "font sizes"
 
 #: lib/classes/WPEditor.php:1175
 #, fuzzy
 msgid "Align center"
-msgstr "Centrum uitlijnen"
+msgstr "Align center"
 
 #: lib/classes/WPEditor.php:1177
 #, fuzzy
 msgid "Align right"
-msgstr "Rechts uitlijnen"
+msgstr "Align right"
 
 #: lib/classes/WPEditor.php:1179
 #, fuzzy
 msgid "Align left"
-msgstr "Links uitlijnen"
+msgstr "Align left"
 
 #: lib/classes/WPEditor.php:1181
 #, fuzzy
 msgid "Justify"
-msgstr "Rechtvaardig"
+msgstr "Justify"
 
 #: lib/classes/WPEditor.php:1183
 #, fuzzy
 msgid "Increase indent"
-msgstr "Inspringen vergroten"
+msgstr "Increase identification"
 
 #: lib/classes/WPEditor.php:1185
 #, fuzzy
 msgid "Decrease indent"
-msgstr "Inspringen verminderen"
+msgstr "Decrease indent"
 
 #: lib/classes/WPEditor.php:1189
 #, fuzzy
@@ -281,22 +282,22 @@ msgstr "Cut"
 #: lib/classes/WPEditor.php:1191
 #, fuzzy
 msgid "Copy"
-msgstr "Kopie"
+msgstr "copy"
 
 #: lib/classes/WPEditor.php:1193
 #, fuzzy
 msgid "Paste"
-msgstr "Plakken"
+msgstr "paste"
 
 #: lib/classes/WPEditor.php:1195
 #, fuzzy
 msgid "Select all"
-msgstr "Selecteer alle"
+msgstr "Select all"
 
 #: lib/classes/WPEditor.php:1197
 #, fuzzy
 msgid "Undo"
-msgstr "Ongedaan maken"
+msgstr "undo"
 
 #: lib/classes/WPEditor.php:1199
 #, fuzzy
@@ -311,56 +312,57 @@ msgstr "OK"
 #: lib/classes/WPEditor.php:1205 lib/classes/WPEditor.php:2475
 #, fuzzy
 msgid "Cancel"
-msgstr "Annuleren"
+msgstr "Cancel"
 
 #: lib/classes/WPEditor.php:1207
+#, fuzzy
 msgid "Close"
 msgstr "Close"
 
 #: lib/classes/WPEditor.php:1209
 #, fuzzy
 msgid "Visual aids"
-msgstr "Visuele hulpmiddelen"
+msgstr "Visual aids"
 
 #: lib/classes/WPEditor.php:1213
 #, fuzzy
 msgid "Bulleted list"
-msgstr "Lijst met opsommingstekens"
+msgstr "Bulleted list"
 
 #: lib/classes/WPEditor.php:1215
 #, fuzzy
 msgid "Numbered list"
-msgstr "Genummerde lijst"
+msgstr "numbered list"
 
 #: lib/classes/WPEditor.php:1217
 #, fuzzy
 msgctxt "list style"
 msgid "Square"
-msgstr "Vierkant"
+msgstr "Square"
 
 #: lib/classes/WPEditor.php:1219
 #, fuzzy
 msgctxt "list style"
 msgid "Default"
-msgstr "Standaard"
+msgstr "default"
 
 #: lib/classes/WPEditor.php:1221
 #, fuzzy
 msgctxt "list style"
 msgid "Circle"
-msgstr "Cirkel"
+msgstr "Circle"
 
 #: lib/classes/WPEditor.php:1223
 #, fuzzy
 msgctxt "list style"
 msgid "Disc"
-msgstr "Schijf"
+msgstr "disk"
 
 #: lib/classes/WPEditor.php:1225
 #, fuzzy
 msgctxt "list style"
 msgid "Lower Greek"
-msgstr "Lager Grieks"
+msgstr "Lower Greek"
 
 #: lib/classes/WPEditor.php:1227
 #, fuzzy
@@ -372,366 +374,363 @@ msgstr "Lower Alpha"
 #, fuzzy
 msgctxt "list style"
 msgid "Upper Alpha"
-msgstr "Upper Alpha"
+msgstr "upper alpha"
 
 #: lib/classes/WPEditor.php:1231
 #, fuzzy
 msgctxt "list style"
 msgid "Upper Roman"
-msgstr "Boven Romeins"
+msgstr "Upper Roman"
 
 #: lib/classes/WPEditor.php:1233
 #, fuzzy
 msgctxt "list style"
 msgid "Lower Roman"
-msgstr "Neder-Romeins"
+msgstr "Lower Roman"
 
 #: lib/classes/WPEditor.php:1239
-#, fuzzy
 msgctxt "Name of link anchor (TinyMCE)"
 msgid "Name"
-msgstr "Naam"
+msgstr "Name"
 
 #: lib/classes/WPEditor.php:1241
 #, fuzzy
 msgctxt "Link anchor (TinyMCE)"
 msgid "Anchor"
-msgstr "Anker"
+msgstr "anchor"
 
 #: lib/classes/WPEditor.php:1243
 #, fuzzy
 msgctxt "Link anchors (TinyMCE)"
 msgid "Anchors"
-msgstr "Ankers"
+msgstr "anchors"
 
 #: lib/classes/WPEditor.php:1249
 #, fuzzy
 msgid "Document properties"
-msgstr "Documenteigenschappen"
+msgstr "Document properties"
 
 #: lib/classes/WPEditor.php:1251
 #, fuzzy
 msgid "Robots"
-msgstr "Robots"
+msgstr "robots"
 
 #: lib/classes/WPEditor.php:1253 lib/classes/WikiWidget.php:116
 #, fuzzy
 msgid "Title"
-msgstr "Titel"
+msgstr "Title"
 
 #: lib/classes/WPEditor.php:1255
 #, fuzzy
 msgid "Keywords"
-msgstr "Trefwoorden"
+msgstr "keywords"
 
 #: lib/classes/WPEditor.php:1257
 #, fuzzy
 msgid "Encoding"
-msgstr "Codering"
+msgstr "encoding"
 
 #: lib/classes/WPEditor.php:1259
 #, fuzzy
 msgid "Description"
-msgstr "Beschrijving"
+msgstr "Description"
 
 #: lib/classes/WPEditor.php:1261
 #, fuzzy
 msgid "Author"
-msgstr "Auteur"
+msgstr "Author"
 
 #: lib/classes/WPEditor.php:1267
 #, fuzzy
 msgid "Insert/edit image"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "Insert/edit image"
 
 #: lib/classes/WPEditor.php:1269
 #, fuzzy
 msgid "General"
-msgstr "Algemeen"
+msgstr "general"
 
 #: lib/classes/WPEditor.php:1271
-#, fuzzy
 msgid "Advanced"
-msgstr "Geavanceerd"
+msgstr "Advanced"
 
 #: lib/classes/WPEditor.php:1273
 #, fuzzy
 msgid "Source"
-msgstr "Bron"
+msgstr "Source"
 
 #: lib/classes/WPEditor.php:1275
 #, fuzzy
 msgid "Border"
-msgstr "Grens"
+msgstr "borders"
 
 #: lib/classes/WPEditor.php:1277
 #, fuzzy
 msgid "Constrain proportions"
-msgstr "Verhoudingen beperken"
+msgstr "constrain proportions"
 
 #: lib/classes/WPEditor.php:1279
 #, fuzzy
 msgid "Vertical space"
-msgstr "Verticale ruimte"
+msgstr "Vertical space"
 
 #: lib/classes/WPEditor.php:1281
 #, fuzzy
 msgid "Image description"
-msgstr "Afbeelding beschrijving"
+msgstr "Image description"
 
 #: lib/classes/WPEditor.php:1283
 #, fuzzy
 msgid "Style"
-msgstr "Stijl"
+msgstr "style"
 
 #: lib/classes/WPEditor.php:1285
 #, fuzzy
 msgid "Dimensions"
-msgstr "Afmetingen"
+msgstr "Dimension"
 
 #: lib/classes/WPEditor.php:1287
 #, fuzzy
 msgid "Insert image"
-msgstr "Afbeelding invoegen"
+msgstr "Insert image"
 
 #: lib/classes/WPEditor.php:1289
 #, fuzzy
 msgid "Insert date/time"
-msgstr "Datum/tijd invoegen"
+msgstr "Insert date/time"
 
 #: lib/classes/WPEditor.php:1291
 #, fuzzy
 msgid "Insert/edit video"
-msgstr "Video invoegen/bewerken"
+msgstr "Insert/edit video"
 
 #: lib/classes/WPEditor.php:1293
 #, fuzzy
 msgid "Poster"
-msgstr "Poster"
+msgstr "poster"
 
 #: lib/classes/WPEditor.php:1295
 #, fuzzy
 msgid "Alternative source"
-msgstr "Alternatieve bron"
+msgstr "Alternate source"
 
 #: lib/classes/WPEditor.php:1297
 #, fuzzy
 msgid "Paste your embed code below:"
-msgstr "Plak je embed code hieronder:"
+msgstr "Paste your embed code below:"
 
 #: lib/classes/WPEditor.php:1299
 #, fuzzy
 msgid "Insert video"
-msgstr "Video invoegen"
+msgstr "Insert video"
 
 #: lib/classes/WPEditor.php:1301
 #, fuzzy
 msgid "Embed"
-msgstr "Embed"
+msgstr "embed"
 
 #: lib/classes/WPEditor.php:1307
 #, fuzzy
 msgid "Special character"
-msgstr "Speciaal karakter"
+msgstr "Special character"
 
 #: lib/classes/WPEditor.php:1309
 #, fuzzy
 msgctxt "editor button"
 msgid "Right to left"
-msgstr "Van rechts naar links"
+msgstr "Right to left"
 
 #: lib/classes/WPEditor.php:1311
 #, fuzzy
 msgctxt "editor button"
 msgid "Left to right"
-msgstr "Van links naar rechts"
+msgstr "left to right"
 
 #: lib/classes/WPEditor.php:1313
 #, fuzzy
 msgid "Emoticons"
-msgstr "Emoticons"
+msgstr "emoticons"
 
 #: lib/classes/WPEditor.php:1315
 #, fuzzy
 msgid "Nonbreaking space"
-msgstr "Niet-brekende ruimte"
+msgstr "Nonbreaking space"
 
 #: lib/classes/WPEditor.php:1317
 #, fuzzy
 msgid "Page break"
-msgstr "Pagina pauze"
+msgstr "Page break"
 
 #: lib/classes/WPEditor.php:1319
 #, fuzzy
 msgid "Paste as text"
-msgstr "Plakken als tekst"
+msgstr "Paste as text"
 
 #: lib/classes/WPEditor.php:1321
 #, fuzzy
 msgid "Preview"
-msgstr "Voorbeeld"
+msgstr "Preview"
 
 #: lib/classes/WPEditor.php:1323
 #, fuzzy
 msgid "Print"
-msgstr "Afdrukken"
+msgstr "printing"
 
 #: lib/classes/WPEditor.php:1325 lib/classes/WPEditor.php:2005
 #, fuzzy
 msgid "Save"
-msgstr "Sla"
+msgstr "Save"
 
 #: lib/classes/WPEditor.php:1327
 #, fuzzy
 msgid "Fullscreen"
-msgstr "Volledig scherm"
+msgstr "full screen"
 
 #: lib/classes/WPEditor.php:1329
 #, fuzzy
 msgid "Horizontal line"
-msgstr "Horizontale lijn"
+msgstr "horizontal line"
 
 #: lib/classes/WPEditor.php:1331
 #, fuzzy
 msgid "Horizontal space"
-msgstr "Horizontale ruimte"
+msgstr "Horizontal space"
 
 #: lib/classes/WPEditor.php:1333
 #, fuzzy
 msgid "Restore last draft"
-msgstr "Laatste ontwerp herstellen"
+msgstr "Restore last draft"
 
 #: lib/classes/WPEditor.php:1335
 #, fuzzy
 msgid "Insert/edit link"
-msgstr "Link invoegen/bewerken"
+msgstr "Insert/edit link"
 
 #: lib/classes/WPEditor.php:1337
 #, fuzzy
 msgid "Remove link"
-msgstr "Link verwijderen"
+msgstr "Remove link"
 
 #: lib/classes/WPEditor.php:1343
 #, fuzzy
 msgid "Could not find the specified string."
-msgstr "Kon de opgegeven string niet vinden."
+msgstr "Couldn't find the specified string."
 
 #: lib/classes/WPEditor.php:1345
 #, fuzzy
 msgctxt "find/replace"
 msgid "Replace"
-msgstr "Vervang"
+msgstr "Replace"
 
 #: lib/classes/WPEditor.php:1347
-#, fuzzy
 msgctxt "find/replace"
 msgid "Next"
-msgstr "Volgende"
+msgstr "Next"
 
 #. translators: previous
 #: lib/classes/WPEditor.php:1351
 #, fuzzy
 msgctxt "find/replace"
 msgid "Prev"
-msgstr "Prev"
+msgstr "prev"
 
 #: lib/classes/WPEditor.php:1353
 #, fuzzy
 msgctxt "find/replace"
 msgid "Whole words"
-msgstr "Hele woorden"
+msgstr "Wholewords"
 
 #: lib/classes/WPEditor.php:1355
 #, fuzzy
 msgid "Find and replace"
-msgstr "Zoeken en vervangen"
+msgstr "Find and replace"
 
 #: lib/classes/WPEditor.php:1357
 #, fuzzy
 msgctxt "find/replace"
 msgid "Replace with"
-msgstr "Vervangen door"
+msgstr "Replace with"
 
 #: lib/classes/WPEditor.php:1359
 #, fuzzy
 msgctxt "find/replace"
 msgid "Find"
-msgstr "Zoek"
+msgstr "Find"
 
 #: lib/classes/WPEditor.php:1361
 #, fuzzy
 msgctxt "find/replace"
 msgid "Replace all"
-msgstr "Vervang alle"
+msgstr "Replace all"
 
 #: lib/classes/WPEditor.php:1363
 #, fuzzy
 msgid "Match case"
-msgstr "Wedstrijd geval"
+msgstr "match case"
 
 #: lib/classes/WPEditor.php:1365
 #, fuzzy
 msgid "Check Spelling"
-msgstr "Spelling controleren"
+msgstr "Check Spelling"
 
 #: lib/classes/WPEditor.php:1367
 #, fuzzy
 msgctxt "spellcheck"
 msgid "Finish"
-msgstr "Afwerking"
+msgstr "finish"
 
 #: lib/classes/WPEditor.php:1369
 #, fuzzy
 msgctxt "spellcheck"
 msgid "Ignore all"
-msgstr "Negeer alle"
+msgstr "ignore all"
 
 #: lib/classes/WPEditor.php:1371
 #, fuzzy
 msgctxt "spellcheck"
 msgid "Ignore"
-msgstr "Negeer"
+msgstr "ignore"
 
 #: lib/classes/WPEditor.php:1377
 #, fuzzy
 msgid "Insert table"
-msgstr "Tabel invoegen"
+msgstr "Insert table"
 
 #: lib/classes/WPEditor.php:1379
 #, fuzzy
 msgid "Delete table"
-msgstr "Tabel verwijderen"
+msgstr "Delete table"
 
 #: lib/classes/WPEditor.php:1381
 #, fuzzy
 msgid "Table properties"
-msgstr "Tabel eigenschappen"
+msgstr "Table properties"
 
 #: lib/classes/WPEditor.php:1383
 #, fuzzy
 msgid "Table row properties"
-msgstr "Tabel rij eigenschappen"
+msgstr "Table row properties"
 
 #: lib/classes/WPEditor.php:1385
 #, fuzzy
 msgid "Table cell properties"
-msgstr "Tabel cel eigenschappen"
+msgstr "Table cell properties"
 
 #: lib/classes/WPEditor.php:1389
 #, fuzzy
 msgid "Row"
-msgstr "Rij"
+msgstr "Row"
 
 #: lib/classes/WPEditor.php:1391
 #, fuzzy
 msgid "Rows"
-msgstr "Rijen"
+msgstr "rows"
 
 #: lib/classes/WPEditor.php:1393
 #, fuzzy
 msgctxt "table column"
 msgid "Column"
-msgstr "Kolom"
+msgstr "columns"
 
 #: lib/classes/WPEditor.php:1395
 #, fuzzy
@@ -743,206 +742,206 @@ msgstr "Cols"
 #, fuzzy
 msgctxt "table cell"
 msgid "Cell"
-msgstr "Cel"
+msgstr "Cell"
 
 #: lib/classes/WPEditor.php:1399
 #, fuzzy
 msgid "Header cell"
-msgstr "Koptekst cel"
+msgstr "header cell"
 
 #: lib/classes/WPEditor.php:1401
 #, fuzzy
 msgctxt "table header"
 msgid "Header"
-msgstr "Kop"
+msgstr "headers"
 
 #: lib/classes/WPEditor.php:1403
 #, fuzzy
 msgctxt "table body"
 msgid "Body"
-msgstr "Lichaam"
+msgstr "body"
 
 #: lib/classes/WPEditor.php:1405
 #, fuzzy
 msgctxt "table footer"
 msgid "Footer"
-msgstr "Footer"
+msgstr "footer"
 
 #: lib/classes/WPEditor.php:1409
 #, fuzzy
 msgid "Insert row before"
-msgstr "Rij invoegen vóór"
+msgstr "Insert row before"
 
 #: lib/classes/WPEditor.php:1411
 #, fuzzy
 msgid "Insert row after"
-msgstr "Rij invoegen na"
+msgstr "Insert row after"
 
 #: lib/classes/WPEditor.php:1413
 #, fuzzy
 msgid "Insert column before"
-msgstr "Kolom invoegen vóór"
+msgstr "Insert column before"
 
 #: lib/classes/WPEditor.php:1415
 #, fuzzy
 msgid "Insert column after"
-msgstr "Kolom invoegen na"
+msgstr "Insert column after"
 
 #: lib/classes/WPEditor.php:1417
 #, fuzzy
 msgid "Paste table row before"
-msgstr "Tabelrij plakken voor"
+msgstr "Paste table row before"
 
 #: lib/classes/WPEditor.php:1419
 #, fuzzy
 msgid "Paste table row after"
-msgstr "Tabelrij plakken na"
+msgstr "Paste table row after"
 
 #: lib/classes/WPEditor.php:1421
 #, fuzzy
 msgid "Delete row"
-msgstr "Rij verwijderen"
+msgstr "Delete row"
 
 #: lib/classes/WPEditor.php:1423
 #, fuzzy
 msgid "Delete column"
-msgstr "Kolom verwijderen"
+msgstr "Delete column"
 
 #: lib/classes/WPEditor.php:1425
 #, fuzzy
 msgid "Cut table row"
-msgstr "Tafelrij snijden"
+msgstr "Cut table row"
 
 #: lib/classes/WPEditor.php:1427
 #, fuzzy
 msgid "Copy table row"
-msgstr "Tabelrij kopiëren"
+msgstr "Copy table row"
 
 #: lib/classes/WPEditor.php:1429
 #, fuzzy
 msgid "Merge table cells"
-msgstr "Tabelcellen samenvoegen"
+msgstr "Merge table cells"
 
 #: lib/classes/WPEditor.php:1431
 #, fuzzy
 msgid "Split table cell"
-msgstr "Gesplitste tabelcel"
+msgstr "Split table cell"
 
 #: lib/classes/WPEditor.php:1435
 #, fuzzy
 msgid "Height"
-msgstr "Hoogte"
+msgstr "Height"
 
 #: lib/classes/WPEditor.php:1437
 #, fuzzy
 msgid "Width"
-msgstr "Breedte"
+msgstr "Width"
 
 #: lib/classes/WPEditor.php:1439
 #, fuzzy
 msgid "Caption"
-msgstr "Onderschrift"
+msgstr "caption"
 
 #: lib/classes/WPEditor.php:1441
 #, fuzzy
 msgid "Alignment"
-msgstr "Uitlijning"
+msgstr "alignment"
 
 #: lib/classes/WPEditor.php:1443
 #, fuzzy
 msgid "Left"
-msgstr "Links"
+msgstr "Left"
 
 #: lib/classes/WPEditor.php:1445
 #, fuzzy
 msgid "Center"
-msgstr "Centrum"
+msgstr "center"
 
 #: lib/classes/WPEditor.php:1447
 #, fuzzy
 msgid "Right"
-msgstr "Rechts"
+msgstr "Right"
 
 #: lib/classes/WPEditor.php:1449
 #, fuzzy
 msgctxt "table cell alignment attribute"
 msgid "None"
-msgstr "Geen"
+msgstr "None"
 
 #: lib/classes/WPEditor.php:1453
 #, fuzzy
 msgid "Row group"
-msgstr "Rij groep"
+msgstr "Row group"
 
 #: lib/classes/WPEditor.php:1455
 #, fuzzy
 msgid "Column group"
-msgstr "Kolomgroep"
+msgstr "Column group"
 
 #: lib/classes/WPEditor.php:1457
 #, fuzzy
 msgid "Row type"
-msgstr "Type rij"
+msgstr "Row type"
 
 #: lib/classes/WPEditor.php:1459
 #, fuzzy
 msgid "Cell type"
-msgstr "Celtype"
+msgstr "cell type"
 
 #: lib/classes/WPEditor.php:1461
 #, fuzzy
 msgid "Cell padding"
-msgstr "Celvulling"
+msgstr "Cell padding"
 
 #: lib/classes/WPEditor.php:1463
 #, fuzzy
 msgid "Cell spacing"
-msgstr "Afstand tussen de cellen"
+msgstr "cell spacing"
 
 #: lib/classes/WPEditor.php:1465
 #, fuzzy
 msgctxt "table cell scope attribute"
 msgid "Scope"
-msgstr "Toepassingsgebied"
+msgstr "scope"
 
 #: lib/classes/WPEditor.php:1469
 #, fuzzy
 msgctxt "TinyMCE"
 msgid "Insert template"
-msgstr "Sjabloon invoegen"
+msgstr "Insert template"
 
 #: lib/classes/WPEditor.php:1471
 #, fuzzy
 msgctxt "TinyMCE"
 msgid "Templates"
-msgstr "Sjablonen"
+msgstr "Templates"
 
 #: lib/classes/WPEditor.php:1475
 #, fuzzy
 msgid "Background color"
-msgstr "Achtergrondkleur"
+msgstr "Background color"
 
 #: lib/classes/WPEditor.php:1477
 #, fuzzy
 msgid "Text color"
-msgstr "Tekstkleur"
+msgstr "Text color"
 
 #: lib/classes/WPEditor.php:1479
 #, fuzzy
 msgctxt "editor button"
 msgid "Show blocks"
-msgstr "Toon blokken"
+msgstr "Showblocks"
 
 #: lib/classes/WPEditor.php:1481
 #, fuzzy
 msgid "Show invisible characters"
-msgstr "Toon onzichtbare tekens"
+msgstr "Show invisible characters"
 
 #. translators: word count
 #: lib/classes/WPEditor.php:1487
 #, fuzzy, php-format
 msgid "Words: %s"
-msgstr "Woorden: %s"
+msgstr "Word: %s"
 
 #: lib/classes/WPEditor.php:1489
 #, fuzzy
@@ -950,8 +949,8 @@ msgid ""
 "Paste is now in plain text mode. Contents will now be pasted as plain text "
 "until you toggle this option off."
 msgstr ""
-"Plakken staat nu in de modus platte tekst. De inhoud wordt nu als platte "
-"tekst geplakt totdat u deze optie uitschakelt."
+"Paste is now in plain text mode. Contents will now be pasted as plain text "
+"until you toggle this option off."
 
 #: lib/classes/WPEditor.php:1489
 #, fuzzy
@@ -960,9 +959,9 @@ msgid ""
 "turning this option off. The editor will clean up text pasted from Word "
 "automatically."
 msgstr ""
-"Als u rijke inhoud uit Microsoft Word wilt plakken, probeer deze optie dan "
-"uit te schakelen. De editor ruimt tekst die vanuit Word is geplakt "
-"automatisch op."
+"If you're looking to paste rich content from Microsoft Word, try turning "
+"this option off. The editor will clean up text pasted from Word "
+"automatically."
 
 #: lib/classes/WPEditor.php:1491
 #, fuzzy
@@ -970,15 +969,13 @@ msgid ""
 "Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press "
 "ALT-0 for help"
 msgstr ""
-"Rich Text Area. Druk op ALT-F9 voor het menu. Druk op ALT-F10 voor werkbalk. "
-"Druk op ALT-0 voor help"
+"Rich text area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press "
+"ALT-0 for help"
 
 #: lib/classes/WPEditor.php:1493
 #, fuzzy
 msgid "The changes you made will be lost if you navigate away from this page."
-msgstr ""
-"De door u aangebrachte wijzigingen gaan verloren als u van deze pagina "
-"wegnavigeert."
+msgstr "The changes you made will be lost if you navigate away from this page."
 
 #: lib/classes/WPEditor.php:1495
 #, fuzzy
@@ -986,120 +983,118 @@ msgid ""
 "Your browser does not support direct access to the clipboard. Please use the "
 "Ctrl+X/C/V keyboard shortcuts instead."
 msgstr ""
-"Uw browser ondersteunt geen directe toegang tot het klembord. Gebruik in "
-"plaats daarvan de sneltoetsen Ctrl+X/C/V."
+"Your browser does not support direct access to the clipboard. Please use the "
+"Ctrl+X/C/V keyboard shortcuts instead."
 
 #: lib/classes/WPEditor.php:1501
 #, fuzzy
 msgctxt "TinyMCE menu"
 msgid "Insert"
-msgstr "Plaats"
+msgstr "insert"
 
 #: lib/classes/WPEditor.php:1503
 #, fuzzy
 msgctxt "TinyMCE menu"
 msgid "File"
-msgstr "Bestand"
+msgstr "Files"
 
 #: lib/classes/WPEditor.php:1505
 #, fuzzy
 msgctxt "TinyMCE menu"
 msgid "Edit"
-msgstr "Bewerk"
+msgstr "Edit"
 
 #: lib/classes/WPEditor.php:1507
-#, fuzzy
 msgctxt "TinyMCE menu"
 msgid "Tools"
-msgstr "Gereedschap"
+msgstr "Tools"
 
 #: lib/classes/WPEditor.php:1509
 #, fuzzy
 msgctxt "TinyMCE menu"
 msgid "View"
-msgstr "Bekijk"
+msgstr "views"
 
 #: lib/classes/WPEditor.php:1511
 #, fuzzy
 msgctxt "TinyMCE menu"
 msgid "Table"
-msgstr "Tabel"
+msgstr "Table"
 
 #: lib/classes/WPEditor.php:1513
 #, fuzzy
 msgctxt "TinyMCE menu"
 msgid "Format"
-msgstr "Formaat"
+msgstr "format"
 
 #: lib/classes/WPEditor.php:1519
 #, fuzzy
 msgid "Keyboard Shortcuts"
-msgstr "Sneltoetsen"
+msgstr "Keyboard shortcuts"
 
 #: lib/classes/WPEditor.php:1521
 #, fuzzy
 msgid "Toolbar Toggle"
-msgstr "Werkbalk Toggle"
+msgstr "Toolbar Toggle"
 
 #: lib/classes/WPEditor.php:1523
 #, fuzzy
 msgid "Insert Read More tag"
-msgstr "Meer lezen tag invoegen"
+msgstr "Insert Read More tag"
 
 #: lib/classes/WPEditor.php:1525
 #, fuzzy
 msgid "Distraction Free Writing"
-msgstr "Schrijven zonder afleiding"
+msgstr "Distraction Free Writing"
 
 #: lib/classes/WPEditor.php:2005
-#, fuzzy
 msgid "Update"
 msgstr "Update"
 
 #: lib/classes/WPEditor.php:2017
 #, fuzzy
 msgid "Exit fullscreen"
-msgstr "Volledig scherm verlaten"
+msgstr "Exit full screen"
 
 #: lib/classes/WPEditor.php:2047
 #, fuzzy
 msgid "Bold (Ctrl + B)"
-msgstr "Vetgedrukt (Ctrl + B)"
+msgstr "Bold (Ctrl + B)"
 
 #: lib/classes/WPEditor.php:2049
 #, fuzzy
 msgid "Italic (Ctrl + I)"
-msgstr "Cursief (Ctrl + I)"
+msgstr "Italic (Ctrl + I)"
 
 #: lib/classes/WPEditor.php:2051
 #, fuzzy
 msgid "Unordered list (Alt + Shift + U)"
-msgstr "Ongeordende lijst (Alt + Shift + U)"
+msgstr "Unordered list (Alt + Shift + U)"
 
 #: lib/classes/WPEditor.php:2053
 #, fuzzy
 msgid "Ordered list (Alt + Shift + O)"
-msgstr "Geordende lijst (Alt + Shift + O)"
+msgstr "Ordered list (Alt + Shift + O)"
 
 #: lib/classes/WPEditor.php:2055
 #, fuzzy
 msgid "Blockquote (Alt + Shift + Q)"
-msgstr "Blokcitaat (Alt + Shift + Q)"
+msgstr "Block Quote (Alt + Shift + Q)"
 
 #: lib/classes/WPEditor.php:2057
 #, fuzzy
 msgid "Media library (Alt + Shift + M)"
-msgstr "Mediabibliotheek (Alt + Shift + M)"
+msgstr "Media library (Alt + Shift + M)"
 
 #: lib/classes/WPEditor.php:2059
 #, fuzzy
 msgid "Insert/edit link (Alt + Shift + A)"
-msgstr "Link invoegen/bewerken (Alt + Shift + A)"
+msgstr "Insert/edit link (Alt + Shift + A)"
 
 #: lib/classes/WPEditor.php:2061
 #, fuzzy
 msgid "Unlink (Alt + Shift + S)"
-msgstr "Ontkoppelen (Alt + Shift + S)"
+msgstr "Unlink (Alt + Shift + S)"
 
 #: lib/classes/WPEditor.php:2063
 #, fuzzy
@@ -1109,45 +1104,44 @@ msgstr "Help (Alt + Shift + H)"
 #: lib/classes/WPEditor.php:2135
 #, fuzzy
 msgid "Updated."
-msgstr "Bijgewerkt."
+msgstr "updated"
 
 #: lib/classes/WPEditor.php:2135
 #, fuzzy
 msgid "Saved."
-msgstr "Gered."
+msgstr "Saved."
 
 #: lib/classes/WPEditor.php:2137
 #, fuzzy
 msgid "Save failed."
-msgstr "Opslaan mislukt."
+msgstr "Save failed."
 
 #: lib/classes/WPEditor.php:2155
 #, fuzzy, php-format
 msgid "Word count: %s"
-msgstr "Aantal woorden: %s"
+msgstr "Word count: %s"
 
 #: lib/classes/WPEditor.php:2157
 #, fuzzy
 msgid "Just write."
-msgstr "Schrijf maar."
+msgstr "Just write."
 
 #: lib/classes/WPEditor.php:2281
 #, fuzzy
 msgid "Y/m/d"
-msgstr "J/m/d"
+msgstr "Y/m/d"
 
 #: lib/classes/WPEditor.php:2385
 #, fuzzy
 msgid "Link einfügen/bearbeiten"
-msgstr "Link invoegen/bewerken"
+msgstr "Insert/edit link"
 
 #: lib/classes/WPEditor.php:2395
 #, fuzzy
 msgid "Gib die Ziel-URL ein"
-msgstr "Voer de bestemmings-URL in"
+msgstr "Enter the destination URL"
 
 #: lib/classes/WPEditor.php:2399
-#, fuzzy
 msgid "URL"
 msgstr "URL"
 
@@ -1159,36 +1153,36 @@ msgstr "URL"
 #: premium/lib/classes/WikiTagCloudWidget.php:44
 #: premium/lib/classes/WikiTagsWidget.php:40 premium/wiki-premium.php:137
 msgid "Titel"
-msgstr "Titel"
+msgstr "Academic title"
 
 #: lib/classes/WPEditor.php:2411
 #, fuzzy
 msgid "Link in neuem Fenster/Tab öffnen"
-msgstr "Link in nieuw venster/tabblad openen"
+msgstr "Open link in new window/tab"
 
 #: lib/classes/WPEditor.php:2417
 #, fuzzy
 msgid "Oder auf bestehende Inhalte verlinken"
-msgstr "Of link naar bestaande inhoud"
+msgstr "Or link to existing content"
 
 #: lib/classes/WPEditor.php:2425 premium/lib/classes/SearchWikisWidget.php:27
 msgid "Suche"
-msgstr "Zoek"
+msgstr "Search"
 
 #: lib/classes/WPEditor.php:2449
 #, fuzzy
 msgid "Kein Suchbegriff angegeben. Zuletzt verwendete Elemente anzeigen."
-msgstr "Geen zoekterm opgegeven. Toon recent gebruikte items."
+msgstr "No search term specified. Show recent items."
 
 #: lib/classes/WPEditor.php:2469
 #, fuzzy
 msgid "Add Link"
-msgstr "Link toevoegen"
+msgstr "add link"
 
 #: lib/classes/WikiWidget.php:7
 #, fuzzy
 msgid "Wiki-Seiten anzeigen"
-msgstr "Toon wiki pagina's"
+msgstr "View Wiki Pages"
 
 #: lib/classes/WikiWidget.php:8 lib/classes/WikiWidget.php:10
 #: lib/classes/WikiWidget.php:19 lib/classes/WikiWidget.php:93
@@ -1200,48 +1194,48 @@ msgstr "Wiki"
 #: lib/classes/WikiWidget.php:119
 #, fuzzy
 msgid "Ebenene"
-msgstr "Niveau"
+msgstr "planes"
 
 #: lib/classes/WikiWidget.php:125 premium/lib/classes/NewWikisWidget.php:116
 #: premium/lib/classes/PopularWikisWidget.php:120
 #, fuzzy
 msgid "Unlimitiert"
-msgstr "Onbeperkt"
+msgstr "Unlimited"
 
 #: lib/classes/WikiWidget.php:129
 #, fuzzy
 msgid "Ordne nach"
-msgstr "Bestel door"
+msgstr "Order by"
 
 #: lib/classes/WikiWidget.php:131
 #, fuzzy
 msgid "Menüreihenfolge / Reihenfolge erstellt"
-msgstr "Menu bestelling / bestelling gemaakt"
+msgstr "Menu order/sequence created"
 
 #: lib/classes/WikiWidget.php:133 premium/wiki-premium.php:138
 #, fuzzy
 msgid "Zufällig"
-msgstr "Willekeurige"
+msgstr "Coincidentally"
 
 #: lib/classes/WikiWidget.php:137
 #, fuzzy
 msgid "Ordnen"
-msgstr "Bestel"
+msgstr "Put in order"
 
 #: lib/classes/WikiWidget.php:139 premium/wiki-premium.php:148
 #, fuzzy
 msgid "Aufsteigend"
-msgstr "Oplopend"
+msgstr "Ascending"
 
 #: lib/classes/WikiWidget.php:140 premium/wiki-premium.php:149
 #, fuzzy
 msgid "Absteigend"
-msgstr "Aflopend"
+msgstr "Descending"
 
 #: premium/lib/classes/NewWikisWidget.php:7
 #, fuzzy
 msgid "Neue Wiki-Seiten anzeigen"
-msgstr "Toon nieuwe wikipagina's"
+msgstr "Show new wiki pages"
 
 #: premium/lib/classes/NewWikisWidget.php:8
 #: premium/lib/classes/NewWikisWidget.php:10
@@ -1250,18 +1244,18 @@ msgstr "Toon nieuwe wikipagina's"
 #: premium/lib/classes/NewWikisWidget.php:97
 #, fuzzy
 msgid "Neue Wikis"
-msgstr "Nieuwe wiki's"
+msgstr "New wikis"
 
 #: premium/lib/classes/NewWikisWidget.php:111
 #: premium/lib/classes/PopularWikisWidget.php:115
 #, fuzzy
 msgid "Ebenen"
-msgstr "Niveaus"
+msgstr "levels"
 
 #: premium/lib/classes/PopularWikisWidget.php:7
 #, fuzzy
 msgid "Beliebte Wiki-Seiten anzeigen"
-msgstr "Toon populaire wikipagina's"
+msgstr "View popular wiki pages"
 
 #: premium/lib/classes/PopularWikisWidget.php:8
 #: premium/lib/classes/PopularWikisWidget.php:10
@@ -1270,12 +1264,12 @@ msgstr "Toon populaire wikipagina's"
 #: premium/lib/classes/PopularWikisWidget.php:100
 #, fuzzy
 msgid "Beliebte Wikis"
-msgstr "Populaire wiki's"
+msgstr "Popular wikis"
 
 #: premium/lib/classes/SearchWikisWidget.php:5
 #, fuzzy
 msgid "Wiki-Seiten durchsuchen"
-msgstr "Zoeken in wikipagina's"
+msgstr "Search wiki pages"
 
 #: premium/lib/classes/SearchWikisWidget.php:6
 #: premium/lib/classes/SearchWikisWidget.php:9
@@ -1284,17 +1278,17 @@ msgstr "Zoeken in wikipagina's"
 #: premium/lib/classes/SearchWikisWidget.php:43
 #, fuzzy
 msgid "Suche Wikis"
-msgstr "Zoeken in wiki's"
+msgstr "Search wikis"
 
 #: premium/lib/classes/SearchWikisWidget.php:24
 #, fuzzy
 msgid "Search for:"
-msgstr "Zoeken naar:"
+msgstr "Search for:"
 
 #: premium/lib/classes/WikiCategoriesWidget.php:5
 #, fuzzy
 msgid "Wiki-Kategorien anzeigen"
-msgstr "Toon wiki categorieën"
+msgstr "View wiki categories"
 
 #: premium/lib/classes/WikiCategoriesWidget.php:6
 #: premium/lib/classes/WikiCategoriesWidget.php:8
@@ -1303,12 +1297,12 @@ msgstr "Toon wiki categorieën"
 #: premium/lib/classes/WikiCategoriesWidget.php:37 premium/wiki-premium.php:60
 #, fuzzy
 msgid "Wiki-Kategorien"
-msgstr "Wiki categorieën"
+msgstr "Wiki categories"
 
 #: premium/lib/classes/WikiTagCloudWidget.php:5
 #, fuzzy
 msgid "Wiki-Tag-Cloud anzeigen"
-msgstr "Toon Wiki Tag Cloud"
+msgstr "Show wiki tag cloud"
 
 #: premium/lib/classes/WikiTagCloudWidget.php:6
 #: premium/lib/classes/WikiTagCloudWidget.php:8
@@ -1317,12 +1311,12 @@ msgstr "Toon Wiki Tag Cloud"
 #: premium/lib/classes/WikiTagCloudWidget.php:40
 #, fuzzy
 msgid "Wiki Tag Cloud"
-msgstr "Wiki Tag Cloud"
+msgstr "Wiki tag cloud"
 
 #: premium/lib/classes/WikiTagsWidget.php:5
 #, fuzzy
 msgid "Wiki-Tags anzeigen"
-msgstr "Toon Wiki Tags"
+msgstr "Show wiki tags"
 
 #: premium/lib/classes/WikiTagsWidget.php:6
 #: premium/lib/classes/WikiTagsWidget.php:8
@@ -1331,52 +1325,52 @@ msgstr "Toon Wiki Tags"
 #: premium/lib/classes/WikiTagsWidget.php:36 premium/wiki-premium.php:90
 #, fuzzy
 msgid "Wiki-Tags"
-msgstr "Wiki tags"
+msgstr "wiki tags"
 
 #: premium/wiki-premium.php:61
 #, fuzzy
 msgid "Wiki-Kategorie"
-msgstr "Wiki categorie"
+msgstr "Wiki category"
 
 #: premium/wiki-premium.php:62
 #, fuzzy
 msgid "Suche in Wiki-Kategorien"
-msgstr "Zoeken in wiki categorieën"
+msgstr "Search in wiki categories"
 
 #: premium/wiki-premium.php:63
 #, fuzzy
 msgid "Alle Wiki-Kategorien"
-msgstr "Alle wiki categorieën"
+msgstr "All wiki categories"
 
 #: premium/wiki-premium.php:64
 #, fuzzy
 msgid "Übergeordnete Wiki-Kategorie"
-msgstr "Ouder wiki categorie"
+msgstr "Parent wiki category"
 
 #: premium/wiki-premium.php:65
 #, fuzzy
 msgid "Übergeordnete Wiki-Kategorie:"
-msgstr "Moeder wiki categorie:"
+msgstr "Parent wiki category:"
 
 #: premium/wiki-premium.php:66
 #, fuzzy
 msgid "Wiki-Kategorie bearbeiten"
-msgstr "Wiki-categorie bewerken"
+msgstr "Edit wiki category"
 
 #: premium/wiki-premium.php:67
 #, fuzzy
 msgid "Wiki-Kategorie aktualisieren"
-msgstr "Wiki-categorie bijwerken"
+msgstr "Update wiki category"
 
 #: premium/wiki-premium.php:68
 #, fuzzy
 msgid "Neue Wiki-Kategorie hinzufügen"
-msgstr "Nieuwe wikicategorie toevoegen"
+msgstr "Add new wiki category"
 
 #: premium/wiki-premium.php:69
 #, fuzzy
 msgid "Neuer Name der Wiki-Kategorie"
-msgstr "Nieuwe naam van de wikicategorie"
+msgstr "New name of the wiki category"
 
 #: premium/wiki-premium.php:91
 #, fuzzy
@@ -1386,127 +1380,127 @@ msgstr "Wiki tag"
 #: premium/wiki-premium.php:92
 #, fuzzy
 msgid "Suche Wiki-Tags"
-msgstr "Wiki-tags zoeken"
+msgstr "Search wiki tags"
 
 #: premium/wiki-premium.php:93
 #, fuzzy
 msgid "Beliebte Wiki-Tags"
-msgstr "Populaire Wiki Tags"
+msgstr "Popular wiki tags"
 
 #: premium/wiki-premium.php:94
 #, fuzzy
 msgid "Alle Wiki-Tags"
-msgstr "Alle Wiki Tags"
+msgstr "All wiki tags"
 
 #: premium/wiki-premium.php:95
 #, fuzzy
 msgid "Wiki-Tag bearbeiten"
-msgstr "Wiki-tag bewerken"
+msgstr "Edit wiki tag"
 
 #: premium/wiki-premium.php:96
 #, fuzzy
 msgid "Wiki-Tag aktualisieren"
-msgstr "Wiki tag bijwerken"
+msgstr "Update wiki tag"
 
 #: premium/wiki-premium.php:97
 #, fuzzy
 msgid "Neues Wiki-Tag hinzufügen"
-msgstr "Nieuwe wiki tag toevoegen"
+msgstr "Add new wiki tag"
 
 #: premium/wiki-premium.php:98
 #, fuzzy
 msgid "Neuer Wiki-Tag-Name"
-msgstr "Nieuwe wiki tag naam"
+msgstr "New wiki tag name"
 
 #: premium/wiki-premium.php:99
 #, fuzzy
 msgid "Trenne Wiki-Tags durch Kommas"
-msgstr "Wiki-tags scheiden met komma's"
+msgstr "Separate wiki tags with commas"
 
 #: premium/wiki-premium.php:100
 #, fuzzy
 msgid "Hinzufügen oder Entfernen von Wiki-Tags"
-msgstr "Wiki-tags toevoegen of verwijderen"
+msgstr "Add or remove wiki tags"
 
 #: premium/wiki-premium.php:101
 #, fuzzy
 msgid "Wähle häufig verwendete Wiki-Tags"
-msgstr "Kies veelgebruikte wikitags"
+msgstr "Choose commonly used wiki tags"
 
 #: premium/wiki-premium.php:116
 #, fuzzy
 msgid "Anzahl der Breadcrumbs, die dem Titel hinzugefügt werden sollen"
-msgstr "Aantal broodkruimels dat aan de titel moet worden toegevoegd"
+msgstr "Number of breadcrumbs to add to the title"
 
 #: premium/wiki-premium.php:122
 #, fuzzy
 msgid "Wie möchtest Du Wikis nennen?"
-msgstr "Hoe wil je wiki's noemen?"
+msgstr "What would you like to call wikis?"
 
 #: premium/wiki-premium.php:127
 #, fuzzy
 msgid "Wie möchtest Du Sub Wikis nennen?"
-msgstr "Hoe wil je Sub Wiki's noemen?"
+msgstr "What would you like to call sub wikis?"
 
 #: premium/wiki-premium.php:132
 #, fuzzy
 msgid "Wie sollen Sub-Wikis bestellt werden?"
-msgstr "Hoe moeten sub-wiki's worden gerangschikt?"
+msgstr "How should sub-wikis be ordered?"
 
 #: premium/wiki-premium.php:136
 #, fuzzy
 msgid "Menüreihenfolge/Reihenfolge erstellt"
-msgstr "Menu volgorde/volgorde gemaakt"
+msgstr "Menu order/sequence created"
 
 #: premium/wiki-premium.php:144
 #, fuzzy
 msgid "Welche Reihenfolge sollten Sub Wikis bestellt werden?"
-msgstr "In welke volgorde moeten subwiki's worden gerangschikt?"
+msgstr "What order should sub wikis be ordered in?"
 
 #: premium/wiki-premium.php:155
 #, fuzzy
 msgid "Wer kann Wiki-Berechtigungen bearbeiten?"
-msgstr "Wie kan wiki-rechten bewerken?"
+msgstr "Who can edit wiki permissions?"
 
 #: premium/wiki-premium.php:199 wiki.php:1197
 #, fuzzy
 msgid "Wiki-Berechtigungen"
-msgstr "Wiki machtigingen"
+msgstr "Wiki Permissions"
 
 #: premium/wiki-premium.php:216
 #, fuzzy
 msgid "Jeder"
-msgstr "Elke"
+msgstr "Everyone"
 
 #: premium/wiki-premium.php:217
 #, fuzzy
 msgid "Netzwerk Benutzer"
-msgstr "Netwerkgebruiker"
+msgstr "network user"
 
 #: premium/wiki-premium.php:218
 #, fuzzy
 msgid "Seitenbenutzer"
-msgstr "Pagina gebruiker"
+msgstr "site users"
 
 #: premium/wiki-premium.php:219
 #, fuzzy
 msgid "Benutzer, die Beiträge auf dieser Seite bearbeiten können"
-msgstr "Gebruikers die berichten op deze pagina kunnen bewerken"
+msgstr "Users who can edit posts on this page"
 
 #: premium/wiki-premium.php:224
 #, fuzzy
 msgid "Bearbeitung zulassen durch"
-msgstr "Bewerking toestaan door"
+msgstr "Allow editing by"
 
 #: premium/wiki-premium.php:302
 #, fuzzy
 msgid "Kategorie wählen..."
-msgstr "Selecteer categorie..."
+msgstr "Choose categorie..."
 
 #: premium/wiki-premium.php:306 wiki.php:793 wiki.php:795
 #, fuzzy
 msgid "Tags:"
-msgstr "Tags:"
+msgstr "tags:"
 
 #: psource/psource-plugin-update/Puc/v4p10/Plugin/Ui.php:54
 #, fuzzy
@@ -1516,90 +1510,87 @@ msgstr "HELPDESK"
 #: psource/psource-plugin-update/Puc/v4p10/Plugin/Ui.php:77
 #, fuzzy, php-format
 msgid "Weitere Informationen zu %s"
-msgstr "Meer informatie over %s"
+msgstr "More information on %s"
 
 #: psource/psource-plugin-update/Puc/v4p10/Plugin/Ui.php:128
 #, fuzzy
 msgid "Auf Updates prüfen"
-msgstr "Controleren op updates"
+msgstr "Check for updates"
 
 #: psource/psource-plugin-update/Puc/v4p10/Plugin/Ui.php:213
 #, fuzzy, php-format
 msgctxt "the plugin title"
 msgid "Das %s-Plugin ist laut PSource Server auf dem neuesten Stand."
-msgstr "De %s plugin is up-to-date volgens de PSource server."
+msgstr "The %s plugin is up to date according to PSource Server."
 
 #: psource/psource-plugin-update/Puc/v4p10/Plugin/Ui.php:215
 #, fuzzy, php-format
 msgctxt "the plugin title"
 msgid "Eine neue Version des %s-Plugins ist auf dem PSource Server verfügbar."
-msgstr ""
-"Een nieuwe versie van de %s plugin is beschikbaar op de PSource server."
+msgstr "A new version of the %s plugin is available on the PSource server."
 
 #: psource/psource-plugin-update/Puc/v4p10/Plugin/Ui.php:217
 #, fuzzy, php-format
 msgctxt "the plugin title"
 msgid "Es konnte nicht festgestellt werden, ob Updates für %s verfügbar sind."
-msgstr "Er kon niet worden vastgesteld of er updates voor %s beschikbaar zijn."
+msgstr "Could not determine if updates are available for %s."
 
 #: psource/psource-plugin-update/Puc/v4p10/Plugin/Ui.php:223
 #, fuzzy, php-format
 msgid "Unbekannter Update-Status \"%s\""
-msgstr "Onbekende update status \"%s\""
+msgstr "Unknown update status \"%s\""
 
 #: psource/psource-plugin-update/Puc/v4p10/Vcs/PluginUpdateChecker.php:98
 #, fuzzy
 msgid "Es ist kein Änderungsprotokoll verfügbar."
-msgstr "Er is geen change log beschikbaar."
+msgstr "No change log is available."
 
 #: wiki.php:391
 #, fuzzy
 msgid "Du darfst als dieser Benutzer keine Seiten bearbeiten."
-msgstr "U mag geen pagina's bewerken als deze gebruiker."
+msgstr "You are not allowed to edit pages as this user."
 
 #: wiki.php:392
 #, fuzzy
 msgid "Du darfst als dieser Benutzer keine Seiten erstellen."
-msgstr "U mag geen pagina's aanmaken als deze gebruiker."
+msgstr "You are not allowed to create pages as this user."
 
 #: wiki.php:396
 #, fuzzy
 msgid "Du darfst als dieser Benutzer keine Beiträge bearbeiten."
-msgstr "Je mag geen berichten bewerken als deze gebruiker."
+msgstr "You are not allowed to edit posts as this user."
 
 #: wiki.php:397
 #, fuzzy
 msgid "Du darfst nicht als dieser Benutzer posten."
-msgstr "Je mag niet posten als deze gebruiker."
+msgstr "You are not allowed to post as this user."
 
 #: wiki.php:479
 #, fuzzy
 msgid "Du bist nicht berechtigt, diese Seite zu bearbeiten."
-msgstr "U bent niet gemachtigd om deze pagina te bewerken."
+msgstr "You do not have permission to edit this page."
 
 #: wiki.php:481
 #, fuzzy
 msgid "Du bist nicht berechtigt, diesen Beitrag zu bearbeiten."
-msgstr "Je mag dit bericht niet bewerken."
+msgstr "You do not have permission to edit this post."
 
 #: wiki.php:597
 #, fuzzy
 msgid "Revision erfolgreich wiederhergestellt"
-msgstr "Revisie succesvol hersteld"
+msgstr "Revision restored successfully"
 
 #: wiki.php:636
 #, fuzzy
 msgid ""
 "Du hast versucht, ein nicht vorhandenes Element zu bearbeiten. Vielleicht "
 "wurde es gelöscht?"
-msgstr ""
-"Je hebt geprobeerd een element te bewerken dat niet bestaat. Misschien is "
-"het verwijderd?"
+msgstr "You tried to edit an item that doesn't exist. Maybe it got deleted?"
 
 #: wiki.php:638
 #, fuzzy
 msgid "Du bist nicht berechtigt, dieses Element zu bearbeiten."
-msgstr "U bent niet gemachtigd om dit item te bewerken."
+msgstr "You do not have permission to edit this item."
 
 #: wiki.php:640
 #, fuzzy
@@ -1607,53 +1598,53 @@ msgid ""
 "Du kannst dieses Element nicht bearbeiten, da es sich im Papierkorb "
 "befindet. Bitte stelle es wieder her und versuche es erneut."
 msgstr ""
-"U kunt dit item niet bewerken omdat het in de prullenbak zit. Herstel het en "
-"probeer het opnieuw."
+"You can't edit this item because it's in the trash. Please restore and try "
+"again."
 
 #: wiki.php:642
 #, fuzzy
 msgid "Unbekannter Beitragstyp."
-msgstr "Onbekende bijdrage type."
+msgstr "Unknown post type."
 
 #: wiki.php:719
 #, fuzzy, php-format
 msgid "Vergleiche Revisionen von &#8220;%1$s&#8221;"
-msgstr "Vergelijk revisies van \"%1$s\""
+msgstr "Compare revisions of “%1$s”"
 
 #: wiki.php:720
 #, fuzzy
 msgid "Revisionen"
-msgstr "Herzieningen"
+msgstr "revisions"
 
 #: wiki.php:733
 #, fuzzy, php-format
 msgid "Revision für &#8220;%1$s&#8221; erstellt am %2$s"
-msgstr "Revisie voor \"%1$s\" gemaakt op %2$s"
+msgstr "Revision for “%1$s” created on %2$s"
 
 #: wiki.php:743
 #, fuzzy, php-format
 msgid "Älter: %s"
-msgstr "Ouder: %s"
+msgstr "Age: %s"
 
 #: wiki.php:744
 #, fuzzy, php-format
 msgid "Neuer: %s"
-msgstr "Nieuwer: %s"
+msgstr "Newer: %s"
 
 #: wiki.php:769
 #, fuzzy
 msgid "Diese Revisionen sind identisch."
-msgstr "Deze herzieningen zijn identiek."
+msgstr "These revisions are identical."
 
 #: wiki.php:792 wiki.php:794
 #, fuzzy
 msgid "Wiki-Kategorie:"
-msgstr "Wiki categorie:"
+msgstr "Wiki category:"
 
 #: wiki.php:836 wiki.php:848
 #, fuzzy
 msgid "Benachrichtige mich über Änderungen"
-msgstr "Stel me op de hoogte van wijzigingen"
+msgstr "Notify me of changes"
 
 #: wiki.php:846
 #, fuzzy
@@ -1663,7 +1654,7 @@ msgstr "E-mail"
 #: wiki.php:911
 #, fuzzy
 msgid "Automatischer Entwurf"
-msgstr "Automatisch ontwerp"
+msgstr "Automatic draft"
 
 #: wiki.php:1035
 #, fuzzy
@@ -1672,178 +1663,177 @@ msgstr "EDIT"
 
 #: wiki.php:1073 wiki.php:1166
 msgid "Speichern"
-msgstr "Opslaan"
+msgstr "Save"
 
 #: wiki.php:1074 wiki.php:1167
 msgid "Abbrechen"
-msgstr "Afbreken"
+msgstr "Cancel"
 
 #: wiki.php:1090
 #, fuzzy
 msgid "Du hast keine Berechtigung zum Anzeigen dieser Seite."
-msgstr "Je hebt geen toestemming om deze pagina te bekijken."
+msgstr "You do not have permission to view this page."
 
 #: wiki.php:1105 wiki.php:1256
 msgid "Bearbeiten"
-msgstr "Bewerking"
+msgstr "Edit"
 
 #: wiki.php:1128
-#, fuzzy
 msgid "Privat"
-msgstr "Privé"
+msgstr "Private"
 
 #: wiki.php:1131
 #, fuzzy
 msgid "Passwortgeschützt"
-msgstr "Wachtwoord beschermd"
+msgstr "Password protected"
 
 #: wiki.php:1134
 #, fuzzy
 msgid "Öffentlich"
-msgstr "Publiek"
+msgstr "Public"
 
 #: wiki.php:1189
 #, fuzzy
 msgid "Wiki Kategorien/Tags"
-msgstr "Wiki Categorieën/Tags"
+msgstr "Wiki Categories/Tags"
 
 #: wiki.php:1193
 #, fuzzy
 msgid "Wiki-Benachrichtigungen"
-msgstr "Wiki-meldingen"
+msgstr "Wiki Notifications"
 
 #: wiki.php:1243
 #, fuzzy
 msgid "Wiki-Seite"
-msgstr "Wiki pagina"
+msgstr "wiki page"
 
 #: wiki.php:1246
 #, fuzzy
 msgid "Diskussion"
-msgstr "Discussie"
+msgstr "discussion"
 
 #: wiki.php:1249
 #, fuzzy
 msgid "Verlauf"
-msgstr "Cursus"
+msgstr "Course"
 
 #: wiki.php:1258
 #, fuzzy
 msgid "Erweitertes bearbeiten"
-msgstr "Geavanceerde bewerking"
+msgstr "Advanced edit"
 
 #: wiki.php:1260
 #, fuzzy
 msgid "Neues (Sub)Wiki"
-msgstr "Nieuwe (sub)wiki"
+msgstr "New (sub)wiki"
 
 #: wiki.php:1329
 #, fuzzy, php-format
 msgctxt "post revision"
 msgid "%1$s von %2$s"
-msgstr "%1$s van %2$s"
+msgstr "%1$s of %2$s"
 
 #: wiki.php:1357
 #, fuzzy
 msgid "Wiederherstellen"
-msgstr "Herstel"
+msgstr "Restore"
 
 #: wiki.php:1377
 #, fuzzy
 msgid "Revisionen vergleichen"
-msgstr "Vergelijk herzieningen"
+msgstr "Compare revisions"
 
 #: wiki.php:1387
 #, fuzzy
 msgctxt "revisions column name"
 msgid "Alt"
-msgstr "Oud"
+msgstr "Old"
 
 #: wiki.php:1388
 #, fuzzy
 msgctxt "revisions column name"
 msgid "Neu"
-msgstr "Nieuw"
+msgstr "New"
 
 #: wiki.php:1389
 #, fuzzy
 msgctxt "revisions column name"
 msgid "Datum erstellt"
-msgstr "Datum gemaakt"
+msgstr "date created"
 
 #: wiki.php:1390
 #, fuzzy
 msgid "Autor"
-msgstr "Auteur"
+msgstr "author"
 
 #: wiki.php:1391
 msgid "Aktionen"
-msgstr "Acties"
+msgstr "Actions"
 
 #: wiki.php:1554 wiki.php:1691 wiki.php:1701
 #, fuzzy
 msgid "Wikis"
-msgstr "Wikis"
+msgstr "wikis"
 
 #: wiki.php:1555
 #, fuzzy
 msgid "Sub-Wikis"
-msgstr "Sub-Wiki's"
+msgstr "subwikis"
 
 #: wiki.php:1693
 #, fuzzy
 msgid "Wiki hinzufügen"
-msgstr "Wiki toevoegen"
+msgstr "Add wiki"
 
 #: wiki.php:1694
 #, fuzzy
 msgid "Neues Wiki hinzufügen"
-msgstr "Een nieuwe wiki toevoegen"
+msgstr "Add new wiki"
 
 #: wiki.php:1695
 #, fuzzy
 msgid "Wiki bearbeiten"
-msgstr "Wijzig wiki"
+msgstr "edit wiki"
 
 #: wiki.php:1696
 #, fuzzy
 msgid "Neues Wiki"
-msgstr "Nieuwe Wiki"
+msgstr "New wiki"
 
 #: wiki.php:1697
 #, fuzzy
 msgid "Wiki anzeigen"
-msgstr "Toon wiki"
+msgstr "view wiki"
 
 #: wiki.php:1698
 #, fuzzy
 msgid "Suche Wiki"
-msgstr "Wiki zoeken"
+msgstr "Search wiki"
 
 #: wiki.php:1699
 #, fuzzy
 msgid "Kein Wiki gefunden"
-msgstr "Geen wiki gevonden"
+msgstr "No wiki found"
 
 #: wiki.php:1700
 #, fuzzy
 msgid "Im Papierkorb wurden keine Wikis gefunden"
-msgstr "Er zijn geen wiki's gevonden in de prullenbak"
+msgstr "No wikis were found in the recycle bin"
 
 #: wiki.php:1743
 #, fuzzy
 msgid "Bist Du sicher, dass Sie diese Version wiederherstellen möchtest?"
-msgstr "Weet je zeker dat je deze versie wilt herstellen?"
+msgstr "Are you sure you want to restore this version?"
 
 #: wiki.php:1762
 #, fuzzy
 msgid "Wiki-E-Mail-Benachrichtigungen"
-msgstr "Wiki e-mail meldingen"
+msgstr "Wiki email notifications"
 
 #: wiki.php:1814
 #, fuzzy
 msgid "Aktiviere E-Mail-Benachrichtigungen"
-msgstr "E-mailmeldingen activeren"
+msgstr "Enable email notifications"
 
 #: wiki.php:1888
 #, fuzzy, php-format
@@ -1861,18 +1851,18 @@ msgid ""
 "\n"
 "Abonnement kündigen: CANCEL_URL"
 msgstr ""
-"Beste abonnee,\n"
+"Dear subscriber,\n"
 "\n"
-"%s is veranderd\n"
+"%s has been changed\n"
 "\n"
-"U kunt de volledige wikipagina hier lezen: %s\n"
+"You can read the wiki page in full here: %s\n"
 "\n"
 "%s\n"
 "\n"
-"Bedankt,\n"
-"BLOGNAME\n"
+"Thanks,\n"
+"BLOG NAME\n"
 "\n"
-"Abonnement opzeggen: CANCEL_URL"
+"Cancel Subscription: CANCEL_URL"
 
 #: wiki.php:1902
 #, fuzzy, php-format
@@ -1892,20 +1882,20 @@ msgid ""
 "\n"
 "Abonnement kündigen: %s"
 msgstr ""
-"Beste auteur,\n"
+"Dear author,\n"
 "\n"
-"%s is veranderd\n"
+"%s has been changed\n"
 "\n"
-"U kunt de volledige wikipagina hier lezen: %s\n"
+"You can read the wiki page in full here: %s\n"
 "\n"
-"Je kunt de wijzigingen ongedaan maken: %s\n"
+"You can undo the changes: %s\n"
 "\n"
 "%s\n"
 "\n"
-"Bedankt,\n"
+"Thanks,\n"
 "%s\n"
 "\n"
-"Abonnement opzeggen: %s"
+"Unsubscribe: %s"
 
 #: wiki.php:1917
 #, fuzzy, php-format
@@ -1924,24 +1914,24 @@ msgid ""
 "\n"
 "Abonnement kündigen: %s"
 msgstr ""
-"Beste auteur,\n"
+"Dear author,\n"
 "\n"
-"%s is veranderd\n"
+"%s has been changed\n"
 "\n"
-"U kunt de volledige wikipagina hier lezen: %s\n"
-"\n"
-"%s\n"
-"\n"
-"Bedankt,\n"
+"You can read the wiki page in full here: %s\n"
 "\n"
 "%s\n"
 "\n"
-"Abonnement opzeggen: %s"
+"Thanks,\n"
+"\n"
+"%s\n"
+"\n"
+"Unsubscribe: %s"
 
 #: wiki.php:1964
 #, fuzzy
 msgid "Änderungen an der Wiki-Seite"
-msgstr "Wijzigingen in de wikipagina"
+msgstr "Changes to the wiki page"
 
 #. Plugin Name of the plugin/theme
 #, fuzzy
@@ -1959,13 +1949,13 @@ msgid ""
 "Ein simples aber mächtiges Wiki-Plugin für Deine WordPress Seite, inkl. "
 "Multisitesupport, Frontend-Editor, Rechtemanagment."
 msgstr ""
-"Een eenvoudige maar krachtige wiki plugin voor uw WordPress site, inclusief "
-"multisite ondersteuning, frontend editor, rechtenbeheer."
+"A simple but powerful wiki plugin for your WordPress site, including "
+"multisite support, frontend editor, rights management."
 
 #. Author of the plugin/theme
 #, fuzzy
 msgid "Webmasterservice \"Die N3rds\""
-msgstr "Webmasterservice \"De N3rds"
+msgstr "Webmaster Service \"The N3rds\""
 
 #. Author URI of the plugin/theme
 #, fuzzy
