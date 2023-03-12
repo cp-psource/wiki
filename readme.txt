@@ -72,11 +72,11 @@ Use the opportunity to do so on GitHub or send your files to: webmaster@n3rds.wo
 
 = DEUTSCH =
 
-= Finde mehr Piestingtal.Source =
+= Finde mehr CP-Powersource =
 
-Wirf einen Blick in unser [PSOURCE Sortiment](https://n3rds.work/psource_kategorien/cp-powersource/) und hole noch mehr aus Deinem ClassicPress/ClassicPress!
+Wirf einen Blick in unser [PSOURCE Sortiment](https://n3rds.work/psource_kategorien/cp-powersource/) und hole noch mehr aus Deinem ClassicPress!
 
-Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere Piestingtal.Source informiert!
+Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere CP-Powersource informiert!
 
 = Unterstütze PSOURCE =
 
@@ -88,11 +88,11 @@ Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktion
 
 = ENGLISH =
 
-= Find more Piestingtal.Source =
+= Find more CP-Powersource =
 
-Take a look at our [PSOURCE range](https://n3rds.work/psource_categories/cp-powersource/) and get even more out of your ClassicPress/ClassicPress!
+Take a look at our [PSOURCE range](https://n3rds.work/psource_categories/cp-powersource/) and get even more out of your ClassicPress!
 
-Keep yourself informed about our Piestingtal.Source with our [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/)!
+Keep yourself informed about our CP-Powersource with our [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/)!
 
 = Support PSOURCE =
 
