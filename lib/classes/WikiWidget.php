@@ -64,11 +64,11 @@ class WikiWidget extends WP_Widget {
 
 		$sub_wikis = get_posts(
 				array('post_parent' => $wiki->ID,
-						 'post_type' => 'psource_wiki',
-						 'orderby' => $order_by,
-						 'order' => $order,
-						 'numberposts' => 100000
-				));
+				'post_type' => 'psource_wiki',
+				'orderby' => $order_by,
+				'order' => $order,
+				'numberposts' => 100000
+			));
 		?>
 
 		<ul>
@@ -113,10 +113,10 @@ class WikiWidget extends WP_Widget {
 		?>
 
 		<div style="text-align:left">
-				<label for="<?php echo $this->get_field_id('title'); ?>" style="line-height:35px;display:block;"><?php _e('Title', 'ps-wiki'); ?>:<br />
+				<label for="<?php echo $this->get_field_id('title'); ?>" style="line-height:35px;display:block;"><?php _e('Titel', 'ps-wiki'); ?>:<br />
 			<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo $options['title']; ?>" type="text" style="width:95%;" />
 				</label>
-			<label for="<?php echo $this->get_field_id('hierarchical'); ?>" style="line-height:35px;display:block;"><?php _e('Ebenene', 'ps-wiki'); ?>:<br />
+			<label for="<?php echo $this->get_field_id('hierarchical'); ?>" style="line-height:35px;display:block;"><?php _e('Ebenen', 'ps-wiki'); ?>:<br />
 					<select id="<?php echo $this->get_field_id('hierarchical'); ?>" name="<?php echo $this->get_field_name('hierarchical'); ?>" >
 
 				<?php for ($i=1; $i<5; $i++) { ?>

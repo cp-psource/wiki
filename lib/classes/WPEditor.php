@@ -1006,7 +1006,7 @@ final class WikiEditor {
 
 				continue;
 
-			} elseif ( !empty($v) && is_string($v) && ( ('{' == $v{0} && '}' == $v{strlen($v) - 1}) || ('[' == $v{0} && ']' == $v{strlen($v) - 1}) || preg_match('/^\(?function ?\(/', $v) ) ) {
+			} elseif ( !empty($v) && is_string($v) && ( ('{' == $v[0] && '}' == $v[strlen($v) - 1]) || ('[' == $v[0] && ']' == $v[strlen($v) - 1]) || preg_match('/^\(?function ?\(/', $v) ) ) {
 
 				$options .= $k . ':' . $v . ',';
 

@@ -1,15 +1,13 @@
 <?php
-
 /*
 Plugin Name: PS-Wiki
 Plugin URI: https://n3rds.work/piestingtal_source/ps-wiki-plugin/
 Description: Ein simples aber mächtiges Wiki-Plugin für Deine ClassicPress Seite, inkl. Multisitesupport, Frontend-Editor, Rechtemanagment.
 Author: Webmasterservice "Die N3rds"
-Version: 1.3.5
+Version: 1.3.6
 Author URI: https://n3rds.work
 Text Domain: ps-wiki
 */
-
 
 /*
 Copyright 2019-2024 DerN3rd (https://n3rds.work)
@@ -37,7 +35,7 @@ $MyUpdateChecker = PucFactory::buildUpdateChecker(
 class Wiki {
 
 	// @var string Aktuelle Version
-	var $version = '1.3.5';
+	var $version = '1.3.6';
 
 	// @var string Der DB Prefix
 	var $db_prefix = '';

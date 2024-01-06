@@ -4,7 +4,7 @@ Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free
 Tags: multisite, wiki, wikipedia
 Requires at least: 4.9
 Tested up to: 5.6
-Stable tag: 1.3.5
+Stable tag: 1.3.6
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -43,9 +43,7 @@ Lightning fast results
 Network Search uses our powerful PS-Multisite Post Index Plugin that indexes all posts on every site in your network,
 to create a lightning-fast search across your entire network.
 
-
 [Projektseite](https://n3rds.work/cp_psource/ps-wiki-plugin/)
-[Supportforum](https://n3rds.work/forum/ps-wiki-supportforum/)
 [GitHub](https://github.com/cp-psource/ps-wiki)
 
 [POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/cp-powersource/)
@@ -68,7 +66,7 @@ Nutze die Möglichkeit dazu auf GitHub oder sende Deine Dateien an: webmaster@n3
 You are welcome to send us your optimized .po/.mo files for your native language. 
 Use the opportunity to do so on GitHub or send your files to: webmaster@n3rds.work
 
-== CP PSOURCE ==
+== PSOURCE ==
 
 = DEUTSCH =
 
@@ -103,7 +101,12 @@ Make a [donation by bank transfer or PayPal](https://n3rds.work/spenderaktionen/
 
 == ChangeLog ==
 
-= 1.3.5 = DerN3rd =
+= 1.3.6 =
+
+* Textanpassung
+* PhP8 Fix
+
+= 1.3.5 =
 
 * CSS für Revisionen verbessert (auch Responsive)
 * Style des Frontend-Editors verbessert
@@ -114,14 +117,14 @@ Make a [donation by bank transfer or PayPal](https://n3rds.work/spenderaktionen/
 * Register post_type Fix
 * Code-Optimierung
 
-= 1.3.4 = DerN3rd =
+= 1.3.4 =
 
 * Jede Menge Code überholt
 * Komplett in Deutsch
 * Texte angepasst
 * Code-Entschlackt
 
-= 1.3.3 = DerN3rd =
+= 1.3.3 =
 
 * Overhauled von WPMUDEV
 * Release WMS N@W Netzwerksuche
