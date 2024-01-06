@@ -12,7 +12,7 @@ Text Domain: ps-wiki
 
 
 /*
-Copyright 2019-2023 DerN3rd (https://n3rds.work)
+Copyright 2019-2024 DerN3rd (https://n3rds.work)
 Author - Der N3rd
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License (Version 2 - GPLv2) as published by
