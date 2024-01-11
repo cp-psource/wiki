@@ -109,7 +109,7 @@ final class WikiEditor {
 			}
 
 			if ( $cookie )
-				$set['editor_height'] = $cookie;
+			$set['editor_height'] = $cookie;
 		}
 
 		if ( $set['editor_height'] < 50 )
@@ -929,63 +929,33 @@ final class WikiEditor {
 
 
 				/**
-
 				 * Filter the teenyMCE config before init.
-
 				 *
-
 				 * @since 2.7.0
-
 				 *
-
 				 * @param array  $mceInit   An array with teenyMCE config.
-
 				 * @param string $editor_id Unique editor identifier, e.g. 'content'.
-
 				 */
-
 				$mceInit = apply_filters( 'teeny_mce_before_init', $mceInit, $editor_id );
-
 			} else {
-
-
-
 				/**
-
 				 * Filter the TinyMCE config before init.
-
 				 *
-
 				 * @since 2.5.0
-
 				 *
-
 				 * @param array  $mceInit   An array with TinyMCE config.
-
 				 * @param string $editor_id Unique editor identifier, e.g. 'content'.
-
 				 */
-
 				$mceInit = apply_filters( 'tiny_mce_before_init', $mceInit, $editor_id );
-
 			}
-
-
 
 			if ( empty( $mceInit['toolbar3'] ) && ! empty( $mceInit['toolbar4'] ) ) {
-
 				$mceInit['toolbar3'] = $mceInit['toolbar4'];
-
 				$mceInit['toolbar4'] = '';
-
 			}
 
-
-
 			self::$mce_settings[$editor_id] = $mceInit;
-
 		} // end if self::$this_tinymce
-
 	}
 
 
@@ -2281,209 +2251,113 @@ final class WikiEditor {
 				$info = mysql2date( __( 'Y/m/d' ), $post->post_date );
 
 			else
-
 				$info = $pts[ $post->post_type ]->labels->singular_name;
-
-
-
-			$results[] = array(
-
+				$results[] = array(
 				'ID' => $post->ID,
-
 				'title' => trim( esc_html( strip_tags( get_the_title( $post ) ) ) ),
-
 				'permalink' => get_permalink( $post->ID ),
-
 				'info' => $info,
-
 			);
-
 		}
 
-
-
 		/**
-
 		 * Filter the link query results.
-
 		 *
-
 		 * Allows modification of the returned link query results.
-
 		 *
-
 		 * @since 3.7.0
-
 		 *
-
 		 * @see 'wp_link_query_args' filter
-
 		 *
-
 		 * @param array $results {
-
 		 *     An associative array of query results.
-
 		 *
-
 		 *     @type array {
-
 		 *         @type int    $ID        Post ID.
-
 		 *         @type string $title     The trimmed, escaped post title.
-
 		 *         @type string $permalink Post permalink.
-
 		 *         @type string $info      A 'Y/m/d'-formatted date for 'post' post type,
-
 		 *                                 the 'singular_name' post type label otherwise.
-
 		 *     }
-
 		 * }
-
 		 * @param array $query  Ein Array von WP_Query-Argumenten.
-
 		 */
-
 		return apply_filters( 'wp_link_query', $results, $query );
-
 	}
 
-
-
 	/**
-
 	 * Dialog zur internen Verlinkung.
-
 	 *
-
 	 * @since 3.1.0
-
 	 */
-
 	public static function wp_link_dialog() {
-
 		$search_panel_visible = '1' == get_user_setting( 'wplink', '0' ) ? ' search-panel-visible' : '';
-
-
-
 		// Anzeige: Hier ist keine erforderlich, siehe #WP27605
-
 		?>
-
 		<div id="wp-link-backdrop" style="display: none"></div>
-
 		<div id="wp-link-wrap" class="wp-core-ui<?php echo $search_panel_visible; ?>" style="display: none">
-
 		<form id="wp-link" tabindex="-1">
-
 		<?php wp_nonce_field( 'internal-linking', '_ajax_linking_nonce', false ); ?>
-
 		<div id="link-modal-title">
-
 			<?php _e( 'Link einfügen/bearbeiten' ) ?>
-
 			<div id="wp-link-close" tabindex="0"></div>
-
 	 	</div>
 
 		<div id="link-selector">
 
 			<div id="link-options">
-
 				<p class="howto"><?php _e( 'Gib die Ziel-URL ein' ); ?></p>
-
 				<div>
-
 					<label><span><?php _e( 'URL' ); ?></span><input id="url-field" type="text" name="href" /></label>
-
 				</div>
 
 				<div>
-
 					<label><span><?php _e( 'Titel' ); ?></span><input id="link-title-field" type="text" name="linktitle" /></label>
-
 				</div>
 
 				<div class="link-target">
-
 					<label><span>&nbsp;</span><input type="checkbox" id="link-target-checkbox" /> <?php _e( 'Link in neuem Fenster/Tab öffnen' ); ?></label>
-
 				</div>
-
 			</div>
 
 			<p class="howto" id="wp-link-search-toggle"><?php _e( 'Oder auf bestehende Inhalte verlinken' ); ?></p>
 
 			<div id="search-panel">
-
 				<div class="link-search-wrapper">
-
 					<label>
-
 						<span class="search-label"><?php _e( 'Suche' ); ?></span>
-
 						<input type="search" id="search-field" class="link-search-field" autocomplete="off" />
-
 						<span class="spinner"></span>
-
 					</label>
-
 				</div>
 
 				<div id="search-results" class="query-results">
-
 					<ul></ul>
-
 					<div class="river-waiting">
-
 						<span class="spinner"></span>
-
 					</div>
-
 				</div>
 
 				<div id="most-recent-results" class="query-results">
-
 					<div class="query-notice"><em><?php _e( 'Kein Suchbegriff angegeben. Zuletzt verwendete Elemente anzeigen.' ); ?></em></div>
-
 					<ul></ul>
-
 					<div class="river-waiting">
-
 						<span class="spinner"></span>
-
 					</div>
-
 				</div>
-
 			</div>
-
 		</div>
 
 		<div class="submitbox">
-
 			<div id="wp-link-update">
-
-				<input type="submit" value="<?php esc_attr_e( 'Add Link' ); ?>" class="button button-primary" id="wp-link-submit" name="wp-link-submit">
-
+				<input type="submit" value="<?php esc_attr_e( 'Link hinzufügen' ); ?>" class="button button-primary" id="wp-link-submit" name="wp-link-submit">
 			</div>
-
 			<div id="wp-link-cancel">
-
-				<a class="submitdelete deletion" href="#"><?php _e( 'Cancel' ); ?></a>
-
+				<a class="submitdelete deletion" href="#"><?php _e( 'Abbrechen' ); ?></a>
 			</div>
-
 		</div>
-
 		</form>
-
 		</div>
-
 		<?php
-
 	}
-
 }

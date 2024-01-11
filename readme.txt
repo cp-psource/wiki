@@ -101,6 +101,10 @@ Make a [donation by bank transfer or PayPal](https://n3rds.work/spenderaktionen/
 
 == ChangeLog ==
 
+= 1.3.7 =
+
+* Fix: Uncaught Error: Call to undefined method
+
 = 1.3.6 =
 
 * Textanpassung

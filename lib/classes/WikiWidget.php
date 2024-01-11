@@ -101,46 +101,62 @@ class WikiWidget extends WP_Widget {
 
 	function form($instance) {
 		global $wiki;
-
-		$instance = wp_parse_args( (array) $instance, array( 'title' => __('Wiki', 'ps-wiki'), 'hierarchical' => 'yes', 'order_by' => $wiki->get_setting('sub_wiki_order_by'), 'order' => $wiki->get_setting('sub_wiki_order')));
-		$options = array('title' => strip_tags($instance['title']), 'hierarchical' => $instance['hierarchical'], 'order_by' => $instance['order_by'], 'order' => $instance['order']);
-
-		if ($options['hierarchical'] == 'yes') {
-			$options['hierarchical'] = 0;
-		} else if ($options['hierarchical'] == 'no') {
-			$options['hierarchical'] = 1;
-		}
+	
+		// Standardwerte festlegen
+		$defaults = array(
+			'title' => __('Wiki', 'ps-wiki'),
+			'hierarchical' => 'yes',
+			'order_by' => 'menu_order',
+			'order' => 'ASC'
+		);
+	
+		// Standardwerte mit den vorhandenen Instanzwerten zusammenführen
+		$instance = wp_parse_args((array) $instance, $defaults);
+	
+		// Einstellungen abrufen
+		$wiki_settings = get_option('ps_wiki_settings'); // Oder den richtigen Optionsnamen verwenden
+	
+		// Standardwerte für 'order_by' und 'order' anpassen, wenn Einstellungen vorhanden sind
+		$instance['order_by'] = isset($wiki_settings['sub_wiki_order_by']) ? $wiki_settings['sub_wiki_order_by'] : $instance['order_by'];
+		$instance['order'] = isset($wiki_settings['sub_wiki_order']) ? $wiki_settings['sub_wiki_order'] : $instance['order'];
+	
+		// Konvertieren Sie 'hierarchical' in einen numerischen Wert
+		$instance['hierarchical'] = ($instance['hierarchical'] == 'yes') ? 0 : (($instance['hierarchical'] == 'no') ? 1 : $instance['hierarchical']);
 		?>
-
+	
 		<div style="text-align:left">
-				<label for="<?php echo $this->get_field_id('title'); ?>" style="line-height:35px;display:block;"><?php _e('Titel', 'ps-wiki'); ?>:<br />
-			<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo $options['title']; ?>" type="text" style="width:95%;" />
-				</label>
-			<label for="<?php echo $this->get_field_id('hierarchical'); ?>" style="line-height:35px;display:block;"><?php _e('Ebenen', 'ps-wiki'); ?>:<br />
-					<select id="<?php echo $this->get_field_id('hierarchical'); ?>" name="<?php echo $this->get_field_name('hierarchical'); ?>" >
-
-				<?php for ($i=1; $i<5; $i++) { ?>
-				<option value="<?php echo $i; ?>" <?php if ($options['hierarchical'] == $i){ echo 'selected="selected"'; } ?> ><?php _e($i, 'ps-wiki'); ?></option>
-				<?php } ?>
-				<option value="0" <?php if ($options['hierarchical'] == 0){ echo 'selected="selected"'; } ?> ><?php _e('Unlimitiert', 'ps-wiki'); ?></option>
-					</select>
-				</label>
-
-			<label for="<?php echo $this->get_field_id('order_by'); ?>" style="line-height:35px;display:block;"><?php _e('Ordne nach', 'ps-wiki'); ?>:<br />
-					<select id="<?php echo $this->get_field_id('order_by'); ?>" name="<?php echo $this->get_field_name('order_by'); ?>" >
-				<option value="menu_order" <?php if ($options['order_by'] == 'menu_order'){ echo 'selected="selected"'; } ?> ><?php _e('Menüreihenfolge / Reihenfolge erstellt', 'ps-wiki'); ?></option>
-				<option value="title" <?php if ($options['order_by'] == 'title'){ echo 'selected="selected"'; } ?> ><?php _e('Titel', 'ps-wiki'); ?></option>
-				<option value="rand" <?php if ($options['order_by'] == 'rand'){ echo 'selected="selected"'; } ?> ><?php _e('Zufällig', 'ps-wiki'); ?></option>
-					</select>
-				</label>
-
-			<label for="<?php echo $this->get_field_id('order'); ?>" style="line-height:35px;display:block;"><?php _e('Ordnen', 'ps-wiki'); ?>:<br />
-					<select id="<?php echo $this->get_field_id('order'); ?>" name="<?php echo $this->get_field_name('order'); ?>" >
-				<option value="ASC" <?php if ($options['order'] == 'ASC'){ echo 'selected="selected"'; } ?> ><?php _e('Aufsteigend', 'ps-wiki'); ?></option>
-				<option value="DESC" <?php if ($options['order'] == 'DESC'){ echo 'selected="selected"'; } ?> ><?php _e('Absteigend', 'ps-wiki'); ?></option>
-					</select>
-				</label>
-
+			<label for="<?php echo $this->get_field_id('title'); ?>" style="line-height:35px;display:block;">
+				<?php _e('Titel', 'ps-wiki'); ?>:<br />
+				<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo esc_attr($instance['title']); ?>" type="text" style="width:95%;" />
+			</label>
+	
+			<label for="<?php echo $this->get_field_id('hierarchical'); ?>" style="line-height:35px;display:block;">
+				<?php _e('Ebenen', 'ps-wiki'); ?>:<br />
+				<select id="<?php echo $this->get_field_id('hierarchical'); ?>" name="<?php echo $this->get_field_name('hierarchical'); ?>">
+					<?php for ($i = 1; $i < 5; $i++) { ?>
+						<option value="<?php echo $i; ?>" <?php selected($instance['hierarchical'], $i); ?>><?php _e($i, 'ps-wiki'); ?></option>
+					<?php } ?>
+					<option value="0" <?php selected($instance['hierarchical'], 0); ?>><?php _e('Unlimitiert', 'ps-wiki'); ?></option>
+				</select>
+			</label>
+	
+			<label for="<?php echo $this->get_field_id('order_by'); ?>" style="line-height:35px;display:block;">
+				<?php _e('Ordne nach', 'ps-wiki'); ?>:<br />
+				<select id="<?php echo $this->get_field_id('order_by'); ?>" name="<?php echo $this->get_field_name('order_by'); ?>">
+					<option value="menu_order" <?php selected($instance['order_by'], 'menu_order'); ?>><?php _e('Menüreihenfolge / Reihenfolge erstellt', 'ps-wiki'); ?></option>
+					<option value="title" <?php selected($instance['order_by'], 'title'); ?>><?php _e('Titel', 'ps-wiki'); ?></option>
+					<option value="rand" <?php selected($instance['order_by'], 'rand'); ?>><?php _e('Zufällig', 'ps-wiki'); ?></option>
+				</select>
+			</label>
+	
+			<label for="<?php echo $this->get_field_id('order'); ?>" style="line-height:35px;display:block;">
+				<?php _e('Ordnen', 'ps-wiki'); ?>:<br />
+				<select id="<?php echo $this->get_field_id('order'); ?>" name="<?php echo $this->get_field_name('order'); ?>">
+					<option value="ASC" <?php selected($instance['order'], 'ASC'); ?>><?php _e('Aufsteigend', 'ps-wiki'); ?></option>
+					<option value="DESC" <?php selected($instance['order'], 'DESC'); ?>><?php _e('Absteigend', 'ps-wiki'); ?></option>
+				</select>
+			</label>
+	
 			<input type="hidden" name="wiki-submit" id="wiki-submit" value="1" />
 		</div>
 		<?php

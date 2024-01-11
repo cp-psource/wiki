@@ -43,8 +43,13 @@ class NewWikisWidget extends WP_Widget {
 			<?php
 			foreach ($wiki_posts as $wiki) {
 			?>
-				<li><a href="<?php print get_permalink($wiki->ID); ?>" class="<?php print ($wiki->ID == $post->ID)?'current':''; ?>" ><?php print $wiki->post_title; ?></a>
-				<?php ($hierarchical == 0 || $hierarchical > 1)?$this->_print_sub_wikis($wiki, $hierarchical, 2):''; ?>
+				<li>
+					<a href="<?php echo get_permalink($wiki->ID); ?>" class="<?php echo ($wiki->ID == $post->ID) ? 'current' : ''; ?>" >
+						<?php echo $wiki->post_title; ?>
+					</a>
+					<?php if ($hierarchical == 0 || $hierarchical > 1) {
+						$this->_print_sub_wikis($wiki, $hierarchical, 2);
+					} ?>
 				</li>
 			<?php
 			}
