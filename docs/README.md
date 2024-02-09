@@ -3,11 +3,7 @@
 
 **Zusammenarbeiten, diskutieren, Crowdsourcing betreiben und bessere Inhalte erstellen mit PS-Wiki für ClassicPress, Multisite und BuddyPress.**
 
-[DOWNLOAD](https://github.com/cp-psource/ps-wiki/releases)
-
-[FORUM](https://github.com/cp-psource/ps-wiki/discussions)
-
-[PROBLEM-MELDEN](https://github.com/cp-psource/ps-wiki/issues)
+[DOWNLOAD](https://github.com/cp-psource/ps-wiki/releases) | [FORUM](https://github.com/cp-psource/ps-wiki/discussions) | [PROBLEM-MELDEN](https://github.com/cp-psource/ps-wiki/issues)
 
 ## Füge mit PS-Wiki Front-End-Zusammenarbeit und -Bearbeitung von Inhalten zu ClassicPress hinzu. Crowdsource alles von Informationsblättern und Bedienungsanleitungen bis hin zu kreativen Schreibprojekten.
 
