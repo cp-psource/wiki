@@ -37,7 +37,7 @@ Durchsuche schnell Hunderte von Beiträgen, Updates und Diskussionen. PS-Wiki ve
 
 Wiki-spezifische Tags und Kategorien ermöglichen eine leistungsfähigere Suche.
 
-![Frontend-Interface-735x470](https://n3rds.work/wp-content/uploads/2024/01/Frontend-Interface-735x470-583x373.jpg)
+![Frontend-Interface-735x470](https://github.com/cp-psource/ps-wiki/blob/master/docs/assets/Frontend-Interface-735x470-583x373.jpg)
 
 Diskussionsforen bieten klare Kommunikationswege.
 
