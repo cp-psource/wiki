@@ -47,6 +47,7 @@ Themenspezifische Diskussionsforen bieten Benutzern mehr Möglichkeiten zur Inte
 ### PS Bloghosting und Premium-Plugin-Integration
 
 Mit der integrierten [PS Bloghosting](https://cp-psource.github.io/ps-bloghosting/)-Integration kannst Du die Wiki-Erstellung einschränken und unbegrenzt viele Wikis als kostenpflichtiges Upgrade anbieten. Steigere die Produktivität und ändere die Art und Weise, wie Benutzer mit Inhalten auf Deiner Webseite oder Deinem Netzwerk interagieren.
+
 ![prosites-integration-735x470](assets/prosites-integration-735x470-583x373.jpg)
 
 PS-Wiki lässt sich nahtlos in PS Bloghosting integrieren.
