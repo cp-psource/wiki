@@ -19,7 +19,7 @@ Mit PS-Wiki kannst Du ganz einfach alles erstellen, von einer Sammlung von von M
 **Anzeigereihenfolge konfigurieren** Zeige Wiki-Archive in aufsteigender oder absteigender Reihenfolge nach Titel, erstellter Reihenfolge, Titel oder zufällig an – je nachdem, was Deinen Anforderungen am besten entspricht.
 
 
-![wiki-frontend735x470](/least-github-pages/assets/wiki-frontend735x470-583x372.jpg)
+![wiki-frontend735x470](/least-github-pages/ps-wiki/docs/assets/wiki-frontend735x470-583x372.jpg)
 
 Die vollständige Front-End-Schnittstelle erleichtert jedem Benutzer die Zusammenarbeit.
 
