@@ -55,3 +55,8 @@ PS-Wiki lässt sich nahtlos in PS Bloghosting integrieren.
 ### Deiner Fantasie sind keine Grenzen gesetzt
 
 PS-Wiki ist ein einfaches Plugin, das die volle Leistungsfähigkeit der ClassicPress-Taxonomien und Beziehungen zwischen Beitragstypen freischaltet. Von Fandom-Seiten über Spiele-Wikis bis hin zu Forschungskooperationen – oder einfach nur eine umfassende Liste aller Pflanzenarten in Deiner Nähe – mit PS-Wiki ist alles möglich.
+
+[DOWNLOAD](https://github.com/cp-psource/ps-wiki/releases)
+[FORUM](https://github.com/cp-psource/ps-wiki/discussions)
+[PROBLEM-MELDEN](https://github.com/cp-psource/ps-wiki/issues)
+
