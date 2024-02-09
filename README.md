@@ -19,7 +19,7 @@ Mit PS-Wiki kannst Du ganz einfach alles erstellen, von einer Sammlung von von M
 **Anzeigereihenfolge konfigurieren** Zeige Wiki-Archive in aufsteigender oder absteigender Reihenfolge nach Titel, erstellter Reihenfolge, Titel oder zufällig an – je nachdem, was Deinen Anforderungen am besten entspricht.
 
 
-![wiki-frontend735x470](https://n3rds.work/wp-content/uploads/2024/01/wiki-frontend735x470-583x372.jpg)
+![wiki-frontend735x470](https://github.com/cp-psource/ps-wiki/blob/master/docs/assets/wiki-frontend735x470-583x372.jpg)
 
 Die vollständige Front-End-Schnittstelle erleichtert jedem Benutzer die Zusammenarbeit.
 
@@ -33,7 +33,7 @@ Verwalte und verfolge Änderungen wie ein ClassicPress-SuperHero über die Regis
 
 Durchsuche schnell Hunderte von Beiträgen, Updates und Diskussionen. PS-Wiki verwendet Wiki-spezifische Tags und Kategorien, um das Auffinden von Inhalten zu erleichtern. Der Dashboard-Manager und benutzerdefinierte Beitragstypen ermöglichen Administratoren einen schnellen Zugriff über das Backend.
 
-![wiki-manage-735x470](https://n3rds.work/wp-content/uploads/2024/01/wiki-manage-735x470-583x372.jpg)
+![wiki-manage-735x470](https://github.com/cp-psource/ps-wiki/blob/master/docs/assets/wiki-manage-735x470-583x372.jpg)
 
 Wiki-spezifische Tags und Kategorien ermöglichen eine leistungsfähigere Suche.
 
@@ -47,8 +47,8 @@ Themenspezifische Diskussionsforen bieten Benutzern mehr Möglichkeiten zur Inte
 
 ### PS Bloghosting und Premium-Plugin-Integration
 
-Mit der integrierten [PS Bloghosting](https://n3rds.work/piestingtal_source/ps-bloghosting-multisite-next-level-plugin/)-Integration kannst Du die Wiki-Erstellung einschränken und unbegrenzt viele Wikis als kostenpflichtiges Upgrade anbieten. Steigere die Produktivität und ändere die Art und Weise, wie Benutzer mit Inhalten auf Deiner Webseite oder Deinem Netzwerk interagieren.
-![prosites-integration-735x470](https://n3rds.work/wp-content/uploads/2024/01/prosites-integration-735x470-583x373.jpg)
+Mit der integrierten [PS Bloghosting](https://cp-psource.github.io/ps-bloghosting/)-Integration kannst Du die Wiki-Erstellung einschränken und unbegrenzt viele Wikis als kostenpflichtiges Upgrade anbieten. Steigere die Produktivität und ändere die Art und Weise, wie Benutzer mit Inhalten auf Deiner Webseite oder Deinem Netzwerk interagieren.
+![prosites-integration-735x470](https://github.com/cp-psource/ps-wiki/blob/master/docs/assets/prosites-integration-735x470-583x373.jpg)
 
 PS-Wiki lässt sich nahtlos in PS Bloghosting integrieren.
 
