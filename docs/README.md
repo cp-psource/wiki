@@ -1,13 +1,15 @@
 
+# PS Wiki Plugin #
+
+**Zusammenarbeiten, diskutieren, Crowdsourcing betreiben und bessere Inhalte erstellen mit PS-Wiki für ClassicPress, Multisite und BuddyPress.**
+
 [DOWNLOAD](https://github.com/cp-psource/ps-wiki/releases)
 
 [FORUM](https://github.com/cp-psource/ps-wiki/discussions)
 
 [PROBLEM-MELDEN](https://github.com/cp-psource/ps-wiki/issues)
 
-**Zusammenarbeiten, diskutieren, Crowdsourcing betreiben und bessere Inhalte erstellen mit PS-Wiki für ClassicPress, Multisite und BuddyPress.**
-
-## Füge mit PS-Wiki Front-End-Zusammenarbeit und -Bearbeitung von Inhalten zu ClassicPress hinzu. Crowdsourcen Sie alles von Informationsblättern und Bedienungsanleitungen bis hin zu kreativen Schreibprojekten.
+## Füge mit PS-Wiki Front-End-Zusammenarbeit und -Bearbeitung von Inhalten zu ClassicPress hinzu. Crowdsource alles von Informationsblättern und Bedienungsanleitungen bis hin zu kreativen Schreibprojekten.
 
 Mit PS-Wiki kannst Du ganz einfach alles erstellen, von einer Sammlung von von Mitgliedern verwalteten Nutzungsdokumenten bis hin zu einer Fandom-Webseite für Deine Lieblingsfernsehsendung, auf der Du Informationen über Charaktere, Orte, Regisseure und Episoden sammeln und diskutieren kannst. Gibt es einen besseren Weg, Deine Benutzer einzubeziehen, als ihnen einen sinnvollen Beitrag zu ermöglichen?
 
