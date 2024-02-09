@@ -1,6 +1,5 @@
 === PS-Wiki ===
-Contributors: DerN3rd (WMS N@W)
-Donate link: https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/
+Contributors: DerN3rd (PSOURCE)
 Tags: multisite, wiki, wikipedia
 Requires at least: 4.9
 Tested up to: 5.6
@@ -43,10 +42,10 @@ Lightning fast results
 Network Search uses our powerful PS-Multisite Post Index Plugin that indexes all posts on every site in your network,
 to create a lightning-fast search across your entire network.
 
-[Projektseite](https://n3rds.work/cp_psource/ps-wiki-plugin/)
+[Projektseite](https://cp-psource.github.io/ps-wiki/)
 [GitHub](https://github.com/cp-psource/ps-wiki)
 
-[POWERED BY PSOURCE](https://n3rds.work/psource_kategorien/cp-powersource/)
+[POWERED BY PSOURCE](https://github.com/cp-psource)
 
 == Languages ==
 
@@ -72,32 +71,8 @@ Use the opportunity to do so on GitHub or send your files to: webmaster@n3rds.wo
 
 = Finde mehr CP-Powersource =
 
-Wirf einen Blick in unser [PSOURCE Sortiment](https://n3rds.work/psource_kategorien/cp-powersource/) und hole noch mehr aus Deinem ClassicPress!
+Wirf einen Blick in unser [PSOURCE Sortiment](https://github.com/cp-psource) und hole noch mehr aus Deinem ClassicPress!
 
-Halte Dich mit unserem [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/) über unsere CP-Powersource informiert!
-
-= Unterstütze PSOURCE =
-
-Viele, viele Kaffees konsumieren wir während wir an unseren Plugins und Themes arbeiten.
-Wie wärs? Möchtest Du uns mit einer Kaffee-Spende bei der Arbeit an unseren Plugins unterstützen?
-
-Mach eine [Spende per Überweisung oder PayPal](https://n3rds.work/spendenaktionen/unterstuetze-unsere-psource-free-werke/) wir Danken Dir!
-
-
-= ENGLISH =
-
-= Find more CP-Powersource =
-
-Take a look at our [PSOURCE range](https://n3rds.work/psource_categories/cp-powersource/) and get even more out of your ClassicPress!
-
-Keep yourself informed about our CP-Powersource with our [Newsletter](https://n3rds.work/webmasterservice-n3rdswork-digalize-das-piestingtal/newsletter-management/)!
-
-= Support PSOURCE =
-
-We consume many, many coffees while working on our plugins and themes.
-how about Would you like to support us with a coffee donation while working on our plugins?
-
-Make a [donation by bank transfer or PayPal](https://n3rds.work/spenderaktionen/unterstuetze-unsere-psource-free-werke/) we thank you!
 
 == ChangeLog ==
 
@@ -131,4 +106,4 @@ Make a [donation by bank transfer or PayPal](https://n3rds.work/spenderaktionen/
 = 1.3.3 =
 
 * Overhauled von WPMUDEV
-* Release WMS N@W Netzwerksuche
+* Release PSOURCE Netzwerksuche

@@ -1,16 +1,16 @@
 <?php
 /*
 Plugin Name: PS-Wiki
-Plugin URI: https://n3rds.work/piestingtal_source/ps-wiki-plugin/
+Plugin URI: https://cp-psource.github.io/ps-wiki/
 Description: Ein simples aber mächtiges Wiki-Plugin für Deine ClassicPress Seite, inkl. Multisitesupport, Frontend-Editor, Rechtemanagment.
-Author: Webmasterservice "Die N3rds"
+Author: DerN3rd (PSOURCE)
 Version: 1.3.6
-Author URI: https://n3rds.work
+Author URI: https://github.com/cp-psource
 Text Domain: ps-wiki
 */
 
 /*
-Copyright 2019-2024 DerN3rd (https://n3rds.work)
+Copyright 2019-2024 PSOURCE (https://github.com/cp-psource)
 Author - Der N3rd
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License (Version 2 - GPLv2) as published by
@@ -24,13 +24,17 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
-require 'psource/psource-plugin-update/psource-plugin-updater.php';
-use Psource\PluginUpdateChecker\v5\PucFactory;
-$MyUpdateChecker = PucFactory::buildUpdateChecker(
-	'https://n3rds.work//wp-update-server/?action=get_metadata&slug=ps-wiki', 
-	__FILE__, 
-	'ps-wiki' 
+require 'psource/psource-plugin-update/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/cp-psource/ps-wiki',
+	__FILE__,
+	'ps-wiki'
 );
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('master');
 
 class Wiki {
 
