@@ -226,7 +226,7 @@ class Wiki {
 		global $wp_query, $post;
 
 		if ( is_single() && 'psource_wiki' == get_post_type() ) {
-			//Sucht nach benutzerdefinierten Designvorlagen
+			// Sucht nach benutzerdefinierten Designvorlagen im Theme
 			$wiki_name = $post->post_name;
 			$wiki_id = (int) $post->ID;
 			$templates = array('psource_wiki.php');
@@ -239,14 +239,18 @@ class Wiki {
 
 			if ( $new_template = locate_template($templates) ) {
 				remove_filter('the_content', array(&$this, 'theme'), 1);
-
 				return $new_template;
+			}
+
+			// Fallback: Plugin-Template verwenden
+			$plugin_template = $this->plugin_dir . 'default-templates/psource_wiki.php';
+			if ( file_exists($plugin_template) ) {
+				remove_filter('the_content', array(&$this, 'theme'), 1);
+				return $plugin_template;
 			}
 		}
 		return $template;
 	}
-
-
 
 	function pre_get_posts( $query ) {
 		if( $query->is_main_query() && !is_admin() && !empty($query->query_vars['psource_wiki']) && preg_match('/\//', $query->query_vars['psource_wiki']) == 0 ) {
