@@ -1,5 +1,15 @@
+---
+layout: psource-theme
+title: "PS Wiki Plugin"
+---
 
-# PS Wiki Plugin #
+<h2 align="center" style="color:#38c2bb;">📚 PS Wiki Plugin</h2>
+
+<div class="menu">
+  <a href="https://github.com/cp-psource/wiki/discussions" style="color:#38c2bb;">💬 Forum</a>
+  <a href="https://github.com/cp-psource/wiki/releases" style="color:#38c2bb;">📝 Download</a>
+</div>
+
 
 **Zusammenarbeiten, diskutieren, Crowdsourcing betreiben und bessere Inhalte erstellen mit PS-Wiki für ClassicPress, Multisite und BuddyPress.**
 

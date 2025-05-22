@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: PS-Wiki
-Plugin URI: https://cp-psource.github.io/ps-wiki/
+Plugin URI: https://cp-psource.github.io/wiki/
 Description: Ein simples aber mächtiges Wiki-Plugin für Deine ClassicPress Seite, inkl. Multisitesupport, Frontend-Editor, Rechtemanagment.
 Author: DerN3rd (PSOURCE)
-Version: 1.3.6
+Version: 1.3.8
 Author URI: https://github.com/cp-psource
 Text Domain: ps-wiki
 */
@@ -39,7 +39,7 @@ $myUpdateChecker->setBranch('master');
 class Wiki {
 
 	// @var string Aktuelle Version
-	var $version = '1.3.6';
+	var $version = '1.3.8';
 
 	// @var string Der DB Prefix
 	var $db_prefix = '';

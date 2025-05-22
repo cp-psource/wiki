@@ -1,9 +1,9 @@
-=== PS-Wiki ===
+=== PS Wiki ===
 Contributors: DerN3rd (PSOURCE)
 Tags: multisite, wiki, wikipedia
 Requires at least: 4.9
 Tested up to: 5.6
-Stable tag: 1.3.6
+Stable tag: 1.3.8
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -42,11 +42,6 @@ Lightning fast results
 Network Search uses our powerful PS-Multisite Post Index Plugin that indexes all posts on every site in your network,
 to create a lightning-fast search across your entire network.
 
-[Projektseite](https://cp-psource.github.io/ps-wiki/)
-[GitHub](https://github.com/cp-psource/ps-wiki)
-
-[POWERED BY PSOURCE](https://github.com/cp-psource)
-
 == Languages ==
 
 * Deutsch: de_DE
@@ -65,22 +60,19 @@ Nutze die Möglichkeit dazu auf GitHub oder sende Deine Dateien an: webmaster@n3
 You are welcome to send us your optimized .po/.mo files for your native language. 
 Use the opportunity to do so on GitHub or send your files to: webmaster@n3rds.work
 
-== PSOURCE ==
-
-= DEUTSCH =
-
-= Finde mehr CP-Powersource =
-
-Wirf einen Blick in unser [PSOURCE Sortiment](https://github.com/cp-psource) und hole noch mehr aus Deinem ClassicPress!
-
-
 == ChangeLog ==
+
+= 1.3.8 =
+
+* Fix: comments
+* Fix: History
 
 = 1.3.7 =
 
 * Fix: Uncaught Error: Call to undefined method
 
-= 1.3.6 =
+
+= 1.3.8 =
 
 * Textanpassung
 * PhP8 Fix
