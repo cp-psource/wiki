@@ -46,7 +46,7 @@ class Wiki_Admin_Page_Settings {
 
 			<?php
 			if ( ! class_exists('Wiki_Premium') ) : ?>
-			<h3><?php _e('<a target="_blank" href="https://n3rds.work/piestingtal-source-project/ps-wiki-plugin/">Upgrade jetzt</a> um neue Features zu erhalten!', 'ps-wiki'); ?></h3>
+			<h3><?php _e('<a target="_blank" href="https://cp-psource.github.io/ps-wiki/">Upgrade jetzt</a> um neue Features zu erhalten!', 'ps-wiki'); ?></h3>
 
 			<ul>
 				<li><?php _e('Gib die Anzahl der Breadcrumbs an, die dem Titel hinzugefügt werden sollen', 'ps-wiki'); ?></li>

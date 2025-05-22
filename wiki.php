@@ -752,17 +752,17 @@ class Wiki {
 
 				foreach ( _wp_post_revision_fields() as $field => $field_title ) :
 					if ( 'diff' == $action ) {
-						$left_content = apply_filters( "_wp_post_revision_field_$field", $left_revision->$field, $field );
-						$right_content = apply_filters( "_wp_post_revision_field_$field", $right_revision->$field, $field );
+						$left_content = apply_filters( "_wp_post_revision_field_$field", $left_revision->$field, $field, $left_revision->ID );
+						$right_content = apply_filters( "_wp_post_revision_field_$field", $right_revision->$field, $field, $right_revision->ID );
 						if ( !$rcontent = wp_text_diff( $left_content, $right_content ) )
 							continue; // Es gibt keinen Unterschied zwischen links und rechts
 						$identical = false;
 					} else {
 						add_filter( "_wp_post_revision_field_$field", 'htmlspecialchars' );
-						$rcontent = apply_filters( "_wp_post_revision_field_$field", $revision->$field, $field );
+						$rcontent = apply_filters( "_wp_post_revision_field_$field", $revision->$field, $field, $revision->ID );
 					}
 					$new_content .= '<tr id="revision-field-' . $field . '">';
-					$new_content .= '<th scope="row" style="width: 150px">'.esc_html( $field_title ).'</th>';
+					$new_content .= '<th scope="row" style="width: auto; max-width: 45px;">'.esc_html( $field_title ).'</th>';
 					$new_content .= '<td><div class="pre">'.$rcontent.'</div></td>';
 					$new_content .= '</tr>';
 				endforeach;
