@@ -1259,7 +1259,11 @@ class Wiki {
 			if (is_user_logged_in()) {
 			$tabs .= '<li class="'.join(' ', $classes['advanced_edit']).'" ><a href="' . get_edit_post_link() . '" >' . __('Erweitertes bearbeiten', 'ps-wiki') . '</a></li>';
 			}
-			$tabs .= '<li class="'.join(' ', $classes['create']).'"><a href="' . add_query_arg(array('action' => 'edit', 'eaction' => 'create'), $permalink) . '">'.__('Neues (Sub)Wiki', 'ps-wiki').'</a></li>';
+			$sub_wiki_name = $this->get_setting('sub_wiki_name');
+			if (empty($sub_wiki_name)) {
+				$sub_wiki_name = __('Sub-Wiki', 'ps-wiki');
+			}
+			$tabs .= '<li class="'.join(' ', $classes['create']).'"><a href="' . add_query_arg(array('action' => 'edit', 'eaction' => 'create'), $permalink) . '">'.sprintf(__('Neues %s', 'ps-wiki'), $sub_wiki_name).'</a></li>';
 			$tabs .= '</ul>';
 		}
 		$psource_tab_check = 0;
